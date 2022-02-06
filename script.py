@@ -7,6 +7,7 @@ import logging
 # import file system?
 
 def is_prop_number(s):
+    # TODO: regex
     pass
 
 class Script:

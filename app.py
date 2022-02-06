@@ -61,4 +61,7 @@ class App:
         result = tx.run(query)
         return result
 
+    def add_prop_name(selfself, tx, p, name):
+        pass
+
 

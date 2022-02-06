@@ -6,10 +6,18 @@ from neo4j.exceptions import ServiceUnavailable
 
 from app import App
 
+def clear_nodes():
+    pass
+
+def check_nodes():
+    pass
+
+logfile = "logfile.txt"
+bolt_url = "bolt://localhost:7687"
+user = "neo4j"
+password = "neo4j"
+
 if __name__ == "__main__":
-    bolt_url = "bolt://localhost:7687"
-    user = "neo4j"
-    password = "neo4j"
     App.enable_log(logging.INFO, sys.stdout)
     app = App(bolt_url, user, password)
 
