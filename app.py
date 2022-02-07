@@ -53,6 +53,7 @@ class App:
 
         print("Relation " + p1 + " -> " + p2 + " created")
 
+    @staticmethod
     def _connect_pm_prop(self, tx, p1, p2):
         query = (
             "MATCH (a:Prop), (b:Prop) WHERE " +
@@ -61,7 +62,10 @@ class App:
         result = tx.run(query)
         return result
 
-    def add_prop_name(selfself, tx, p, name):
+    def check_prop_exists(selfself, tx, p):
+        pass
+
+    def update_prop_name(self, tx, p, name):
         pass
 
 

@@ -1,6 +1,11 @@
 #
 # TODO:
 #  change print to log
+#  **modify <- functionality**(and name's), cooperate with Pp Thm
+#  modify recordprop functionality
+#  proof: auto uniqueness
+#  is_number...
+#  tactic names should be wrapped in []
 
 from app import App
 import logging
@@ -20,8 +25,9 @@ class Script:
         self.part = "null"
         self.section = "null"
         self.page = "null"
-        self.name = [] # [String name, String number]
-        self.tactics = [] # [String name, String number1, String number2 ...]
+        self.currentprop = "null"
+        self.name = []  # [String name, String number]
+        self.tactics = []  # [String name, String number1, String number2 ...]
 
     def close(self):
         self.app.close()
@@ -42,28 +48,37 @@ class Script:
 
     def parse_line(self, line, linenum):
         parse = line.split(" ")
-        command = parse[0].lower()
-        if command == "volume": # set volume to x
+        if len(parse) <= 1:
+            return
+        command = parse[0]
+        if command == "#":  # Just common comment
+            return
+        elif command.lower() == "volume":  # set volume to x
             self.volume = parse[1]
-        elif command == "part": # set part to x
+        elif command.lower() == "part":  # set part to x
             self.part = parse[1]
-        elif command == "section": # set section to x
+        elif command.lower() == "section":  # set section to x
             self.section = parse[1]
-        elif command == "page": # set page to x
+        elif command.lower() == "page":  # set page to x
             self.page = parse[1]
-        elif command == "->": # add b proves a relation
-            a = parse[1]
-            bs = parse[2:]
-            self.parse_proof_line(a, bs)
-        elif command == "tactic": # add tactic x
+        elif command.lower() == "tactic":  # add tactic x
             print("Line {linenum}: tactic not implemented: ".format(linenum=linenum) + line)
-        elif command == "name": # add name x
-            print("Line {linenum}: name not implemented: ".format(linenum=linenum) + line)
         elif command == "Pp" or command == "Df" or command == "Thm":
-            [tp, pnum] = [command, parse[1]]
-            self.app.create_pm_prop(pnum, self.volume, self.part, self.section, self.page, tp)
+            # set current proposition to x, and upload the proposition with its type to the database
+            self.currentprop = parse[1]
+            # TODO: check location info validity
+            # TODO: check prop already exists in database
+            self.app.create_pm_prop(parse[1], self.volume, self.part, self.section, self.page, command)
+        elif command == "<-":  # add proof support for current proposition
+            self.parse_proof_line(self.currentprop, parse)
+        elif command.lower() == "name":  # add name x
+            print("Line {linenum}: name not implemented: ".format(linenum=linenum) + line)
         else:
             print("Unidentified line {linenum}: ".format(linenum=linenum) + line)
+        return
+
+    def parse_prop_line(self):
+        pass
 
     def parse_proof_line(self, a, bs):
         # TODO: add tactic and name support
@@ -77,10 +92,16 @@ class Script:
     def read_name(self):
         pass
 
+    def check_nname(self):
+        # search prop name in database, check if it has name...?
+        pass
+
     def search_name(self):
+        # find name exists in local data?
         pass
 
     def save_name(self):
+        # add prop name to local data?
         pass
 
     def read_tactic(self):
@@ -105,4 +126,6 @@ class Script:
         tactics = open(self.tacticfile)
         # read tactics...
         self.parse_file()
+        # write names...
+        # write tactics...
         self.close()
