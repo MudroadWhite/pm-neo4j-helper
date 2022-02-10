@@ -6,11 +6,7 @@ from neo4j.exceptions import ServiceUnavailable
 
 from app import App
 
-def clear_nodes():
-    pass
-
-def check_nodes():
-    pass
+# TODO: general logic to make the python script running
 
 logfile = "logfile.txt"
 bolt_url = "bolt://localhost:7687"

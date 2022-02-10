@@ -1,18 +1,21 @@
 #
 # TODO:
-#  change print to log
-#  modify recordprop functionality
-#  proof: auto uniqueness
-#  tactic names should be wrapped in []
+#  1. change print to log
+#  2. tactic names should be wrapped in []?
+#  3. implement run function
 
 from app import App
 import logging
 import re
 # import file system?
+# import lib?
 
 
 def is_prop_number(s):
     return bool(re.match(r"\d+\.\d+", s))
+
+def is_location_valid(script):
+    pass
 
 
 class Script:
@@ -25,7 +28,7 @@ class Script:
         self.section = "null"
         self.page = "null"
         self.currentprop = "null"
-        self.tactics = []  # [String name, String number1, String number2 ...]
+        self.tactics = {}  # {String name: List String props...}
 
     def close(self):
         self.app.close()
@@ -49,31 +52,32 @@ class Script:
         if len(parse) <= 1:
             return
         command = parse[0]
+        args = parse[1:]
         if command == "#":  # Just common comment
             return
         elif command.lower() == "volume":  # set volume to x
-            self.volume = parse[1]
+            self.volume = args[0]
         elif command.lower() == "part":  # set part to x
-            self.part = parse[1]
+            self.part = args[0]
         elif command.lower() == "section":  # set section to x
-            self.section = parse[1]
+            self.section = args[0]
         elif command.lower() == "page":  # set page to x
-            self.page = parse[1]
+            self.page = args[0]
         elif command.lower() == "tactic":  # add tactic x
+            self.tactics[args[0]] = args[1:]
             print("Line {linenum}: tactic not implemented: ".format(linenum=linenum) + line)
         elif command == "Pp" or command == "Df" or command == "Thm":
             # set current proposition to x, and upload the proposition with its type to the database
-            self.currentprop = parse[1]
-            # TODO: check location info validity
-            if not self.app.check_prop_exists(self.currentprop):
-                self.app.create_pm_prop(parse[1], self.volume, self.part, self.section, self.page, command)
+            self.currentprop = args[0]
+            if not is_location_valid(self):
+                # TODO: logging...
+                print("location invalid")
             else:
-                # TODO: implement update
-                self.app.update_prop(parse[1], self.volume, self.part, self.section, self.page, command)
+                self.app.create_pm_prop(args[0], self.volume, self.part, self.section, self.page, command)
         elif command == "<-":  # add proof support for current proposition
-            self.parse_proof_line(parse[1:])
+            self.parse_proof_line(args)
         elif command.lower() == "name":  # add name x
-            self.app.update_prop_name(self.currentprop, parse[1])
+            self.app.update_prop_name(self.currentprop, args[0])
         else:
             print("Unidentified line {linenum}: ".format(linenum=linenum) + line)
         return
@@ -86,28 +90,40 @@ class Script:
             if is_prop_number(b):
                 self.app.connect_pm(b, self.currentprop)
             else:
-                # TODO: add tactic support
-                continue
-        pass
+                # if it isn't a prop number, it is a tactic name
+                if b in self.tactics:
+                    cs = self.tactics[b]
+                    for c in cs:
+                        self.app.connect_pm(c, self.currentprop)
+                else:
+                    # TODO: enhance the error report
+                    print("Unidentified tactic name {b}".format(b=b))
+                    return
 
     def load_tactics(self):
-        pass
+        # clear the tactics...
+        self.tactics = {}
+        tactics = open(self.tacticfile).readlines()
+        i = 0
+        for line in tactics:
+            parse = line.split(" ")
+            if len(parse) < 2:
+                print("Error loading tactics at line {i}: insufficient arguments".format(i=i))
+                return
+            self.tactics[parse[0]] = parse[1:]
+            i += 1
 
-    def search_tactic(self):
-        pass
-
-    def save_tactic(self):
+    def write_tactics(self):
         pass
 
     def run(self):
         # TODO:
-        #  1. read tactics from tactic file
-        #  2. load script
-        #  3. if found tactic line in script, search/add tactic
+        #  1. load tactics from tactic file
+        #  2. read script
+        #  3. if found tactic line in proofs, search for tactic
         #  4. otherwise generate the corresponded neo4j query
         tactics = open(self.tacticfile)
         # read tactics...
         self.parse_file()
-        # write names...
-        # write tactics...
+        # write tactics to local file...
         self.close()
