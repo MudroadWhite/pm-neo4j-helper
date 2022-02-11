@@ -22,6 +22,17 @@ class App:
         logging.getLogger("neo4j").addHandler(handler)
         logging.getLogger("neo4j").setLevel(level)
 
+    def clear_all(self):
+        with self.driver.session() as session:
+            result = session.write_transaction(
+                self._clear_all_return)
+            return result
+
+    @staticmethod
+    def _clear_all_return(tx):
+        result = tx.run("MATCH (n) DETACH DELETE n")
+        return result
+
     def create_pm_prop(self, pnum, vol, part, sect, pg, tp):
         if self.check_prop_exists(pnum):
             print("Proposition {pnum} {tp}(updated)".format(pnum=pnum, tp=tp))
@@ -53,7 +64,7 @@ class App:
     def _update_pm_prop_and_return(tx, pnum, vol, part, sect, pg, tp):
         ch, thm = pnum.split(".")
         result = tx.run(
-            "MATCH (p:Prop {number: 'pnum'}) " +
+            "MATCH (p:Prop {number: '" + pnum + "'}) " +
             "SET p.volume='" + vol + "'," +
             "p.part='" + part + "'," +
             "p.section='" + sect + "'," +
@@ -64,16 +75,20 @@ class App:
         return result
 
     def connect_pm(self, p1, p2):
-        print(p1 + " -> " + p2 + " ...")
-        if self.check_conn_exists(p1, p2):
+        if not self.check_conn_exists(p1, p2):
+            print(p1 + " -[Proves]-> " + p2)
             with self.driver.session() as session:
                 result = session.write_transaction(self._connect_pm_prop, p1, p2)
+                return result
+        else:
+            print(p1 + ", " + p2 + " not found")
+            return None
 
     @staticmethod
-    def _connect_pm_prop(self, tx, p1, p2):
+    def _connect_pm_prop(tx, p1, p2):
         result = tx.run(
-            "MATCH (a:Prop {number: '" + p1 + "'}), " +
-            "(b:Prop {number: '" + p2 + "'})" +
+            "MATCH (a:Prop {number: '" + p1 + "'}) " +
+            "MATCH (b:Prop {number: '" + p2 + "'})" +
             "CREATE (a)-[r:Proves]->(b)")
         return result
 
@@ -88,25 +103,26 @@ class App:
             pass
 
     @staticmethod
-    def _update_prop_name_return(self, tx, p, name):
+    def _update_prop_name_return(tx, p, name):
         result = tx.run(
-            "MATCH (a:Prop {number: " + p + "})" +
+            "MATCH (a:Prop {number: '" + p + "'})" +
             "SET a.name = '" + name + "'"
         )
         return result
 
     def check_prop_exists(self, p):
         with self.driver.session() as session:
-            result = session.read_transaction(self. _check_prop_exists_return, p)
-            return result
+            result = session.read_transaction(self._check_prop_exists_return, p)
+            return False if result == 0 else True
+            # return result
 
     @staticmethod
-    def _check_prop_exists_return(self, tx, p):
-        query = "MATCH (a:Prop {number: " + p + "}) " + "RETURN count(n) AS count"
-        result = tx.run(query)
+    def _check_prop_exists_return(tx, p):
+        query = "MATCH (n:Prop {number: '" + p + "'}) " + "RETURN count(n) AS count"
+        result = tx.run(query).single()
         try:
             count = result["count"]
-            return False if count == 0 else True
+            return count
         except ServiceUnavailable as exception:
             logging.error("{query} raised an error: \n {exception}".format(
                 query=query, exception=exception))
@@ -116,26 +132,25 @@ class App:
         if self.check_prop_exists(p1) and self.check_prop_exists(p2):
             with self.driver.session() as session:
                 result = session.read_transaction(self._check_conn_exists_return, p1, p2)
-                return result
+                return False if result == 0 else True
         else:
             return False
 
     @staticmethod
-    def _check_conn_exists_return(self, tx, p1, p2):
+    def _check_conn_exists_return(tx, p1, p2):
         query = "MATCH " \
                 "(p1:Prop {number: '" + p1 + "'})" \
                 "-[r:Proves]->" \
                 "(p2:Prop {number: '" + p2 + "'}) " \
-                "RETURN count(n) AS count"
-        result = tx.run(query)
+                "RETURN count(r) AS count"
+        result = tx.run(query).single()
         try:
             count = result["count"]
-            return False if count == 0 else True
+            return count
         except ServiceUnavailable as exception:
             logging.error("{query} raised an error: \n {exception}".format(
                 query=query, exception=exception))
             raise
-
 
 
 

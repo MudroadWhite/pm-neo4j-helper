@@ -7,11 +7,11 @@ Principia Mathematica is a large book with proofs.
 
 This helper reads simplified script, generates Neo4j queries and send it into Neo4j database, for recording the proof relations in PM.
 
-
+Related Project: https://github.com/LogicalAtomist/principia
 
 ## Script Syntax & Functionalities
 
-### General Location Info
+### General Location Info Setting
 
 `volume x`, `part x`, `section x`, `page x` set volume, part, section, page to x respectively. 
 
@@ -27,22 +27,22 @@ This helper reads simplified script, generates Neo4j queries and send it into Ne
 
 `tactic x y1 y2 y3...` adds a tactic involving a proof pattern supported by several propositions, for future translation. Abstracting the proof patterns can simplify the proof in PM. Tactic's name is x, and the involved propositions are ys. These ys will be added into proof relations that proves x. (To be implemented)
 
-`tactic` will load the tactics from a file, and save/update new tactics back to the file when reading the scripts.
+Tactics can be saved in a local file. When the helper starts, the helper will try to read tactics from the local file. When the helper is finished, the helper will save/update new tactics back to the local file.
 
 
 
-### Restrictions
+## Restrictions
 
-The script language isn't implemented formally using a parser and lexer. Rather, I do all the things brutally. Therefore,
+The script language isn't implemented formally using a parser and lexer. Rather, I do all the things pretty brutal. Therefore,
 
 - Newlines are pretty strict. 
 - Don't leave extra symbols like ",", ";" in the script. 
-- One, and only one space is required, for most syntaxes mentioned above. Don't leave extra spaces
+- One, and only one space is required, for most syntaxes mentioned above. Don't leave extra spaces.
 - Only one instruction at one line.
 
 
 
-### TODO
+## TODO
 
 - [ ] Test functionalities
 - [ ] General running logic
