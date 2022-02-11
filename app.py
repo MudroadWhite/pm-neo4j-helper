@@ -5,8 +5,6 @@ from neo4j import GraphDatabase
 from neo4j.exceptions import ServiceUnavailable
 
 # TODO: change print into logging?
-# TODO: implement check_conn_exists & making relation functionality
-
 
 class App:
 
@@ -67,8 +65,7 @@ class App:
 
     def connect_pm(self, p1, p2):
         print(p1 + " -> " + p2 + " ...")
-        # TODO: check connection exists
-        if True:
+        if self.check_conn_exists(p1, p2):
             with self.driver.session() as session:
                 result = session.write_transaction(self._connect_pm_prop, p1, p2)
 
@@ -77,7 +74,7 @@ class App:
         result = tx.run(
             "MATCH (a:Prop {number: '" + p1 + "'}), " +
             "(b:Prop {number: '" + p2 + "'})" +
-            "CREATE (a)-[r:proves]->(b)")
+            "CREATE (a)-[r:Proves]->(b)")
         return result
 
     def update_prop_name(self, p, name):
@@ -85,6 +82,7 @@ class App:
         if self.check_prop_exists(p):
             with self.driver.session() as session:
                 result = session.write_transaction(self._update_prop_name_return, p, name)
+                return result
         else:
             print("No proposition {p} found in database for name {name}".format(p=p, name=name))
             pass
@@ -99,7 +97,8 @@ class App:
 
     def check_prop_exists(self, p):
         with self.driver.session() as session:
-            result = session.write_transaction(self. _check_prop_exists_return, p)
+            result = session.read_transaction(self. _check_prop_exists_return, p)
+            return result
 
     @staticmethod
     def _check_prop_exists_return(self, tx, p):
@@ -115,7 +114,31 @@ class App:
 
     def check_conn_exists(self, p1, p2):
         if self.check_prop_exists(p1) and self.check_prop_exists(p2):
-            pass
+            with self.driver.session() as session:
+                result = session.read_transaction(self._check_conn_exists_return, p1, p2)
+                return result
+        else:
+            return False
+
+    @staticmethod
+    def _check_conn_exists_return(self, tx, p1, p2):
+        query = "MATCH " \
+                "(p1:Prop {number: '" + p1 + "'})" \
+                "-[r:Proves]->" \
+                "(p2:Prop {number: '" + p2 + "'}) " \
+                "RETURN count(n) AS count"
+        result = tx.run(query)
+        try:
+            count = result["count"]
+            return False if count == 0 else True
+        except ServiceUnavailable as exception:
+            logging.error("{query} raised an error: \n {exception}".format(
+                query=query, exception=exception))
+            raise
+
+
+
+
 
 
 

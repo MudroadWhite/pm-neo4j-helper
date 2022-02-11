@@ -70,8 +70,8 @@ Thm 2.15
 <- 2.05 2.12 1.11 2.03 2.05 2.14 1.11
 name Transp
 
-# todo: eliminate syll
-# all unfinished below
+# TODO: eliminate syll
+#  all unfinished below
 page 103
 Thm 2.16
 <- 2.12 2.05 2.03 syll

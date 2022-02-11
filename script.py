@@ -1,8 +1,7 @@
 #
 # TODO:
-#  1. change print to log
-#  2. tactic names should be wrapped in []?
-#  3. implement run function
+#  1. change print to log?
+#  2. implement run function
 
 from app import App
 import logging
@@ -13,10 +12,6 @@ import re
 
 def is_prop_number(s):
     return bool(re.match(r"\d+\.\d+", s))
-
-def is_location_valid(script):
-    pass
-
 
 class Script:
     def __init__(self, app, tacticfile="tactics.txt", script="pm.txt"):
@@ -69,11 +64,7 @@ class Script:
         elif command == "Pp" or command == "Df" or command == "Thm":
             # set current proposition to x, and upload the proposition with its type to the database
             self.currentprop = args[0]
-            if not is_location_valid(self):
-                # TODO: logging...
-                print("location invalid")
-            else:
-                self.app.create_pm_prop(args[0], self.volume, self.part, self.section, self.page, command)
+            self.app.create_pm_prop(args[0], self.volume, self.part, self.section, self.page, command)
         elif command == "<-":  # add proof support for current proposition
             self.parse_proof_line(args)
         elif command.lower() == "name":  # add name x
@@ -81,9 +72,6 @@ class Script:
         else:
             print("Unidentified line {linenum}: ".format(linenum=linenum) + line)
         return
-
-    # def parse_prop_line(self):
-    #     pass
 
     def parse_proof_line(self, bs):
         for b in bs:

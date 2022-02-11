@@ -5,8 +5,12 @@ from neo4j import GraphDatabase
 from neo4j.exceptions import ServiceUnavailable
 
 from app import App
+import test
 
-# TODO: general logic to make the python script running
+# TODO:
+#  1. Finished almost core functionalities! Be ready to write some tests
+#  2. After testing, implement general logic to make the python script running
+#     and polish the codes(?)
 
 logfile = "logfile.txt"
 bolt_url = "bolt://localhost:7687"
