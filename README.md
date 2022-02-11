@@ -5,7 +5,7 @@ Neo4j is a database with visualized graph.
 
 Principia Mathematica is a large book with proofs.
 
-This helper reads simplified script, generates Neo4j queries and send it into Neo4j database.
+This helper reads simplified script, generates Neo4j queries and send it into Neo4j database, for recording the proof relations in PM.
 
 
 
@@ -21,7 +21,7 @@ This helper reads simplified script, generates Neo4j queries and send it into Ne
 
 `name x` adds a name to an already existing proposition in the database.
 
-### Proof Relation Recording (To be implemented)
+### Proof Relation Recording
 
 `<- a b1 b2 b3...` sends relations `b1 proves a`, `b2 proves a`... to Neo4j database. 
 
@@ -33,14 +33,17 @@ This helper reads simplified script, generates Neo4j queries and send it into Ne
 
 ### Restrictions
 
-The script language isn't implemented formally using a parser and lexer. Rather, I do all the things brutally. Newlines are pretty strict, and there's no space for usual symbols like ",", ";" or so. For the syntaxes mentioned above, one & only one space is required. Also, it's recommended to put only one instruction at one line.
+The script language isn't implemented formally using a parser and lexer. Rather, I do all the things brutally. Therefore,
+
+- Newlines are pretty strict. 
+- Don't leave extra symbols like ",", ";" in the script. 
+- One, and only one space is required, for most syntaxes mentioned above. Don't leave extra spaces
+- Only one instruction at one line.
 
 
 
 ### TODO
 
-- [ ] Implement tactic saving
-- [ ] App functions: check props/proofs already exists
-- [ ] Enhance error report, understand Python logging
-- [ ] Main running logic for Script
-- [ ] Create -> Update for prop
+- [ ] Test functionalities
+- [ ] General running logic
+- [ ] Then polish the code and functionalities for more
