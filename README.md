@@ -15,6 +15,8 @@ The suggested way to run the helper for now is
 
 ```python.exe pm-neo47-helper/main.py```
 
+Username, password, and bolt url for the Neo4j database should be set in `main.py`. The Neo4j database should have its bolt connection enabled.
+
 ## Script Syntax & Functionalities
 
 ### General Location Info Setting

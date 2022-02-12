@@ -13,12 +13,7 @@ from script import Script
 #  2. Unique tactic name(done?)
 #  3. Good tactic name format
 #  4. Set script file & tactic file
-
-# TODO:
-#  1. Finished almost core functionalities! Be ready to write some tests
-#  2. After testing, implement general logic to make the python script running
-#     and polish the codes(?)
-#  3. logging implementation
+#  5. logging implementation
 
 logfile = "log_pmneo4j.txt"
 bolt_url = "bolt://localhost:7687"
