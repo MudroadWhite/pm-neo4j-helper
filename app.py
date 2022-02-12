@@ -4,7 +4,9 @@ import sys
 from neo4j import GraphDatabase
 from neo4j.exceptions import ServiceUnavailable
 
-# TODO: change print into logging?
+# TODO:
+#  1. Change print into logging?
+#  2. Identical relation a->a checking?
 
 
 class App:

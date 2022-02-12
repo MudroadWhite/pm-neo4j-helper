@@ -29,6 +29,9 @@ Related Project: https://github.com/LogicalAtomist/principia
 
 Tactics can be saved in a local file. When the helper starts, the helper will try to read tactics from the local file. When the helper is finished, the helper will save/update new tactics back to the local file.
 
+### Comments
+
+`# x` makes the whole line a comment. Use it to enhance the readability of your script.
 
 
 ## Restrictions
@@ -46,11 +49,17 @@ The script language isn't implemented formally using a parser and lexer. Rather,
 
 Functionalities are being tested on Windows 10. Potentially the username and the password have to be alternated.
 
+Default file to save tactics is `scripts/tactics.txt`.
+
+Default script file to feed the script is `scripts/pm.txt`.
+
+(Currently, the functionality to change the files is not implemented.)
+
 
 
 ## TODO
 
-- [x] Test App class functionalities
-- [ ] Test Script class functionalities
-- [ ] General running logic
-- [ ] Polish the code and functionalities for more
+- [x] All core functionalities
+- [ ] Set/change script file
+- [ ] Set/change tactic file storing/loading location
+- [ ] More functionalities to fix bugs...

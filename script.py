@@ -68,14 +68,14 @@ class Script:
             self.currentprop = args[0]
             self.app.create_pm_prop(args[0], self.volume, self.part, self.section, self.page, command)
         elif command == "<-":  # add proof support for current proposition
-            self.parse_proof_line(args)
+            self.parse_proof_line(args, linenum)
         elif command.lower() == "name":  # add name x
             self.app.update_prop_name(self.currentprop, args[0])
         else:
             print("Unidentified line {linenum}: ".format(linenum=linenum) + line)
         return
 
-    def parse_proof_line(self, bs):
+    def parse_proof_line(self, bs, linenum):
         for b in bs:
             if is_prop_number(b):
                 self.app.connect_pm(b, self.currentprop)
@@ -87,7 +87,7 @@ class Script:
                         self.app.connect_pm(c, self.currentprop)
                 else:
                     # TODO: enhance the error report
-                    print("Unidentified tactic/proposition name {b}".format(b=b))
+                    print("Unidentified tactic/proposition name {b} in line {linenum}".format(b=b, linenum=linenum))
                     # return
 
     def load_tactics(self):
