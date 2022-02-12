@@ -4,8 +4,9 @@ import sys
 from neo4j import GraphDatabase
 from neo4j.exceptions import ServiceUnavailable
 
+# from test import *
 from app import App
-from test import *
+from script import Script
 
 # TODO:
 #  1. Good checking for proposition's format, duplication, etc
