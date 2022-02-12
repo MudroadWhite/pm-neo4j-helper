@@ -9,6 +9,12 @@ This helper reads simplified script, generates Neo4j queries and send it into Ne
 
 Related Project: https://github.com/LogicalAtomist/principia
 
+## How to Run
+
+The suggested way to run the helper for now is
+
+```python.exe pm-neo47-helper/main.py```
+
 ## Script Syntax & Functionalities
 
 ### General Location Info Setting
@@ -60,6 +66,7 @@ Default script file to feed the script is `scripts/pm.txt`.
 ## TODO
 
 - [x] All core functionalities
+- [x] Test all core functionalities  
 - [ ] Set/change script file
 - [ ] Set/change tactic file storing/loading location
 - [ ] More functionalities to fix bugs...
