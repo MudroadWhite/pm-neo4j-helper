@@ -17,13 +17,13 @@ Related Project: https://github.com/LogicalAtomist/principia
 
 ### Proposition Recording
 
-`Thm x`, `Df x`, `Pp x` send query of proposition x with type Thm, Df or Pp respectively. If a proposition is in the database, it will be updated with the corresponded new values.
+`Thm x`, `Df x`, `Pp x` send query of proposition x with type Thm, Df or Pp respectively. If a proposition is in the database, it will be updated with the corresponded new values. `x` will also be set as the last proposition being recorded in the script.
 
 `name x` adds a name to an already existing proposition in the database.
 
 ### Proof Relation Recording
 
-`<- a b1 b2 b3...` sends relations `b1 proves a`, `b2 proves a`... to Neo4j database. 
+`<- a1 a2 a3...` sends relations `a1 proves x`, `a2 proves x`... to Neo4j database, where `x` is the last proposition being recorded. 
 
 `tactic x y1 y2 y3...` adds a tactic involving a proof pattern supported by several propositions, for future translation. Abstracting the proof patterns can simplify the proof in PM. Tactic's name is x, and the involved propositions are ys. These ys will be added into proof relations that proves x. (To be implemented)
 
@@ -37,13 +37,20 @@ The script language isn't implemented formally using a parser and lexer. Rather,
 
 - Newlines are pretty strict. 
 - Don't leave extra symbols like ",", ";" in the script. 
-- One, and only one space is required, for most syntaxes mentioned above. Don't leave extra spaces.
+- One, and only one space is required, for all syntaxes mentioned above. Don't leave extra spaces anywhere.
 - Only one instruction at one line.
+
+
+
+## More Information
+
+Functionalities are being tested on Windows 10. Potentially the username and the password have to be alternated.
 
 
 
 ## TODO
 
-- [ ] Test functionalities
+- [x] Test App class functionalities
+- [ ] Test Script class functionalities
 - [ ] General running logic
-- [ ] Then polish the code and functionalities for more
+- [ ] Polish the code and functionalities for more

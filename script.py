@@ -1,7 +1,8 @@
 #
 # TODO:
 #  1. change print to log?
-#  2. implement run function
+#  2. run() implementation
+#  3. change init method to initiating an app from inside rather than outside
 
 from app import App
 import logging
@@ -14,7 +15,7 @@ def is_prop_number(s):
     return bool(re.match(r"\d+\.\d+", s))
 
 class Script:
-    def __init__(self, app, tacticfile="tactics.txt", script="pm.txt"):
+    def __init__(self, app, tacticfile="scripts/tactics.txt", script="scripts/pm.txt"):
         self.app = app
         self.tacticfile = tacticfile
         self.script = script
@@ -36,11 +37,13 @@ class Script:
         logging.getLogger("neo4j").setLevel(level)
 
     def parse_file(self):
-        script = open(self.script)
-        lines = script.readlines()
+        script = open(self.script, 'r')
+        lines = script.read().splitlines()
+        script.close()
         i = 0
         while i < len(lines):
             self.parse_line(lines[i], i)
+            i += 1
 
     def parse_line(self, line, linenum):
         parse = line.split(" ")
@@ -60,7 +63,6 @@ class Script:
             self.page = args[0]
         elif command.lower() == "tactic":  # add tactic x
             self.tactics[args[0]] = args[1:]
-            print("Line {linenum}: tactic not implemented: ".format(linenum=linenum) + line)
         elif command == "Pp" or command == "Df" or command == "Thm":
             # set current proposition to x, and upload the proposition with its type to the database
             self.currentprop = args[0]
@@ -85,13 +87,15 @@ class Script:
                         self.app.connect_pm(c, self.currentprop)
                 else:
                     # TODO: enhance the error report
-                    print("Unidentified tactic name {b}".format(b=b))
-                    return
+                    print("Unidentified tactic/proposition name {b}".format(b=b))
+                    # return
 
     def load_tactics(self):
         # clear the tactics...
         self.tactics = {}
-        tactics = open(self.tacticfile).readlines()
+        f = open(self.tacticfile, 'r')
+        tactics = f.read().splitlines()
+        f.close()
         i = 0
         for line in tactics:
             parse = line.split(" ")
@@ -101,17 +105,35 @@ class Script:
             self.tactics[parse[0]] = parse[1:]
             i += 1
 
-    def write_tactics(self):
-        pass
+    def save_tactics(self):
+        f = open(self.tacticfile, 'w')
+        for k in self.tactics:  # tactic name
+            f.write(k)
+            for t in self.tactics[k]:  # tactic props
+                f.write(" ")
+                f.write(t)
+            f.write("\n")
+        f.close()
 
     def run(self):
-        # TODO:
-        #  1. load tactics from tactic file
-        #  2. read script
-        #  3. if found tactic line in proofs, search for tactic
-        #  4. otherwise generate the corresponded neo4j query
-        tactics = open(self.tacticfile)
-        # read tactics...
+        # 0. Initializing settings...
+
+        # 1. load tactics from tactic file
+        print("Reading tactic file from {f}...".format(f=self.tacticfile))
+        f = open(self.tacticfile, 'r')
+        lines = f.read().splitlines()
+        f.close()
+        for line in lines:
+            l = line.split(" ")
+            self.tactics[l[0]] = l[1:]
+
+        # 2. read script
+        print("Parsing script file from {f}...".format(f=self.script))
         self.parse_file()
-        # write tactics to local file...
+
+        # 3. write tactics to local file...
+        print("Saving tactics to {f}...".format(f=self.tacticfile))
+        self.save_tactics()
+
         self.close()
+        print("...Done")

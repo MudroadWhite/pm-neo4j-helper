@@ -3,7 +3,6 @@ part 1
 section A
 
 page 94
-
 Df 1.01
 Df 1.1
 

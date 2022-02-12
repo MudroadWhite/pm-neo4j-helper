@@ -6,6 +6,7 @@ from neo4j.exceptions import ServiceUnavailable
 
 # TODO: change print into logging?
 
+
 class App:
 
     def __init__(self, url, user, password):
@@ -75,14 +76,18 @@ class App:
         return result
 
     def connect_pm(self, p1, p2):
-        if not self.check_conn_exists(p1, p2):
+        if not self.check_prop_exists(p1):
+            print("{p1} not found for {p1}->{p2}".format(p1=p1, p2=p2))
+        elif not self.check_prop_exists(p2):
+            print("{p2} not found for {p1}->{p2}".format(p1=p1, p2=p2))
+        elif not self.check_conn_exists(p1, p2):
             print(p1 + " -[Proves]-> " + p2)
             with self.driver.session() as session:
                 result = session.write_transaction(self._connect_pm_prop, p1, p2)
                 return result
         else:
-            print(p1 + ", " + p2 + " not found")
-            return None
+            print("{p1} -[Proves]-> {p2}(already exists)".format(p1=p1, p2=p2))
+        return None
 
     @staticmethod
     def _connect_pm_prop(tx, p1, p2):
@@ -129,12 +134,9 @@ class App:
             raise
 
     def check_conn_exists(self, p1, p2):
-        if self.check_prop_exists(p1) and self.check_prop_exists(p2):
-            with self.driver.session() as session:
-                result = session.read_transaction(self._check_conn_exists_return, p1, p2)
-                return False if result == 0 else True
-        else:
-            return False
+        with self.driver.session() as session:
+            result = session.read_transaction(self._check_conn_exists_return, p1, p2)
+            return False if result == 0 else True
 
     @staticmethod
     def _check_conn_exists_return(tx, p1, p2):
