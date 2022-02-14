@@ -1,18 +1,19 @@
-#
-# TODO:
-#  1. change print to log?
-#  2. run() implementation
-#  3. change init method to initiating an app from inside rather than outside
-
 from app import App
 import logging
 import re
 # import file system?
 # import lib?
 
+# TODO:
+#  [ ] Change print to log?
+#  [ ] Change init method to initiating an app from inside rather than outside(refactor class?)
+
 
 def is_prop_number(s):
     return bool(re.match(r"\d+\.\d+", s))
+
+def is_sharp_only(s):
+    return bool(re.match(r"\#+", s))
 
 class Script:
     def __init__(self, app, tacticfile="scripts/tactics.txt", script="scripts/pm.txt"):
@@ -51,7 +52,7 @@ class Script:
             return
         command = parse[0]
         args = parse[1:]
-        if command == "#":  # Just common comment
+        if is_sharp_only(command):  # Just common comments
             return
         elif command.lower() == "volume":  # set volume to x
             self.volume = args[0]

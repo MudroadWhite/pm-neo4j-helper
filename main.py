@@ -9,11 +9,12 @@ from app import App
 from script import Script
 
 # TODO:
-#  1. Good checking for proposition's format, duplication, etc
-#  2. Unique tactic name(done?)
-#  3. Good tactic name format
-#  4. Set script file & tactic file
-#  5. logging implementation
+#  [ ] Good checking for proposition's format, duplication, etc
+#  [x] Unique tactic name(done?)
+#  [ ] Good tactic name format
+#  [ ] Logging implementation
+#  [ ] *** Enhance main init logic, setting options, including setting script file & tactic file
+#  [ ] *** Eliminate redundant relations: check for one node, all relations that doesn't being fed at current time
 
 logfile = "log_pmneo4j.txt"
 bolt_url = "bolt://localhost:7687"
@@ -38,6 +39,10 @@ def tests():
 
 
 if __name__ == "__main__":
+    # TODO:
+    #  [ ] 1. Default settings in variables
+    #  [ ] 2. Load settings from some JSON file
+    #  [ ] 3. Load settings from some parameters
     print("Running pm-neo4j helper")
     print("Username: '{u}', url: {url}".format)
     App.enable_log(logging.INFO, sys.stdout)

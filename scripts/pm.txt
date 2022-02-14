@@ -26,7 +26,9 @@ Pp 1.7
 Pp 1.71
 Pp 1.72
 
-# didn't added tactics formally
+# p98: "rational" notation means substitution
+# square brackets [ ] means what is assertinng (lhs of |-)
+
 page 100
 Thm 2.01 
 name Abs
@@ -37,7 +39,7 @@ name Simp
 Thm 2.03 
 name Transp
 <- 1.4 1.01
-Thm 2.04 
+Thm 2.04
 name Comm
 <- 1.5 1.01
 Thm 2.05 
@@ -47,90 +49,116 @@ Thm 2.06
 name Syll
 <- 2.04 2.05 1.11
 
+# p100: [(1).(2).*1.11] means MP?
+tactic MP 1.11
+
 page 101
 Thm 2.07
 <- 1.3
+# NOTE: Default Syll to 2.05
 Thm 2.08
-<- 2.05 Taut 1.11 2.07
+<- 2.05 1.2 MP 2.07
 name Id
 Thm 2.1
 <- 2.08 1.01
 Thm 2.11
-<- Perm 2.1 1.11
+<- 1.4 2.1 MP
 Thm 2.12
 <- 2.11 1.01
 Thm 2.13
-<- Sum 2.12 1.11 2.11
+<- 1.6 2.12 MP 2.11
 
 page 102
 Thm 2.14
-<- Perm 2.13 1.11 1.01
+<- 1.4 2.13 MP 1.01
 Thm 2.15
-<- 2.05 2.12 1.11 2.03 2.05 2.14 1.11
+<- 2.05 2.12 MP 2.03 2.05 2.14
 name Transp
 
-# TODO: eliminate syll
-#  all unfinished below
+# page 102: [Syll] |- (a->b) . (b->c) . (c->d) *->|-* d
+tactic Syll 2.05
+# tactic Syll2_05 2.05
+# tactic Syll2_06 2.06
+
 page 103
+# page 103:
+#              |- p1 *->*
+# [some props] |- p2
+# Potentially means 1.11 or 1.1?! Similar to some syntax in Agda
+# Are there any necessities to distinguish between 1.1 & 1.11?
+# Tactic: "-> at the end, [] at the beginning"
+tactic ->[] 1.11
+
 Thm 2.16
-<- 2.12 2.05 2.03 syll
+<- 2.12 2.05 2.03 Syll_2_05 ->[]
 name Transp
+
+# page 103: *->|- Prop* means QED. Doesn't involve anything
+
 Thm 2.17
-<- 2.03 2.14 2.05 syll
+<- 2.03 2.14 2.05 syll ->[]
 name Transp
 Thm 2.18
 <- 2.12 2.05 2.01 syll 2.14
 
 page 104
 Thm 2.2
-<- Add [->|-] Perm Syll
+<- 1.3 1.4 Syll
 Thm 2.21
 <- 2.2
 Thm 2.24
-<- 2.21 Comm
+<- 2.21 2.04
 Thm 2.25
-<- 2.1 Assoc [->|-]
+<- 2.1 1.5
 Thm 2.26
 <- 2.25
 Thm 2.27
 <- 2.26
 Thm 2.3
-<- Perm Sum [->|-]
+<- 1.4 1.6
+
+# page 105: A -> [...] B -> [...] C
+# Doesn't involve |-s, therefore an abbreviation
+tactic []-> 1.11
+
 Thm 2.31
-<- Syll 1.11
+<- 2.3 1.5 1.4
 
 page 105
 Thm 2.32
-<- perm assoc 2.3
+<- 2.3 1.4 1.5 []->
 Df 2.33
 Thm 2.36
-<- Perm Syll Sum
+<- 1.4 2.05 1.6
 Thm 2.37
-<- Syll Perm Sum
+<- 2.05 1.4 1.6
 Thm 2.38
-<- Syll Perm Sum
+<- 2.05 1.4 1.6
 
+# page 106: x.yy.zz means x.yy & x.zz
+# page 106: Recommended directly apply tactic, rather than referencing to some tactic to make a deduction
 page 106
 Thm 2.4
-<- 2.31 Taut 2.38
+<- 2.31 1.2 2.38 []->
 Thm 2.41
-<- Assoc Taut Sum
+<- 1.5 1.2 1.6 []->
 Thm 2.42
 <- 2.4
 Thm 2.43
 <- 2.42
+# NOTE: Default Transp to 2.16
 Thm 2.45
-<- 2.2 Transp
+<- 2.2 2.16
 Thm 2.46
-<- 1.3 Transp
+<- 1.3 2.16
 
 page 107
 Thm 2.47
-<- 2.45 2.2 Syll
+<- 2.45 2.2 2.05
 Thm 2.48
-<- 2.46 1.3 Syll
+<- 2.46 1.3 2.05
 Thm 2.49
-<- 2.45 2.2 Syll
+<- 2.45 2.2 2.05
 Thm 2.5
 <- 2.47
 Thm 2.51
@@ -138,56 +166,57 @@ Thm 2.51
 Thm 2.52
 <- 2.49
 Thm 2.521
-# ??? 2.52.17???
 <- 2.52 2.17
 Thm 2.53
 <- 2.12 2.38
 Thm 2.54
 <- 2.14 2.38
 Thm 2.55
-<- 2.53 Comm
+<- 2.53 2.04
 Thm 2.56
-<- 2.55 Perm
+<- 2.55 1.4
 Thm 2.6
-<-2.38 Taut Syll
+<- 2.38 1.2 2.05
 Thm 2.61
-<- 2.6 Comm
+<- 2.6 2.04
 Thm 2.62
-<- 2.53 2.6 Comm
+<- 2.53 2.6 2.05
 Thm 2.621
-<- 2.63
+<- 2.63 2.04
 Thm 2.63
 <- 2.62
 Thm 2.64
-<- 2.63 Perm
+<- 2.63 1.4
 Thm 2.65
 <- 2.64
 Thm 2.67
-<- 2.54 Syll 2.24
+<- 2.54 2.05 2.24
 
 page 108
 Thm 2.68
-
+<- 2.67 2.54
 Thm 2.69
-
+<- 2.68 1.4 2.62
 Thm 2.73
-
+<- 2.621 2.38
 Thm 2.74
-
+<- 2.73 1.5 2.05
 Thm 2.75
-
+<- 2.74 2.53 2.31
 Thm 2.76
-
+<- 2.75 2.04
 Thm 2.77
-
+<- 2.76
 Thm 2.8
-
+<- 2.53 1.4 []->
 Thm 2.81
-
+<- Sum 2.76 2.05
 Thm 2.82
-
+<- 2.8 2.81
 Thm 2.83
-
+<- 2.82
+# Where is 2.84? Deleted?
 Thm 2.85
-
+<- Add 2.05 2.55 2.83 2.04 2.54
 Thm 2.86
+<- 2.85

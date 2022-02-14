@@ -33,13 +33,15 @@ Username, password, and bolt url for the Neo4j database should be set in `main.p
 
 `<- a1 a2 a3...` sends relations `a1 proves x`, `a2 proves x`... to Neo4j database, where `x` is the last proposition being recorded. 
 
-`tactic x y1 y2 y3...` adds a tactic involving a proof pattern supported by several propositions, for future translation. Abstracting the proof patterns can simplify the proof in PM. Tactic's name is x, and the involved propositions are ys. These ys will be added into proof relations that proves x. (To be implemented)
+`tactic x y1 y2 y3...` adds a tactic involving a proof pattern supported by several propositions, for future translation. Abstracting the proof patterns can simplify the proof in PM. Tactic's name is x, and the involved propositions are ys. These ys will be added into proof relations that proves x.
 
 Tactics can be saved in a local file. When the helper starts, the helper will try to read tactics from the local file. When the helper is finished, the helper will save/update new tactics back to the local file.
 
 ### Comments
 
-`# x`, a line starts with a # and a space, is a line of comment. Use it to enhance the readability of your script.
+`# x`, a line starts with a # and a space, is a line of comment. Use it to enhance the readability of your script. 
+
+Any length of `#` is allowed, for giving weights to the comments. e.g. `#`, `##`, `###`...
 
 ## Pros
 - Allows you(potentially) feed more than one scripts and still generate solid relation graph.
@@ -53,6 +55,7 @@ The script language isn't implemented formally using a parser and lexer. Rather,
 - Don't leave extra symbols like ",", ";" in the script. 
 - One, and only one space is required, for all syntaxes mentioned above. Don't leave extra spaces anywhere.
 - Only one instruction at one line.
+- Didn't figured out a way to *delete* redundant relations that are added by mistake safely.
 
 ## More Information
 

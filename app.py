@@ -5,8 +5,9 @@ from neo4j import GraphDatabase
 from neo4j.exceptions import ServiceUnavailable
 
 # TODO:
-#  1. Change print into logging?
-#  2. Identical relation a->a checking?
+#  [ ] Change print into logging?
+#  [ ] Identical relation a->a checking?
+#  [ ] Refresh whole graph for uniqueness & no identical relations
 
 
 class App:
@@ -155,9 +156,3 @@ class App:
             logging.error("{query} raised an error: \n {exception}".format(
                 query=query, exception=exception))
             raise
-
-
-
-
-
-
