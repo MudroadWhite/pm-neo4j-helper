@@ -71,8 +71,19 @@ Default script file to feed the script is `scripts/pm.txt`.
 
 ## TODO
 
+- [ ] Upload generated database to Github?
 - [x] All core functionalities
 - [x] Test all core functionalities  
 - [ ] Set/change script file
 - [ ] Set/change tactic file storing/loading location
 - [ ] More functionalities to fix bugs...
+
+## PM Relation Progress
+
+### Volume 1
+
+- [x] Chapter 1
+- [x] Chapter 2
+- [x] Chapter 3
+- [ ] Chapter 4
+- [ ] Chapter 5

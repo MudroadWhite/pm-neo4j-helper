@@ -15,6 +15,9 @@ def is_prop_number(s):
 def is_sharp_only(s):
     return bool(re.match(r"\#+", s))
 
+def is_empty(s):
+    return len(s) == 0
+
 class Script:
     def __init__(self, app, tacticfile="scripts/tactics.txt", script="scripts/pm.txt"):
         self.app = app
