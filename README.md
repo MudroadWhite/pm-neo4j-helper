@@ -81,9 +81,14 @@ Default script file to feed the script is `scripts/pm.txt`.
 ## PM Relation Progress
 
 ### Volume 1
+#### Section A
 
 - [x] Chapter 1
 - [x] Chapter 2
 - [x] Chapter 3
 - [ ] Chapter 4
 - [ ] Chapter 5
+
+#### Section B
+- [ ] Chapter 9
+- [ ] ...
