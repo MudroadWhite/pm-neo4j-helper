@@ -85,10 +85,10 @@ Default script file to feed the script is `scripts/pm.txt`.
 
 - [x] Chapter 1
 - [x] Chapter 2
-- [x] Chapter 3
-- [ ] Chapter 4
-- [ ] Chapter 5
+- [x] Chapter 3 (Missing text reading)
+- [ ] Chapter 4 (In progress)
+- [ ] Chapter 5 (In progesss)
 
 #### Section B
-- [ ] Chapter 9
+- [ ] Chapter 9 (In progesss)
 - [ ] ...

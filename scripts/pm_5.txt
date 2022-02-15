@@ -1,0 +1,95 @@
+# PM chapter 5 proof relations
+
+volume 1
+part 1
+section A
+
+page 123
+Thm 5.1
+<- 3.4 3.22
+Thm 5.11
+<- 2.5 2.54
+Thm 5.12
+<- 2.51 2.54
+Thm 5.13
+<- 2.521
+Thm 5.14
+<- Simp Transp 2.21
+
+# TODO: check names
+# TODO: check tactics
+page 124
+Thm 5.15
+<- 4.61 5.1 2.54 4.12 4.41
+Thm 5.16
+<- 3.26 4.82 3.27 Syll Abs Comp 4.65 Exp Id 1.01 4.51 4.01
+Thm 5.17
+<- 4.64 4.21 4.63 Transp 4.38
+Thm 5.18
+<- 5.15 5.16 5.17
+Thm 5.19
+<- 5.18 4.2
+Thm 5.21
+<- 5.1 4.11
+Thm 5.22
+<- 4.61 4.51 4.39
+Thm 5.23
+<- 5.18 5.22 4.13 4.36
+Thm 5.24
+<- 5.22 5.23
+Thm 5.25
+<- 2.62 2.68
+
+# TODO: check names
+# TODO: check tactics
+page 125
+Thm 5.3
+<- Simp Comp Syll
+Thm 5.31
+<- Simp Comp
+Thm 5.32
+<- 4.76 3.3 3.31 5.3
+Thm 5.33
+<- 4.73 4.84 5.32
+Thm 5.35
+<- Comp 5.1
+Thm 5.36
+<- Ass 4.38
+Thm 5.4
+<- Simp 2.43
+Thm 5.41
+<- 2.77 2.86
+Thm 5.42
+<- 5.3 4.87
+Thm 5.44
+<- 4.76 5.3 5.32
+Thm 5.5
+<- Ass Exp Simp
+Thm 5.501
+<- 5.1 Exp Ass
+Thm 5.53
+<- 4.77
+Thm 5.54
+<- 4.73 4.44 Transp 5.1
+Thm 5.55
+<- 1.3 5.1 4.74
+Thm 5.6
+<- 4.87 4.64 4.85
+Thm 5.61
+<- 4.74 5.32
+Thm 5.62
+<- 4.7
+Thm 5.63
+<- 5.62
+Thm 5.7
+<- 4.74 1.3 5.1 4.37
+Thm 5.71
+<- 4.4 4.62 4.51 4.74 4.22
+
+# TODO: check names
+# TODO: check tactics
+page 126
+Thm 5.74
+<- 5.41 4.38 4.76
+Thm 5.75
+<- 5.6 3.27 4.77 3.26 Comp

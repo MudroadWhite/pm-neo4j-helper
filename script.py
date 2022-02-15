@@ -69,6 +69,7 @@ class Script:
             self.tactics[args[0]] = args[1:]
         elif command == "Pp" or command == "Df" or command == "Thm":
             # set current proposition to x, and upload the proposition with its type to the database
+            # TODO: if is not prop number, set back to "null"
             self.currentprop = args[0]
             self.app.create_pm_prop(args[0], self.volume, self.part, self.section, self.page, command)
         elif command == "<-":  # add proof support for current proposition

@@ -1,4 +1,4 @@
-# Proof relations for chapter 1 & 2
+# PM chapter 1 & 2 proof relations
 
 volume 1
 part 1

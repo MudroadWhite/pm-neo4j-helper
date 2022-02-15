@@ -16,8 +16,10 @@ from script import Script
 #  [ ] *** Enhance main init logic, setting options, including setting script file & tactic file
 #  [ ] *** Eliminate redundant relations: check for one node, all relations that doesn't being fed at current time
 
+# TODO: to be implemented
 logfile = "log_pmneo4j.txt"
 bolt_url = "bolt://localhost:7687"
+# ALTER USER neo4j SET PASSWORD 'neo4j'
 user = "neo4j"
 password = "neo4j"
 
@@ -36,7 +38,6 @@ def tests():
     # test_script_run()  # passed
     # test_script_run2()  # passed
     pass
-
 
 if __name__ == "__main__":
     # TODO:

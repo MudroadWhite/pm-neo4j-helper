@@ -1,0 +1,145 @@
+# PM chapter 4 proof relations
+
+volume 1
+part 1
+section A
+
+# TODO: check names
+# TODO: check tactics
+page 117
+Df 4.01
+Df 4.02
+Thm d.1
+<- 2.16 2.17
+Thm 4.11
+<- 2.16 2.17 3.47 3.22
+Thm 4.12
+<- 2.03 2.15
+Thm 4.13
+<- 2.12 2.14
+Thm 4.14
+<- 3.37 4.13
+Thm 4.15
+<- 3.22 4.13 4.14
+Thm 4.2
+<- Id 3.2
+Thm 4.21
+<- 3.22
+Thm 4.22
+<- 3.26 3.27 2.83 Comp
+Thm 4.24
+<- 3.26 3.2 2.43
+Thm 4.25
+<- Taut Add
+
+# TODO: check names
+# TODO: check tactics
+page 118
+Thm 4.3
+<- 3.22
+Thm 4.31
+<- Perm
+Thm 4.32
+<- 4.15 4.12 4.11 1.01 3.01
+Thm 4.33
+<- 2.31 2.32
+Df 4.34
+Thm 4.36
+<- Fact 3.47
+Thm 4.37
+<- Sum 3.47
+Thm 4.48
+<- 3.47 4.32 3.22
+Thm 4.39
+<- 3.48 3.47 4.32 3.22
+Thm 4.4
+<- 3.2 Comp 3.48 Imp 3.26 3.44 3.27
+
+# TODO: check names
+# TODO: check tactics
+page 119
+Thm 4.41
+<- 3.26 Sum 3.27 Comp 2.53 3.47 2.54
+Thm 4.42
+<- 3.21 2.11 3.26 4.4
+Thm 4.43
+<- 2.2 Comp 2.65 Imp 2.53 3.47
+Thm 4.44
+<- 2.2 Id 3.26 3.44
+Thm 4.45
+<- 3.26 2.2
+
+# TODO: check names
+# TODO: check tactics
+page 120
+Thm 4.5
+<- 4.2 3.01
+Thm 4.51
+<- 4.5 4.12
+Thm 4.52
+<- 4.5 4.13
+Thm 4.53
+<- 4.52 4.12
+Thm 4.54
+<- 4.5 4.13
+Thm 4.55
+<- 4.54 4.12
+Thm 4.56
+<- 4.54 4.13
+Thm 4.57
+<- 4.56 4.12
+Thm 4.6
+<- 4.2 1.01
+Thm 4.61
+<- 4.6 4.11 4.52
+Thm 4.62
+<- 4.6
+Thm 4.63
+<- 4.62 4.11 4.5
+Thm 4.64
+<- 2.53 2.54
+Thm 4.65
+<- 4.64 4.11 4.56
+Thm 4.66
+<- 4.64
+Thm 4.67
+<- 4.66 4.11 4.54
+Thm 4.7
+<- 3.27 Syll Comp Exp Id
+Thm 4.71
+<- 3.21 3.26 4.7 4.22
+
+# TODO: check names
+# TODO: check tactics
+page 121
+Thm 4.72
+<- 4.1 4.71 4.12 4.57 4.31
+Thm 4.73
+<- Simp 4.71
+Thm 4.74
+<- 2.21 4.72
+Thm 4.76
+<- 4.41 1.01
+Thm 4.78
+<- 4.2 1.01 4.33 4.31 4.37 4.25
+Thm 4.79
+<- 4.1 4.39 4.78 2.15 4.2 3.01
+
+# TODO: check names
+page 122
+Thm 4.8
+<- 2.01 Simp
+Thm 4.81
+<- 2.18 Simp
+Thm 4.82
+<- 2.65 Imp 2.21 Comp
+Thm 4.83
+<- 2.61 Imp Simp Comp
+Thm 4.84
+<- 2.06 3.47
+Thm 4.85
+<- 2.05 3.47
+Thm 4.86
+<- 4.21 4.22
+Thm 4.87
+<- Exp Comm Imp
