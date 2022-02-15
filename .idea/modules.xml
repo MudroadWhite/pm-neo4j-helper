@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/pmneo-47-helper.iml" filepath="$PROJECT_DIR$/.idea/pmneo-47-helper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pm-neo4j-helper/.idea/pm-neo4j-helper.iml" filepath="$PROJECT_DIR$/../pm-neo4j-helper/.idea/pm-neo4j-helper.iml" />
     </modules>
   </component>
 </project>
