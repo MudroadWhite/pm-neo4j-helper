@@ -1,4 +1,4 @@
-# pm-neo47-helper
+# pm-neo4j-helper
 ## What It Does
 
 Neo4j is a database with visualized graph.
