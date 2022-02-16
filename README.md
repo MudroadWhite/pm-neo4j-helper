@@ -51,7 +51,7 @@ By default, the helper can load a `conf.json` file under the project folder, inc
 - password: The password of the database.
 - logfile: The location for the helper to output its logs.
 - tactics: The location for the helper to load tactics.
-- scripts: A list of file paths of scripts that will be fed into the helper.
+- scripts: A list of file paths of scripts that will be fed into the helper. The helper will then translate the scripts to queries, one by one.
 
 ## Pros
 - Allows you separate your queries into several files and still generate solid relation graph.
@@ -65,7 +65,8 @@ The script language isn't implemented formally using a parser and lexer. Rather,
 - Don't leave extra symbols like ",", ";" in the script. 
 - One, and only one space is required, for all syntaxes mentioned above. Don't leave extra spaces anywhere.
 - Only one instruction at one line.
-- Didn't figured out a way to *delete* redundant relations that are added by mistake safely.
+
+Also, a way to safely *delete* redundant relations being added by mistake has not be implemented. The suggested way is to clear all nodes in database and reconstruct them again for the time being.
 
 ## More Information
 
@@ -77,13 +78,14 @@ Functionalities are being tested on Windows 10 with PyCharm.
 - [x] Test all core functionalities
 - [ ] (Important)Implement cmd arguments & options
 - [ ] Implement logging functionalities?
-- [ ] Gradually implement the language with a parser?  
+- [ ] Gradually transplant the language onto a parser?  
 - [ ] More functionalities to fix bugs...
 
 ## PM Relation Progress
 
 ### Volume 1
-#### Section A
+#### Part 1
+##### Section A
 
 - [x] Chapter 1
 - [x] Chapter 2
@@ -91,9 +93,22 @@ Functionalities are being tested on Windows 10 with PyCharm.
 - [x] Chapter 4
 - [x] Chapter 5 (Texts to be digested)
 
-#### Section B
-- [x] Chapter 9 (Texts to be digested) (recheck tactic []->)
-- [ ] Chapter 10 (In progress) (recheck tactic []->)
+##### Section B
+- [x] Chapter 9 (Texts to be digested)
+- [ ] Chapter 10 (Texts to be digested)
 - [ ] Chapter 11 (In progress)
-- [ ] Chapter 12
+- [x] Chapter 12
+- [ ] Chapter 13 (In progress)
+- [ ] Chapter 14
+  
+##### Section C
+- [ ] Chapter 20
+- [ ] Chapter 21
+- [ ] Chapter 22  
+- [ ] Chapter 23  
+- [ ] Chapter 24  
+- [ ] Chapter 25
+  
+##### Section D
+- [ ] Chapter 31
 - [ ] ...
