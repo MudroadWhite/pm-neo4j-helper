@@ -4,12 +4,10 @@ volume 1
 part 1
 section A
 
-# TODO: check names
-# TODO: check tactics
 page 117
 Df 4.01
 Df 4.02
-Thm d.1
+Thm 4.1
 <- 2.16 2.17
 Thm 4.11
 <- 2.16 2.17 3.47 3.22
@@ -22,55 +20,56 @@ Thm 4.14
 Thm 4.15
 <- 3.22 4.13 4.14
 Thm 4.2
-<- Id 3.2
+<- 2.08 3.2
 Thm 4.21
 <- 3.22
 Thm 4.22
-<- 3.26 3.27 2.83 Comp
+<- 3.26 3.27 2.83 3.43 []->
 Thm 4.24
-<- 3.26 3.2 2.43
+<- 3.26 3.2 2.43 []->
 Thm 4.25
-<- Taut Add
+<- 1.2 1.3
 
-# TODO: check names
-# TODO: check tactics
+# TODO: check tactic []==
 page 118
 Thm 4.3
 <- 3.22
 Thm 4.31
-<- Perm
+<- 1.4
+
+# page 118: Starting from the following theorem, abbreviations like (...) == (...) == (...) starts to appear.
+
 Thm 4.32
-<- 4.15 4.12 4.11 1.01 3.01
+# ??? New tactic []== ? Try to find reference to 1.11 & see previous props to figure out if it involves other props
+<- 4.15 4.12 4.11 1.01 3.01 []->
 Thm 4.33
 <- 2.31 2.32
 Df 4.34
 Thm 4.36
-<- Fact 3.47
+<- 3.45 3.47
 Thm 4.37
-<- Sum 3.47
+<- 1.6 3.47
 Thm 4.48
 <- 3.47 4.32 3.22
 Thm 4.39
 <- 3.48 3.47 4.32 3.22
 Thm 4.4
-<- 3.2 Comp 3.48 Imp 3.26 3.44 3.27
+<- 3.2 3.43 3.48 3.31 3.26 3.44 3.27 []->
 
-# TODO: check names
-# TODO: check tactics
+# TODO: check tactic []==
 page 119
 Thm 4.41
-<- 3.26 Sum 3.27 Comp 2.53 3.47 2.54
+<- 3.26 1.6 3.27 3.43 2.53 3.47 2.54 []->
 Thm 4.42
-<- 3.21 2.11 3.26 4.4
+# ??? []==
+<- 3.21 2.11 3.26 4.4 []->
 Thm 4.43
-<- 2.2 Comp 2.65 Imp 2.53 3.47
+<- 2.2 3.43 2.65 3.31 2.53 3.47 []->
 Thm 4.44
-<- 2.2 Id 3.26 3.44
+<- 2.2 2.08 3.26 3.44 []->
 Thm 4.45
 <- 3.26 2.2
 
-# TODO: check names
-# TODO: check tactics
 page 120
 Thm 4.5
 <- 4.2 3.01
@@ -105,36 +104,39 @@ Thm 4.66
 Thm 4.67
 <- 4.66 4.11 4.54
 Thm 4.7
-<- 3.27 Syll Comp Exp Id
+<- 3.27 2.05 3.43 3.3 2.08 []->
 Thm 4.71
-<- 3.21 3.26 4.7 4.22
+<- 3.21 3.26 4.7 4.22 []->
 
-# TODO: check names
-# TODO: check tactics
+# TODO: check tactic []==
 page 121
 Thm 4.72
+# ???? []==
 <- 4.1 4.71 4.12 4.57 4.31
 Thm 4.73
-<- Simp 4.71
+<- 3.31 4.71
 Thm 4.74
 <- 2.21 4.72
 Thm 4.76
 <- 4.41 1.01
+Thm 4.77
+<- 3.44 1.3 2.2
 Thm 4.78
+# ???? []==
 <- 4.2 1.01 4.33 4.31 4.37 4.25
 Thm 4.79
+# ???? []==
 <- 4.1 4.39 4.78 2.15 4.2 3.01
 
-# TODO: check names
 page 122
 Thm 4.8
-<- 2.01 Simp
+<- 2.01 S3.31
 Thm 4.81
-<- 2.18 Simp
+<- 2.18 S3.31
 Thm 4.82
-<- 2.65 Imp 2.21 Comp
+<- 2.65 3.31 2.21 3.43
 Thm 4.83
-<- 2.61 Imp Simp Comp
+<- 2.61 3.31 S3.31 3.43
 Thm 4.84
 <- 2.06 3.47
 Thm 4.85
@@ -142,4 +144,4 @@ Thm 4.85
 Thm 4.86
 <- 4.21 4.22
 Thm 4.87
-<- Exp Comm Imp
+<- 3.3 2.04 3.31

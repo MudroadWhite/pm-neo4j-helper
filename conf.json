@@ -1,0 +1,14 @@
+{
+  "bolt_url": "bolt://localhost:7687",
+  "username": "neo4j",
+  "password": "neo4j",
+  "logfile" : "log_pmneo4j.txt",
+  "tactics" : "scripts/tactics.txt",
+  "scripts": [
+    "scripts/pm.txt",
+    "scripts/pm_3.txt",
+    "scripts/pm_4.txt",
+    "scripts/pm_5.txt",
+    "scripts/pm_9.txt"
+  ]
+}

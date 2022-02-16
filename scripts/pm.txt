@@ -29,7 +29,7 @@ Pp 1.71
 Pp 1.72
 
 # p98: "rational" notation means substitution
-# square brackets [ ] means what is assertinng (lhs of |-)
+# square brackets [ ] means what is asserting (lhs of |-)
 
 page 100
 Thm 2.01 

@@ -12,14 +12,16 @@ import re
 def is_prop_number(s):
     return bool(re.match(r"\d+\.\d+", s))
 
+
 def is_sharp_only(s):
     return bool(re.match(r"\#+", s))
+
 
 def is_empty(s):
     return len(s) == 0
 
 class Script:
-    def __init__(self, app, tacticfile="scripts/tactics.txt", script="scripts/pm.txt"):
+    def __init__(self, app, tacticfile, script=""):
         self.app = app
         self.tacticfile = tacticfile
         self.script = script
@@ -120,25 +122,40 @@ class Script:
             f.write("\n")
         f.close()
 
+    ################
+
     def run(self):
         # 0. Initializing settings...
 
         # 1. load tactics from tactic file
-        print("Reading tactic file from {f}...".format(f=self.tacticfile))
-        f = open(self.tacticfile, 'r')
-        lines = f.read().splitlines()
-        f.close()
-        for line in lines:
-            l = line.split(" ")
-            self.tactics[l[0]] = l[1:]
+        if self.tacticfile == "":
+            print("Cannot find tactic file to read")
+            print("Setting default tactic file to /scripts/tactics.txt...")
+            self.tacticfile = "scripts/tactics.txt"
+        else:
+            print("Reading tactic file from {f}...".format(f=self.tacticfile))
+            f = open(self.tacticfile, 'r')
+            lines = f.read().splitlines()
+            f.close()
+            for line in lines:
+                l = line.split(" ")
+                self.tactics[l[0]] = l[1:]
 
         # 2. read script
-        print("Parsing script file from {f}...".format(f=self.script))
-        self.parse_file()
+        if self.script == "":
+            print("No scripts loaded")
+            self.close()
+            return
+        else:
+            print("Parsing script file from {f}...".format(f=self.script))
+            self.parse_file()
 
         # 3. write tactics to local file...
-        print("Saving tactics to {f}...".format(f=self.tacticfile))
-        self.save_tactics()
+        if self.tacticfile == "":
+            pass
+        else:
+            print("Saving tactics to {f}...".format(f=self.tacticfile))
+            self.save_tactics()
 
         self.close()
         print("...Done")

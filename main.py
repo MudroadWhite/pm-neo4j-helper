@@ -7,14 +7,16 @@ from neo4j.exceptions import ServiceUnavailable
 # from test import *
 from app import App
 from script import Script
+import json
 
 # TODO:
 #  [ ] Good checking for proposition's format, duplication, etc
 #  [x] Unique tactic name(done?)
 #  [ ] Good tactic name format
 #  [ ] Logging implementation
-#  [ ] *** Enhance main init logic, setting options, including setting script file & tactic file
+#  [ ] *** Implement cmd parameters
 #  [ ] *** Eliminate redundant relations: check for one node, all relations that doesn't being fed at current time
+#  [ ] Collect error messages and output them after the program has finished?
 
 # TODO: to be implemented
 logfile = "log_pmneo4j.txt"
@@ -22,6 +24,8 @@ bolt_url = "bolt://localhost:7687"
 # ALTER USER neo4j SET PASSWORD 'neo4j'
 user = "neo4j"
 password = "neo4j"
+tactics = "scripts/tactics.txt"
+scripts = []
 
 
 def tests():
@@ -37,17 +41,56 @@ def tests():
     # test_script_use_tactics()  # passed
     # test_script_run()  # passed
     # test_script_run2()  # passed
+    # TODO: test loading multiple files
     pass
 
-if __name__ == "__main__":
+
+def run():
     # TODO:
-    #  [ ] 1. Default settings in variables
-    #  [ ] 2. Load settings from some JSON file
-    #  [ ] 3. Load settings from some parameters
-    print("Running pm-neo4j helper")
-    print("Username: '{u}', url: {url}".format)
+    #  [x] 1. Default settings in variables
+    #  [x] 2. Load settings from some JSON conf file
+    #  [ ] 3. Load settings from some command line parameters
+    global user
+    global password
+    global bolt_url
+    global logfile
+    global tactics
+    global scripts
+    print("Pm-neo4j helper...")
+
+    # Loading configuration from conf.json
+    conff = open("conf.json")
+    conf = json.load(conff)
+    conff.close()
+
+    if "username" in conf:
+        user = conf["username"]
+    if "password" in conf:
+        password = conf["password"]
+    if "bolt_url" in conf:
+        bolt_url = conf["bolt_url"]
+    if "logfile" in conf:
+        logfile = conf["logfile"]
+    if "tactics" in conf:
+        tactics = conf["tactics"]
+    if "scripts" in conf:
+        scripts = conf["scripts"]
+
+    # TODO:
+    #  implement cmd parameters
+    #  apply conf settings to general running logic, and run the program
+
+    print("Username: '{u}', url: {url}".format(u=user, url=bolt_url))
+
     App.enable_log(logging.INFO, sys.stdout)
     app = App(bolt_url, user, password)
+    s = Script(app, tactics)
 
-    s = Script(app)
-    s.run()
+    for ss in scripts:
+        print("Running script {ss}...".format(ss=ss))
+        s.script = ss
+        s.run()
+
+
+if __name__ == "__main__":
+    run()

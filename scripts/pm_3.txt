@@ -1,6 +1,5 @@
 # PM Chapter 3 proof relations
 
-# TODO: go through the texts and complete notes for this chapter
 volume 1
 part 1
 section A
