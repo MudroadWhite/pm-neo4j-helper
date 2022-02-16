@@ -50,15 +50,26 @@ def run():
     #  [x] 1. Default settings in variables
     #  [x] 2. Load settings from some JSON conf file
     #  [ ] 3. Load settings from some command line parameters
-    global user
-    global password
-    global bolt_url
-    global logfile
-    global tactics
-    global scripts
-    print("Pm-neo4j helper...")
+    print("PM-Neo4j helper")
+
+    # TODO:
+    #  implement cmd parameters
+    #  apply conf settings to general running logic, and run the program
+
+    # https://www.datacamp.com/community/tutorials/argument-parsing-in-python
+    # cmd parameters:
+    # -h --help: show help info
+    # -u --username: set username
+    # -p --password: set password
+    # -b --bolt-url: set bolt_url
+    # -l --log-file: set log file location
+    # -c --conf: set configuration file
+    # -t --tactic: set tactic file
+    # -s --script: final argument, a list of scripts....
 
     # Loading configuration from conf.json
+    # TODO: if conf.json exists, change the value...
+    # TODO: python variable scope
     conff = open("conf.json")
     conf = json.load(conff)
     conff.close()
@@ -76,10 +87,6 @@ def run():
     if "scripts" in conf:
         scripts = conf["scripts"]
 
-    # TODO:
-    #  implement cmd parameters
-    #  apply conf settings to general running logic, and run the program
-
     print("Username: '{u}', url: {url}".format(u=user, url=bolt_url))
 
     App.enable_log(logging.INFO, sys.stdout)
@@ -90,6 +97,7 @@ def run():
         print("Running script {ss}...".format(ss=ss))
         s.script = ss
         s.run()
+    s.close()
 
 
 if __name__ == "__main__":

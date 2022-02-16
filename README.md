@@ -13,7 +13,7 @@ Related Project: https://github.com/LogicalAtomist/principia
 
 The suggested way to run the helper for now is
 
-```python.exe pm-neo4j-helper/main.py```
+```python.exe main.py```
 
 Username, password, and bolt url for the Neo4j database should be set in `main.py`. The Neo4j database should have its bolt connection enabled.
 
@@ -43,8 +43,18 @@ Tactics can be saved in a local file. When the helper starts, the helper will tr
 
 Any length of `#` is allowed, for giving weights to the comments. e.g. `#`, `##`, `###`...
 
+## Configuration
+By default, the helper can load a `conf.json` file under the project folder, including settings for running the helper. The configuration should include the following entries:
+
+- bolt_url: The bolt url of the database to be linked to. 
+- username: The username of the database.
+- password: The password of the database.
+- logfile: The location for the helper to output its logs.
+- tactics: The location for the helper to load tactics.
+- scripts: A list of file paths of scripts that will be fed into the helper.
+
 ## Pros
-- Allows you(potentially) feed more than one scripts and still generate solid relation graph.
+- Allows you separate your queries into several files and still generate solid relation graph.
 - Already existed nodes and relations will be checked for uniqueness.
 
 ## Restrictions
@@ -59,23 +69,15 @@ The script language isn't implemented formally using a parser and lexer. Rather,
 
 ## More Information
 
-Functionalities are being tested on Windows 10. Potentially the username and the password have to be alternated.
-
-Default file to save tactics is `scripts/tactics.txt`.
-
-Default script file to feed the script is `scripts/pm.txt`.
-
-(Currently, the functionality to change the files is not implemented.)
-
-
+Functionalities are being tested on Windows 10 with PyCharm.
 
 ## TODO
 
-- [ ] Upload generated database to Github?
 - [x] All core functionalities
-- [x] Test all core functionalities  
-- [ ] Set/change script file
-- [ ] Set/change tactic file storing/loading location
+- [x] Test all core functionalities
+- [ ] (Important)Implement cmd arguments & options
+- [ ] Implement logging functionalities?
+- [ ] Gradually implement the language with a parser?  
 - [ ] More functionalities to fix bugs...
 
 ## PM Relation Progress
@@ -85,12 +87,13 @@ Default script file to feed the script is `scripts/pm.txt`.
 
 - [x] Chapter 1
 - [x] Chapter 2
-- [x] Chapter 3 
-- [ ] Chapter 4 (Missing a new tactic to be understood; texts to be digested) (recheck tactic []->)
-- [ ] Chapter 5 (Missing ch4 tactic to be understood; texts to be digested) (recheck tactic []->)
+- [x] Chapter 3
+- [x] Chapter 4
+- [x] Chapter 5 (Texts to be digested)
 
 #### Section B
 - [x] Chapter 9 (Texts to be digested) (recheck tactic []->)
 - [ ] Chapter 10 (In progress) (recheck tactic []->)
 - [ ] Chapter 11 (In progress)
+- [ ] Chapter 12
 - [ ] ...

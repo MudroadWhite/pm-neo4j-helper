@@ -84,10 +84,10 @@ tactic Syll 2.05
 
 page 103
 # page 103:
-#              |- p1 *->*
-# [some props] |- p2
+#     |- p1 *->*
+# [X] |- p2
 # Potentially means 1.11 or 1.1?! Similar to some syntax in Agda
-# Are there any necessities to distinguish between 1.1 & 1.11?
+# X means some proposition witnessing |- p1 -> p2 holds
 # Tactic: "-> at the end, [] at the beginning"
 tactic ->[] 1.11
 

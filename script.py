@@ -144,7 +144,6 @@ class Script:
         # 2. read script
         if self.script == "":
             print("No scripts loaded")
-            self.close()
             return
         else:
             print("Parsing script file from {f}...".format(f=self.script))
@@ -157,5 +156,4 @@ class Script:
             print("Saving tactics to {f}...".format(f=self.tacticfile))
             self.save_tactics()
 
-        self.close()
         print("...Done")
