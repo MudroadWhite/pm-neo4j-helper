@@ -18,10 +18,8 @@ Related Project: https://github.com/LogicalAtomist/principia
 
 The script language isn't implemented formally using a parser and lexer. Rather, I do all the things pretty brutal. Therefore,
 
-- Newlines are pretty strict. 
-- Don't leave extra symbols like ",", ";" in the script. 
-- One, and only one space is required, for all syntaxes mentioned above. Don't leave extra spaces anywhere.
-- Only one instruction at one line.
+- Don't leave extra symbols like ",", ";" in the script.
+- Only one instruction at one line, and don't split the instruction to multiple lines.
 
 Also, a way to safely *delete* redundant relations being added by mistake has not be implemented. The suggested way is to clear all nodes in database and reconstruct them again for the time being.
 
@@ -35,7 +33,7 @@ The suggested way to run the helper for now is
 
 ```python.exe main.py```
 
-Username, password, and bolt url for the Neo4j database should be set in `main.py`. The Neo4j database should have its bolt connection enabled.
+Username, password, and bolt url for the Neo4j database should be set in `conf.json`. The Neo4j database must have its bolt connection enabled.
 
 ## Script Syntax & Functionalities
 
@@ -111,9 +109,9 @@ By default, the helper can load a `conf.json` file under the project folder, inc
 - [x] Chapter 25 
   
 ##### Section D
-- [ ] Chapter 30 (In progress)
-- [ ] Chapter 31 (In progress)
-- [ ] Chapter 32 (In progress)
+- [x] Chapter 30
+- [x] Chapter 31
+- [x] Chapter 32
 - [ ] Chapter 33 (In progress)
 - [ ] Chapter 34 (In progress)
 - [ ] Chapter 35
