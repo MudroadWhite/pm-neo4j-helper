@@ -6,9 +6,6 @@
   "tactics" : "scripts/tactics.txt",
   "scripts": [
     "scripts/pm.txt",
-    "scripts/pm_3.txt",
-    "scripts/pm_4.txt",
-    "scripts/pm_5.txt",
-    "scripts/pm_9.txt"
+    "scripts/pm_3.txt"
   ]
 }

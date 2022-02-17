@@ -29,9 +29,15 @@ Functionalities are being tested on Windows 10 with PyCharm.
 
 ## Running the Helper
 
-The suggested way to run the helper for now is
+After installing Python, python's library for neo4j is also required.
 
-```python.exe main.py```
+(To be filled)
+
+The suggested way to run the helper is
+
+```commandline
+python.exe main.py
+```
 
 Username, password, and bolt url for the Neo4j database should be set in `conf.json`. The Neo4j database must have its bolt connection enabled.
 
@@ -71,11 +77,17 @@ By default, the helper can load a `conf.json` file under the project folder, inc
 - tactics: The location for the helper to load tactics.
 - scripts: A list of file paths of scripts that will be fed into the helper. The helper will then translate the scripts to queries, one by one.
 
+It is also possible to send commend line options to run the helper. Options in command line parameters will override the settings in `conf.json`. Command line supports all entries listed in `conf.json`. To see help information, run
+
+```commandline
+python.exe main.py --help
+```
+
 ## TODO
 
 - [x] All core functionalities
 - [x] Test all core functionalities
-- [ ] (Important)Implement cmd arguments & options
+- [x] Implement cmd arguments & options
 - [ ] Implement logging functionalities?
 - [ ] Gradually transplant the language onto a parser?  
 - [ ] More functionalities to fix bugs...
@@ -112,12 +124,12 @@ By default, the helper can load a `conf.json` file under the project folder, inc
 - [x] Chapter 30
 - [x] Chapter 31
 - [x] Chapter 32
-- [ ] Chapter 33 (In progress)
+- [x] Chapter 33
 - [ ] Chapter 34 (In progress)
-- [ ] Chapter 35
-- [ ] Chapter 36
-- [ ] Chapter 37
-- [ ] Chapter 38
+- [ ] Chapter 35 (In progress)
+- [ ] Chapter 36 (In progress)
+- [ ] Chapter 37 (In progress)
+- [ ] Chapter 38 (In progress)
 
 ##### Section E
 - [ ] Chapter 40

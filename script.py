@@ -6,7 +6,7 @@ import re
 
 # TODO:
 #  [ ] Change print to log?
-#  [ ] Change init method to initiating an app from inside rather than outside(refactor class?)
+#  [ ] Change init method to initiating an App instance from inside rather than outside(refactor class?)
 
 
 def is_prop_number(s):
@@ -20,8 +20,9 @@ def is_sharp_only(s):
 def is_not_empty(s):
     return not len(s) == 0
 
+
 class Script:
-    def __init__(self, app, tacticfile, script=""):
+    def __init__(self, app, tacticfile="", script=""):
         self.app = app
         self.tacticfile = tacticfile
         self.script = script
@@ -53,7 +54,7 @@ class Script:
 
     def parse_line(self, line, linenum):
         parse = list(filter(is_not_empty, line.split(" ")))
-        if len(parse) <= 1:
+        if len(parse) <= 1:  # Empty, unuseful line
             return
         command = parse[0]
         args = parse[1:]
@@ -98,6 +99,11 @@ class Script:
                     # return
 
     def load_tactics(self):
+        if self.tacticfile == "":
+            print("Cannot find tactic file to read")
+            print("Setting default tactic file to /scripts/tactics.txt...")
+            self.tacticfile = "scripts/tactics.txt"
+            return
         # clear the tactics...
         self.tactics = {}
         f = open(self.tacticfile, 'r')
@@ -105,7 +111,7 @@ class Script:
         f.close()
         i = 0
         for line in tactics:
-            parse = line.split(" ")
+            parse = list(filter(is_not_empty, line.split(" ")))
             if len(parse) < 2:
                 print("Error loading tactics at line {i}: insufficient arguments".format(i=i))
                 return
@@ -113,6 +119,11 @@ class Script:
             i += 1
 
     def save_tactics(self):
+        if self.tacticfile == "":
+            print("Cannot find tactic file to read")
+            print("Setting default tactic file to /scripts/tactics.txt...")
+            self.tacticfile = "scripts/tactics.txt"
+        print("Saving tactics to {f}...".format(f=self.tacticfile))
         f = open(self.tacticfile, 'w')
         for k in self.tactics:  # tactic name
             f.write(k)
@@ -127,33 +138,12 @@ class Script:
     def run(self):
         # 0. Initializing settings...
 
-        # 1. load tactics from tactic file
-        if self.tacticfile == "":
-            print("Cannot find tactic file to read")
-            print("Setting default tactic file to /scripts/tactics.txt...")
-            self.tacticfile = "scripts/tactics.txt"
-        else:
-            print("Reading tactic file from {f}...".format(f=self.tacticfile))
-            f = open(self.tacticfile, 'r')
-            lines = f.read().splitlines()
-            f.close()
-            for line in lines:
-                l = line.split(" ")
-                self.tactics[l[0]] = l[1:]
-
-        # 2. read script
+        # 1. Read script
         if self.script == "":
             print("No scripts loaded")
             return
         else:
             print("Parsing script file from {f}...".format(f=self.script))
             self.parse_file()
-
-        # 3. write tactics to local file...
-        if self.tacticfile == "":
-            pass
-        else:
-            print("Saving tactics to {f}...".format(f=self.tacticfile))
-            self.save_tactics()
 
         print("...Done")
