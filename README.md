@@ -33,7 +33,7 @@ Username, password, and bolt url for the Neo4j database should be set in `main.p
 
 `<- a1 a2 a3...` sends relations `a1 proves x`, `a2 proves x`... to Neo4j database, where `x` is the last proposition being recorded. 
 
-`tactic x y1 y2 y3...` adds a tactic involving a proof pattern supported by several propositions, for future translation. Abstracting the proof patterns can simplify the proof in PM. Tactic's name is x, and the involved propositions are ys. These ys will be added into proof relations that proves x.
+`tactic x y1 y2 y3...` adds a tactic involving a proof pattern supported by several propositions, for future translation. Abstracting the proof patterns can simplify the proof in PM. Tactic's name is x, and the involved propositions are ys. These ys will be added into proof relations that proves the last proposition being recorded.
 
 Tactics can be saved in a local file. When the helper starts, the helper will try to read tactics from the local file. When the helper is finished, the helper will save/update new tactics back to the local file.
 
@@ -95,11 +95,11 @@ Functionalities are being tested on Windows 10 with PyCharm.
 
 ##### Section B
 - [x] Chapter 9 (Texts to be digested)
-- [ ] Chapter 10 (Texts to be digested)
-- [ ] Chapter 11 (In progress)
+- [x] Chapter 10 (Texts to be digested) (New abbreviation to be checked)
+- [x] Chapter 11 (Texts to be digested) (New abbreviation to be checked)
 - [x] Chapter 12
-- [ ] Chapter 13 (In progress)
-- [ ] Chapter 14
+- [x] Chapter 13 (Texts to be digested)
+- [ ] Chapter 14 (In progress)
   
 ##### Section C
 - [ ] Chapter 20

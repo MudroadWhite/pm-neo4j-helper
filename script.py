@@ -17,8 +17,8 @@ def is_sharp_only(s):
     return bool(re.match(r"\#+", s))
 
 
-def is_empty(s):
-    return len(s) == 0
+def is_not_empty(s):
+    return not len(s) == 0
 
 class Script:
     def __init__(self, app, tacticfile, script=""):
@@ -52,7 +52,7 @@ class Script:
             i += 1
 
     def parse_line(self, line, linenum):
-        parse = line.split(" ")
+        parse = list(filter(is_not_empty, line.split(" ")))
         if len(parse) <= 1:
             return
         command = parse[0]
