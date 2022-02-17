@@ -9,7 +9,27 @@ This helper reads simplified script, generates Neo4j queries and send it into Ne
 
 Related Project: https://github.com/LogicalAtomist/principia
 
-## How to Run
+## Pros
+
+- Allows you separate your queries into several files and still generate solid relation graph.
+- Already existed nodes and relations will be checked for uniqueness.
+
+## Restrictions
+
+The script language isn't implemented formally using a parser and lexer. Rather, I do all the things pretty brutal. Therefore,
+
+- Newlines are pretty strict. 
+- Don't leave extra symbols like ",", ";" in the script. 
+- One, and only one space is required, for all syntaxes mentioned above. Don't leave extra spaces anywhere.
+- Only one instruction at one line.
+
+Also, a way to safely *delete* redundant relations being added by mistake has not be implemented. The suggested way is to clear all nodes in database and reconstruct them again for the time being.
+
+## More Information
+
+Functionalities are being tested on Windows 10 with PyCharm.
+
+## Running the Helper
 
 The suggested way to run the helper for now is
 
@@ -53,25 +73,6 @@ By default, the helper can load a `conf.json` file under the project folder, inc
 - tactics: The location for the helper to load tactics.
 - scripts: A list of file paths of scripts that will be fed into the helper. The helper will then translate the scripts to queries, one by one.
 
-## Pros
-- Allows you separate your queries into several files and still generate solid relation graph.
-- Already existed nodes and relations will be checked for uniqueness.
-
-## Restrictions
-
-The script language isn't implemented formally using a parser and lexer. Rather, I do all the things pretty brutal. Therefore,
-
-- Newlines are pretty strict. 
-- Don't leave extra symbols like ",", ";" in the script. 
-- One, and only one space is required, for all syntaxes mentioned above. Don't leave extra spaces anywhere.
-- Only one instruction at one line.
-
-Also, a way to safely *delete* redundant relations being added by mistake has not be implemented. The suggested way is to clear all nodes in database and reconstruct them again for the time being.
-
-## More Information
-
-Functionalities are being tested on Windows 10 with PyCharm.
-
 ## TODO
 
 - [x] All core functionalities
@@ -101,14 +102,77 @@ Functionalities are being tested on Windows 10 with PyCharm.
 - [x] Chapter 13
 - [x] Chapter 14
   
-##### Section C
-- [ ] Chapter 20
-- [ ] Chapter 21
-- [ ] Chapter 22  
-- [ ] Chapter 23  
-- [ ] Chapter 24  
-- [ ] Chapter 25
+##### Section C (Stuck on "similar proof" reference)
+- [x] Chapter 20
+- [x] Chapter 21 
+- [x] Chapter 22
+- [x] Chapter 23
+- [x] Chapter 24 (New tactic []= to be checked)
+- [x] Chapter 25 
   
 ##### Section D
-- [ ] Chapter 31
-- [ ] ...
+- [ ] Chapter 30 (In progress)
+- [ ] Chapter 31 (In progress)
+- [ ] Chapter 32 (In progress)
+- [ ] Chapter 33 (In progress)
+- [ ] Chapter 34 (In progress)
+- [ ] Chapter 35
+- [ ] Chapter 36
+- [ ] Chapter 37
+- [ ] Chapter 38
+
+##### Section E
+- [ ] Chapter 40
+- [ ] Chapter 41
+- [ ] Chapter 42
+- [ ] Chapter 43
+
+#### Part 2
+##### Section A
+- [ ] Chapter 50
+- [ ] Chapter 51
+- [ ] Chapter 52
+- [ ] Chapter 53
+- [ ] Chapter 54
+- [ ] Chapter 55
+- [ ] Chapter 56
+
+##### Section B
+- [ ] Chapter 60
+- [ ] Chapter 61
+- [ ] Chapter 62
+- [ ] Chapter 63
+- [ ] Chapter 64
+- [ ] Chapter 65
+
+##### Section C
+- [ ] Chapter 70
+- [ ] Chapter 71
+- [ ] Chapter 72
+- [ ] Chapter 73
+- [ ] Chapter 74
+
+##### Section D
+- [ ] Chapter 80
+- [ ] Chapter 81
+- [ ] Chapter 82
+- [ ] Chapter 83
+- [ ] Chapter 84
+- [ ] Chapter 85
+- [ ] Chapter 88
+
+##### Section E
+- [ ] Chapter 90
+- [ ] Chapter 91
+- [ ] Chapter 92
+- [ ] Chapter 93
+- [ ] Chapter 94
+- [ ] Chapter 95
+- [ ] Chapter 96
+- [ ] Chapter 97
+
+#### Appendix A
+- [ ] Chapter 8
+
+#### Appendix B
+- [ ] Chapter 89
