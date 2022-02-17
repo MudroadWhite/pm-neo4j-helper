@@ -25,7 +25,7 @@ Username, password, and bolt url for the Neo4j database should be set in `main.p
 
 ### Proposition Recording
 
-`Thm x`, `Df x`, `Pp x` send query of proposition x with type Thm, Df or Pp respectively. If a proposition is in the database, it will be updated with the corresponded new values. `x` will also be set as the last proposition being recorded in the script.
+`Thm x`, `Df x`, `Pp x` send query of proposition x with type Thm, Df or Pp respectively. If a proposition is in the database, it will be updated with the corresponded new type. `x` will also be set as the last proposition being recorded in the script.
 
 `name x` adds a name to an already existing proposition in the database.
 
@@ -93,13 +93,13 @@ Functionalities are being tested on Windows 10 with PyCharm.
 - [x] Chapter 4
 - [x] Chapter 5 (Texts to be digested)
 
-##### Section B
-- [x] Chapter 9 (Texts to be digested)
-- [x] Chapter 10 (Texts to be digested) (New abbreviation to be checked)
-- [x] Chapter 11 (Texts to be digested) (New abbreviation to be checked)
+##### Section B (Texts to be digested)
+- [x] Chapter 9
+- [x] Chapter 10 (New abbreviation to be checked)
+- [x] Chapter 11 (New abbreviation to be checked)
 - [x] Chapter 12
-- [x] Chapter 13 (Texts to be digested)
-- [ ] Chapter 14 (In progress)
+- [x] Chapter 13
+- [x] Chapter 14
   
 ##### Section C
 - [ ] Chapter 20
