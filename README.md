@@ -7,6 +7,8 @@ Principia Mathematica is a large book with proofs.
 
 This helper reads simplified script, generates Neo4j queries and send it into Neo4j database, for recording the proof relations in PM.
 
+![Proof relations in PM for chapter 1-5](graph.png)
+
 Related Project: https://github.com/LogicalAtomist/principia
 
 ## Pros
@@ -31,7 +33,9 @@ Functionalities are being tested on Windows 10 with PyCharm.
 
 After installing Python, python's library for neo4j is also required.
 
-(To be filled)
+```commandline
+python -m pip install neo4j
+```
 
 The suggested way to run the helper is
 
@@ -88,7 +92,7 @@ python.exe main.py --help
 - [x] All core functionalities
 - [x] Test all core functionalities
 - [x] Implement cmd arguments & options
-- [ ] Implement logging functionalities?
+- [ ] (Important)Implement logging functionalities?
 - [ ] Gradually transplant the language onto a parser?  
 - [ ] More functionalities to fix bugs...
 

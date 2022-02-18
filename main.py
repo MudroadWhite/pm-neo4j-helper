@@ -21,9 +21,18 @@ from script import Script
 #  [ ] Collect error messages and output them after the program has finished?
 
 # TODO: logging file to be implemented
+
+# Cypher commands to color the nodes by chapters(APOC required):
+# MATCH (n:Prop)
+# WITH DISTINCT n.chapter AS chapter, collect(DISTINCT n) AS props
+# CALL apoc.create.addLabels(props, [apoc.text.upperCamelCase(chapter)]) YIELD node
+# RETURN *
+
+# Cypher command to change password:
+# ALTER USER neo4j SET PASSWORD 'neo4j'
+
 logfile = "log_pmneo4j.txt"
 bolt_url = "bolt://localhost:7687"
-# ALTER USER neo4j SET PASSWORD 'neo4j'
 user = "neo4j"
 password = "neo4j"
 tactics = "scripts/tactics.txt"
@@ -43,7 +52,6 @@ def tests():
     # test_script_use_tactics()  # passed
     # test_script_run()  # passed
     # test_script_run2()  # passed
-    # TODO: test loading multiple files
     pass
 
 

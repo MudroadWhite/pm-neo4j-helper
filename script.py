@@ -80,7 +80,7 @@ class Script:
         elif command.lower() == "name":  # add name x
             self.app.update_prop_name(self.currentprop, args[0])
         else:
-            print("Unidentified line {linenum}: ".format(linenum=linenum) + line)
+            print("Unidentified line {linenum}: ".format(linenum=(linenum+1)) + line)
         return
 
     def parse_proof_line(self, bs, linenum):

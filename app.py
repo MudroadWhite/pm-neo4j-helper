@@ -80,9 +80,9 @@ class App:
 
     def connect_pm(self, p1, p2):
         if not self.check_prop_exists(p1):
-            print("{p1} not found for {p1}->{p2}".format(p1=p1, p2=p2))
+            print("Proof relation error: {p1} not found for {p1}->{p2}".format(p1=p1, p2=p2))
         elif not self.check_prop_exists(p2):
-            print("{p2} not found for {p1}->{p2}".format(p1=p1, p2=p2))
+            print("Proof relation error: {p2} not found for {p1}->{p2}".format(p1=p1, p2=p2))
         elif not self.check_conn_exists(p1, p2):
             print(p1 + " -[Proves]-> " + p2)
             with self.driver.session() as session:
