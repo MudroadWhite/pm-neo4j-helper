@@ -143,7 +143,7 @@ class Script:
             print("No scripts loaded")
             return
         else:
-            print("Parsing script file from {f}...".format(f=self.script))
+            print("Processing script file from {f}...".format(f=self.script))
             self.parse_file()
 
         print("...Done")

@@ -1,4 +1,5 @@
 # pm-neo4j-helper
+![Proof relations in PM for chapter 1-5](graph.png)
 ## What It Does
 
 Neo4j is a database with visualized graph.
@@ -6,8 +7,6 @@ Neo4j is a database with visualized graph.
 Principia Mathematica is a large book with proofs.
 
 This helper reads simplified script, generates Neo4j queries and send it into Neo4j database, for recording the proof relations in PM.
-
-![Proof relations in PM for chapter 1-5](graph.png)
 
 Related Project: https://github.com/LogicalAtomist/principia
 
@@ -34,7 +33,7 @@ Functionalities are being tested on Windows 10 with PyCharm.
 After installing Python, python's library for neo4j is also required.
 
 ```commandline
-python -m pip install neo4j
+python.exe -m pip install neo4j
 ```
 
 The suggested way to run the helper is
@@ -79,7 +78,7 @@ By default, the helper can load a `conf.json` file under the project folder, inc
 - password: The password of the database.
 - logfile: The location for the helper to output its logs.
 - tactics: The location for the helper to load tactics.
-- scripts: A list of file paths of scripts that will be fed into the helper. The helper will then translate the scripts to queries, one by one.
+- scripts: A list of file paths of scripts that will be sent into the helper. The helper will then translate the scripts to be processed, one by one.
 
 It is also possible to send commend line options to run the helper. Options in command line parameters will override the settings in `conf.json`. Command line supports all entries listed in `conf.json`. To see help information, run
 

@@ -15,10 +15,10 @@ from script import Script
 #  [ ] Good checking for proposition's format, duplication, etc
 #  [x] Unique tactic name(done?)
 #  [ ] Good tactic name format
-#  [ ] * Logging implementation
-#  [x] *** Implement cmd parameters
-#  [ ] ** Eliminate redundant relations: check for one node, all relations that doesn't being fed at current time
-#  [ ] Collect error messages and output them after the program has finished?
+#  [ ] * Logging implementation, collect error messages(log & errors)
+#  [x] Implement cmd parameters
+#  [ ] * Eliminate redundant relations: check for one node, all relations that doesn't being fed at current time
+#  [ ] Message printing options?
 
 # TODO: logging file to be implemented
 
