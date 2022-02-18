@@ -22,7 +22,7 @@ The script language isn't implemented formally using a parser and lexer. Rather,
 - Don't leave extra symbols like ",", ";" in the script.
 - Only one instruction at one line, and don't split the instruction to multiple lines.
 
-Also, a way to safely *delete* redundant relations being added by mistake has not be implemented. The suggested way is to clear all nodes in database and reconstruct them again for the time being.
+Also, a way to safely *delete* redundant relations being added by mistake has not been designed. It's suggested to clear all nodes in database and reconstruct them again for the time being.
 
 ## More Information
 
@@ -30,7 +30,7 @@ Functionalities are being tested on Windows 10 with PyCharm.
 
 ## Running the Helper
 
-After installing Python, python's library for neo4j is also required.
+After installing Python(>3.9), Python's library for neo4j is also required.
 
 ```commandline
 python.exe -m pip install neo4j
@@ -44,6 +44,8 @@ python.exe main.py
 
 Username, password, and bolt url for the Neo4j database should be set in `conf.json`. The Neo4j database must have its bolt connection enabled.
 
+Command line arguments are also available to use. See the [configuration](#configuration) section below.
+
 ## Script Syntax & Functionalities
 
 ### General Location Info Setting
@@ -52,7 +54,7 @@ Username, password, and bolt url for the Neo4j database should be set in `conf.j
 
 ### Proposition Recording
 
-`Thm x`, `Df x`, `Pp x` send query of proposition x with type Thm, Df or Pp respectively. If a proposition is in the database, it will be updated with the corresponded new type. `x` will also be set as the last proposition being recorded in the script.
+`Thm x`, `Df x`, `Pp x` send query of proposition `x` with type `Thm`, `Df` or `Pp` respectively. If a proposition is in the database, it will be updated with the corresponded new type. `x` will also be set as the last proposition being recorded in the script.
 
 `name x` adds a name to an already existing proposition in the database.
 
@@ -60,13 +62,13 @@ Username, password, and bolt url for the Neo4j database should be set in `conf.j
 
 `<- a1 a2 a3...` sends relations `a1 proves x`, `a2 proves x`... to Neo4j database, where `x` is the last proposition being recorded. 
 
-`tactic x y1 y2 y3...` adds a tactic involving a proof pattern supported by several propositions, for future translation. Abstracting the proof patterns can simplify the proof in PM. Tactic's name is x, and the involved propositions are ys. These ys will be added into proof relations that proves the last proposition being recorded.
+`tactic x y1 y2 y3...` adds a tactic involving a proof pattern supported by several propositions, for future translation. Abstracting the proof patterns can simplify the proof in PM. Tactic's name is `x`, and the involved propositions are `y`s. These `y`s will be added into proof relations that proves the last proposition being recorded.
 
 Tactics can be saved in a local file. When the helper starts, the helper will try to read tactics from the local file. When the helper is finished, the helper will save/update new tactics back to the local file.
 
 ### Comments
 
-`# x`, a line starts with a # and a space, is a line of comment. Use it to enhance the readability of your script. 
+`# x`, a line starts with a `#` and a space, is a line of comment. Use it to enhance the readability of your script. 
 
 Any length of `#` is allowed, for giving weights to the comments. e.g. `#`, `##`, `###`...
 
@@ -80,7 +82,7 @@ By default, the helper can load a `conf.json` file under the project folder, inc
 - tactics: The location for the helper to load tactics.
 - scripts: A list of file paths of scripts that will be sent into the helper. The helper will then translate the scripts to be processed, one by one.
 
-It is also possible to send commend line options to run the helper. Options in command line parameters will override the settings in `conf.json`. Command line supports all entries listed in `conf.json`. To see help information, run
+Command line arguments have higher priority over `conf.json`, and will override the settings in `conf.json`. To see help information for command line arguments, run
 
 ```commandline
 python.exe main.py --help
@@ -115,7 +117,7 @@ python.exe main.py --help
 - [x] Chapter 13
 - [x] Chapter 14
   
-##### Section C (Stuck on "similar proof" reference)
+##### Section C (Stuck on "similar proof" reference, to be checked carefully in future)
 - [x] Chapter 20
 - [x] Chapter 21 
 - [x] Chapter 22
@@ -128,14 +130,14 @@ python.exe main.py --help
 - [x] Chapter 31
 - [x] Chapter 32
 - [x] Chapter 33
-- [ ] Chapter 34 (In progress)
+- [x] Chapter 34 (New tactic []<-)
 - [ ] Chapter 35 (In progress)
 - [ ] Chapter 36 (In progress)
 - [ ] Chapter 37 (In progress)
-- [ ] Chapter 38 (In progress)
+- [x] Chapter 38
 
 ##### Section E
-- [ ] Chapter 40
+- [ ] Chapter 40 (In progress)
 - [ ] Chapter 41
 - [ ] Chapter 42
 - [ ] Chapter 43

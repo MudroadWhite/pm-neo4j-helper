@@ -1,0 +1,74 @@
+# PM chapter 40 proof relations
+
+volume 1
+part 1
+section E
+
+page 315
+Df 41.01
+Df 41.02
+Thm 41.1
+Thm 41.11
+Thm 41.12
+Thm 41.13
+Thm 41.14
+Thm 41.141
+Thm 41.15
+Thm 41.151
+Thm 41.16
+Thm 41.161
+Thm 41.17
+
+page 316
+Thm 41.171
+Thm 41.18
+Thm 41.181
+Thm 41.19
+Thm 41.2
+Thm 41.21
+Thm 41.221
+Thm 41.23
+Thm 41.24
+Thm 41.25
+Thm 41.26
+Thm 41.27
+Thm 41.3
+
+Thm 41.31
+
+Thm 41.32
+
+Thm 41.33
+
+Thm 41.34
+
+Thm 41.341
+
+Thm 41.342
+
+page 317
+Thm 41.35
+
+Thm 41.351
+
+Thm 41.4
+
+Thm 41.41
+
+Thm 41.42
+
+Thm 41.43
+
+Thm 41.44
+
+Thm 41.45
+
+page 318
+Thm 41.5
+
+Thm 41.51
+
+Thm 41.52
+
+page 319
+Thm 41.6

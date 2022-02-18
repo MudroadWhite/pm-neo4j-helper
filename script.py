@@ -138,7 +138,7 @@ class Script:
     def run(self):
         # 0. Initializing settings...
 
-        # 1. Read script
+        # 1. Process script
         if self.script == "":
             print("No scripts loaded")
             return

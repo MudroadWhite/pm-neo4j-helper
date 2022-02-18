@@ -3,3 +3,26 @@
 volume 1
 part 1
 section D
+
+page 278
+Df 36.01
+Thm 36.11
+
+Thm 36.13
+
+Thm 36.2
+
+Thm 36.201
+
+Thm 36.202
+
+Thm 36.203
+
+Thm 36.21
+
+
+page 278
+Thm 36.22
+
+Thm 36.23
+

@@ -79,8 +79,6 @@ name Transp
 
 # page 102: [Syll] |- (a->b) . (b->c) . (c->d) *->|-* d
 tactic Syll 2.05
-# tactic Syll2_05 2.05
-# tactic Syll2_06 2.06
 
 page 103
 # page 103:

@@ -1,0 +1,9 @@
+# PM chapter 40 proof relations
+
+volume 1
+part 1
+section E
+
+page 305
+Df 40.01
+Df 40.02
