@@ -8,6 +8,7 @@ from neo4j.exceptions import ServiceUnavailable
 #  [ ] Change print into logging?
 #  [ ] Identical relation a->a checking?
 #  [ ] Refresh whole graph for uniqueness & no identical relations
+#  [ ] Raise error to Script instance to enhance error printing
 
 
 class App:
@@ -84,12 +85,12 @@ class App:
         elif not self.check_prop_exists(p2):
             print("Proof relation error: {p2} not found for {p1}->{p2}".format(p1=p1, p2=p2))
         elif not self.check_conn_exists(p1, p2):
-            # print(p1 + " -[Proves]-> " + p2)
+            # print(p2 + " <-[Proves]- " + p1)
             with self.driver.session() as session:
                 result = session.write_transaction(self._connect_pm_prop, p1, p2)
                 return result
         else:
-            # print("{p1} -[Proves]-> {p2}(already exists)".format(p1=p1, p2=p2))
+            # print("{p2} <-[Proves]- {p1}(already exists)".format(p1=p1, p2=p2))
             pass
         return None
 

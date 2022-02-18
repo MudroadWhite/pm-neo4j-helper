@@ -14,7 +14,26 @@
     "scripts/pm_11.txt",
     "scripts/pm_12.txt",
     "scripts/pm_13.txt",
-    "scripts/pm_14.txt"
+    "scripts/pm_14.txt",
+    "scripts/pm_20.txt",
+    "scripts/pm_21.txt",
+    "scripts/pm_22.txt",
+    "scripts/pm_23.txt",
+    "scripts/pm_24.txt",
+    "scripts/pm_25.txt",
+    "scripts/pm_30.txt",
+    "scripts/pm_31.txt",
+    "scripts/pm_32.txt",
+    "scripts/pm_33.txt",
+    "scripts/pm_34.txt",
+    "scripts/pm_35.txt",
+    "scripts/pm_36.txt",
+    "scripts/pm_37.txt",
+    "scripts/pm_38.txt",
+    "scripts/pm_40.txt",
+    "scripts/pm_41.txt",
+    "scripts/pm_42.txt",
+    "scripts/pm_43.txt"
   ],
-  "comment": "Configuration for chapter 1 - 14"
+  "comment": "Configuration to load all chapters"
 }

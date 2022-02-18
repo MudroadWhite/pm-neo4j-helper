@@ -178,10 +178,20 @@ def test_script_run2():
     app = App(bolt_url, user, password)
     app.clear_all()
     s = Script(app)
-    s.script = "scripts/testtactics.txt"
+    s.script = "scripts/test/testtactics.txt"
     print("Running full logic...")
     s.run()
     print("Running for twice...")
+    s.run()
+    s.close()
+
+
+def test_script_chinese_comment():
+    app = App(bolt_url, user, password)
+    app.clear_all()
+    s = Script(app)
+    s.script = "scripts/test/test_chn_comm.txt"
+    print("testing chinese comment...")
     s.run()
     s.close()
 

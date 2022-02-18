@@ -103,10 +103,12 @@ python.exe main.py --help
 - [x] Test all core functionalities
 - [x] Implement cmd arguments & options
 - [ ] (Important)Implement logging functionalities?
+- [x] File supports UTF-8 or so, at least for Chinese
+- [ ] Make a pip package?
 - [ ] Gradually transplant the language onto a parser?  
 - [ ] More functionalities to fix bugs...
 
-## PM Relation Progress
+## PM Recording Progress
 
 ### Volume 1
 #### Part 1
@@ -148,18 +150,18 @@ python.exe main.py --help
 ##### Section E
 - [x] Chapter 40 (New tactic []<->___)
 - [x] Chapter 41
-- [x] Chapter 42 (In progress)
-- [x] Chapter 43 (In progress)
+- [x] Chapter 42
+- [x] Chapter 43
 
 #### Part 2
 ##### Section A
-- [ ] Chapter 50
-- [ ] Chapter 51
-- [ ] Chapter 52
-- [ ] Chapter 53
-- [ ] Chapter 54
-- [ ] Chapter 55
-- [ ] Chapter 56
+- [x] Chapter 50
+- [ ] Chapter 51 (In progress)
+- [ ] Chapter 52 (In progress)
+- [ ] Chapter 53 (In progress)
+- [ ] Chapter 54 (In progress)
+- [ ] Chapter 55 (In progress)
+- [ ] Chapter 56 (In progress)
 
 ##### Section B
 - [ ] Chapter 60

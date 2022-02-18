@@ -12,14 +12,16 @@ from app import App
 from script import Script
 
 # TODO:
-#  [ ] Good checking for proposition's format, duplication, etc
 #  [x] Unique tactic name(done?)
-#  [ ] Good tactic name format
-#  [ ] *** Logging implementation, collect error messages(log & errors)
 #  [x] Implement cmd parameters
+#  [x] Comment support UTF-8 or so, at least for Chinese
+#  [ ] *** Logging implementation, collect error messages(log & errors)
+#  [ ] ** Make a pip package
+#  [ ] ** App -> Script raise error, for better error printing
 #  [ ] * Eliminate redundant relations: check for one node, all relations that doesn't being fed at current time
+#  [ ] Good checking for proposition's format, duplication, etc
+#  [ ] Good tactic name format
 #  [ ] Message printing options for cmd & conf?
-#  [ ] *** Comment support UTF-8 or so, at least for Chinese
 
 # TODO: logging file to be implemented
 
@@ -42,7 +44,7 @@ tactics = "scripts/tactics.txt"
 scripts = []
 
 
-def tests():
+def test():
     # test_prop_check_exists()  # passed
     # test_update_prop()  # passed
     # test_update_prop_name()  # passed
@@ -55,6 +57,7 @@ def tests():
     # test_script_use_tactics()  # passed
     # test_script_run()  # passed
     # test_script_run2()  # passed
+    # test_script_chinese_comment()  # passed
     pass
 
 
@@ -75,7 +78,7 @@ def run():
     # Load configuration from conf.json
     # python variable scope?
     if exists(conffile):
-        conff = open(conffile)
+        conff = open(conffile, 'r', encoding="utf8")
         conf = json.load(conff)
         conff.close()
 
@@ -111,7 +114,9 @@ def run():
 
     print("Username: '{u}', url: {url}".format(u=user, url=bolt_url))
 
+    # TODO: enhance logging
     App.enable_log(logging.INFO, sys.stdout)
+
     app = App(bolt_url, user, password)
     s = Script(app, tactics)
 
@@ -127,4 +132,5 @@ def run():
 
 if __name__ == "__main__":
     run()
+    # test()
     pass

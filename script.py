@@ -44,7 +44,7 @@ class Script:
         logging.getLogger("neo4j").setLevel(level)
 
     def parse_file(self):
-        script = open(self.script, 'r')
+        script = open(self.script, 'r', encoding="utf8")
         lines = script.read().splitlines()
         script.close()
         i = 0
@@ -106,7 +106,7 @@ class Script:
             return
         # clear the tactics...
         self.tactics = {}
-        f = open(self.tacticfile, 'r')
+        f = open(self.tacticfile, 'r', encoding="utf8")
         tactics = f.read().splitlines()
         f.close()
         i = 0
@@ -124,7 +124,7 @@ class Script:
             print("Setting default tactic file to /scripts/tactics.txt...")
             self.tacticfile = "scripts/tactics.txt"
         print("Saving tactics to {f}...".format(f=self.tacticfile))
-        f = open(self.tacticfile, 'w')
+        f = open(self.tacticfile, 'w', encoding="utf8")
         for k in self.tactics:  # tactic name
             f.write(k)
             for t in self.tactics[k]:  # tactic props
