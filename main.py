@@ -19,6 +19,7 @@ from script import Script
 #  [x] Implement cmd parameters
 #  [ ] * Eliminate redundant relations: check for one node, all relations that doesn't being fed at current time
 #  [ ] Message printing options for cmd & conf?
+#  [ ] *** Comment support UTF-8 or so, at least for Chinese
 
 # TODO: logging file to be implemented
 
@@ -30,6 +31,8 @@ from script import Script
 
 # Cypher command to change password:
 # ALTER USER neo4j SET PASSWORD 'neo4j'
+
+conffile = "conf_40_43.json"
 
 logfile = "log_pmneo4j.txt"
 bolt_url = "bolt://localhost:7687"
@@ -69,10 +72,10 @@ def run():
 
     cmd = vars(ap.parse_args())
 
-    # Loading configuration from conf.json
+    # Load configuration from conf.json
     # python variable scope?
-    if exists("conf.json"):
-        conff = open("conf.json")
+    if exists(conffile):
+        conff = open(conffile)
         conf = json.load(conff)
         conff.close()
 
@@ -89,7 +92,7 @@ def run():
         if "scripts" in conf:
             scripts = conf["scripts"]
 
-    # Loading configuration from command line prompts
+    # Load configuration from command line prompts
     if len(sys.argv) > 1:
         if "username" in cmd:
             user = cmd["username"]

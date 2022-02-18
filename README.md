@@ -63,7 +63,7 @@ Command line arguments are also available to use. See the [configuration](#confi
 
 ### Proposition Recording
 
-`Thm x`, `Df x`, `Pp x` send query of proposition `x` with type `Thm`, `Df` or `Pp` respectively. If a proposition is in the database, it will be updated with the corresponded new type. `x` will also be set as the last proposition being recorded in the script.
+`Thm x`, `Df x`, `Pp x` send queries adding proposition `x` with type `Thm`, `Df` or `Pp` into the database respectively. If a proposition is in the database, it will be updated with the corresponded new type. `x` will also be set as the last proposition being recorded in the script.
 
 `name x` adds a name to an already existing proposition in the database.
 

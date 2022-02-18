@@ -1,5 +1,4 @@
 # PM chapter 40 proof relations
-# 把这个section给搞完我就准备歇一会 毕竟来到了一个很大的里程碑上了 这段时间倒确实能对代码有稍微强那么一点点的信心
 
 volume 1
 part 1
