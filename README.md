@@ -14,6 +14,7 @@ Related Project: https://github.com/LogicalAtomist/principia
 
 - Allows you separate your queries into several files and still generate robust relation graph.
 - Already existed nodes and relations can be checked for uniqueness.
+- Makes you type super fast comparing to using no tools at all.
 
 ## Restrictions
 
@@ -145,10 +146,10 @@ python.exe main.py --help
 - [x] Chapter 38
 
 ##### Section E
-- [ ] Chapter 40 (In progress)
-- [ ] Chapter 41 (In progress)
-- [ ] Chapter 42 (In progress)
-- [ ] Chapter 43 (In progress)
+- [x] Chapter 40 (New tactic []<->___)
+- [x] Chapter 41
+- [x] Chapter 42 (In progress)
+- [x] Chapter 43 (In progress)
 
 #### Part 2
 ##### Section A
