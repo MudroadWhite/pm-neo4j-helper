@@ -12,8 +12,8 @@ Related Project: https://github.com/LogicalAtomist/principia
 
 ## Pros
 
-- Allows you separate your queries into several files and still generate solid relation graph.
-- Already existed nodes and relations will be checked for uniqueness.
+- Allows you separate your queries into several files and still generate robust relation graph.
+- Already existed nodes and relations can be checked for uniqueness.
 
 ## Restrictions
 
@@ -21,6 +21,7 @@ The script language isn't implemented formally using a parser and lexer. Rather,
 
 - Don't leave extra symbols like ",", ";" in the script.
 - Only one instruction at one line, and don't split the instruction to multiple lines.
+- Capital case matters.
 
 Also, a way to safely *delete* redundant relations being added by mistake has not been designed. It's suggested to clear all nodes in database and reconstruct them again for the time being.
 
@@ -30,7 +31,7 @@ Functionalities are being tested on Windows 10 with PyCharm.
 
 ## Running the Helper
 
-After installing Python(>3.9), Python's library for neo4j is also required.
+After installing Python(>3.9), Python's library for Neo4j is also required.
 
 ```commandline
 python.exe -m pip install neo4j
@@ -42,7 +43,14 @@ The suggested way to run the helper is
 python.exe main.py
 ```
 
-Username, password, and bolt url for the Neo4j database should be set in `conf.json`. The Neo4j database must have its bolt connection enabled.
+The Neo4j database must have its bolt connection enabled. To enable bolt connection, go to the database's settings, find these entries or turn them on:
+
+```
+dbms.connector.bolt.enabled=true
+dbms.connector.bolt.listen_address=:7687
+```
+
+On the helper side, username, password, and bolt url for the Neo4j database should be set up in `conf.json` under the root directory. 
 
 Command line arguments are also available to use. See the [configuration](#configuration) section below.
 
@@ -50,7 +58,7 @@ Command line arguments are also available to use. See the [configuration](#confi
 
 ### General Location Info Setting
 
-`volume x`, `part x`, `section x`, `page x` set volume, part, section, page to x respectively. 
+`volume x`, `part x`, `section x`, `page x` set `volume`, `part`, `section`, `page` to `x` respectively. 
 
 ### Proposition Recording
 
@@ -131,16 +139,16 @@ python.exe main.py --help
 - [x] Chapter 32
 - [x] Chapter 33
 - [x] Chapter 34 (New tactic []<-)
-- [ ] Chapter 35 (In progress)
-- [ ] Chapter 36 (In progress)
-- [ ] Chapter 37 (In progress)
+- [x] Chapter 35
+- [x] Chapter 36
+- [x] Chapter 37
 - [x] Chapter 38
 
 ##### Section E
 - [ ] Chapter 40 (In progress)
-- [ ] Chapter 41
-- [ ] Chapter 42
-- [ ] Chapter 43
+- [ ] Chapter 41 (In progress)
+- [ ] Chapter 42 (In progress)
+- [ ] Chapter 43 (In progress)
 
 #### Part 2
 ##### Section A

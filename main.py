@@ -15,14 +15,14 @@ from script import Script
 #  [ ] Good checking for proposition's format, duplication, etc
 #  [x] Unique tactic name(done?)
 #  [ ] Good tactic name format
-#  [ ] * Logging implementation, collect error messages(log & errors)
+#  [ ] *** Logging implementation, collect error messages(log & errors)
 #  [x] Implement cmd parameters
 #  [ ] * Eliminate redundant relations: check for one node, all relations that doesn't being fed at current time
-#  [ ] Message printing options?
+#  [ ] Message printing options for cmd & conf?
 
 # TODO: logging file to be implemented
 
-# Cypher commands to color the nodes by chapters(APOC required):
+# Cypher commands to color the nodes by chapters(APOC library required):
 # MATCH (n:Prop)
 # WITH DISTINCT n.chapter AS chapter, collect(DISTINCT n) AS props
 # CALL apoc.create.addLabels(props, [apoc.text.upperCamelCase(chapter)]) YIELD node

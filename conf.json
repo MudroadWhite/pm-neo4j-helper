@@ -15,5 +15,6 @@
     "scripts/pm_12.txt",
     "scripts/pm_13.txt",
     "scripts/pm_14.txt"
-  ]
+  ],
+  "comment": "Configuration for chapter 1 - 14"
 }

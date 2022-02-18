@@ -1,0 +1,25 @@
+{
+  "bolt_url": "bolt://localhost:7687",
+  "username": "neo4j",
+  "password": "neo4j",
+  "logfile" : "log_pmneo4j.txt",
+  "tactics" : "scripts/tactics.txt",
+  "scripts": [
+    "scripts/pm_20.txt",
+    "scripts/pm_21.txt",
+    "scripts/pm_22.txt",
+    "scripts/pm_23.txt",
+    "scripts/pm_24.txt",
+    "scripts/pm_25.txt",
+    "scripts/pm_30.txt",
+    "scripts/pm_31.txt",
+    "scripts/pm_32.txt",
+    "scripts/pm_33.txt",
+    "scripts/pm_34.txt",
+    "scripts/pm_35.txt",
+    "scripts/pm_36.txt",
+    "scripts/pm_37.txt",
+    "scripts/pm_38.txt"
+  ],
+  "comment": "Configuration for chapter 20 - 38"
+}
