@@ -156,7 +156,7 @@ python.exe main.py --help
 #### Part 2
 ##### Section A
 - [x] Chapter 50
-- [ ] Chapter 51 (In progress)
+- [x] Chapter 51
 - [ ] Chapter 52 (In progress)
 - [ ] Chapter 53 (In progress)
 - [ ] Chapter 54 (In progress)

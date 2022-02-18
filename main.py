@@ -3,6 +3,7 @@ import sys
 import json
 import argparse
 from os.path import exists
+from logging import BASIC_FORMAT
 
 from neo4j import GraphDatabase
 from neo4j.exceptions import ServiceUnavailable
@@ -131,6 +132,27 @@ def run():
 
 
 if __name__ == "__main__":
-    run()
+    # run()
     # test()
+    # TODO: Logging
+    #  1. INFO -> log file, detailed formatter/basic formatter option
+    #  2. ERROR -> error file, detailed formatter
+    #  3. ERROR -> stdout, basic formatter
+    #  https://stackoverflow.com/questions/16757578/what-is-pythons-default-logging-formatter
+    #  https://www.cnblogs.com/yyds/p/6901864.html
+    #  https://docs.python.org/3/library/logging.html
+    #  https://www.loggly.com/ultimate-guide/python-logging-basics/
+
+    # TODO: Logging for Neo4j.PMNeo4jHelper.App
+
+    # TODO: Logging for Neo4j.PMNeo4jHelper.Script
+
+    formatter = logging.Formatter("[%(asctime)s] %(levelname)s [%(name)s.%(funcName)s:%(lineno)d] %(message)s",
+                                  datefmt="%d/%b/%Y %H:%M:%S")
+    handler = logging.StreamHandler(sys.stdout)
+    handler.setFormatter(formatter)
+    nl = logging.getLogger("App")
+    nl.addHandler(handler)
+    nl.setLevel(logging.DEBUG)
+    nl.debug("Neo4j")
     pass

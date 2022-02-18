@@ -3,3 +3,83 @@
 volume 1
 part 2
 section A
+
+page 347
+Df 52.01
+Thm 52.1
+
+
+page 348
+Thm 52.11
+
+Thm 52.12
+
+Thm 52.13
+
+Thm 52.14
+
+Thm 52.15
+
+Thm 52.16
+
+Thm 52.17
+
+Thm 52.171
+
+Thm 52.172
+
+Thm 52.173
+
+Thm 52.18
+
+Thm 52.181
+
+Thm 52.2
+
+Thm 52.21
+
+Thm 52.22
+
+
+page 349
+Thm 52.23
+
+Thm 52.24
+
+Thm 52.3
+
+Thm 52.31
+
+Thm 52.4
+
+Thm 52.41
+
+
+page 350
+Thm 52.42
+
+Thm 52.43
+
+Thm 52.44
+
+Thm 52.45
+
+Thm 52.46
+
+Thm 52.6
+
+
+page 351
+Thm 52.601
+
+Thm 52.602
+
+Thm 52.61
+
+Thm 52.62
+
+Thm 52.63
+
+Thm 52.64
+
+Thm 52.7
