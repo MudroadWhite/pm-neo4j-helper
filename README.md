@@ -169,16 +169,16 @@ python.exe main.py --help
 - [x] Chapter 60
 - [x] Chapter 61
 - [x] Chapter 62
-- [ ] Chapter 63 (In progress)
-- [ ] Chapter 64 (In progress)
+- [x] Chapter 63
+- [x] Chapter 64
 - [x] Chapter 65
 
 ##### Section C
 - [ ] Chapter 70 (In progress)
 - [ ] Chapter 71 (In progress)
 - [ ] Chapter 72 (In progress)
-- [ ] Chapter 73
-- [ ] Chapter 74
+- [ ] Chapter 73 (In progress)
+- [ ] Chapter 74 (In progress)
 
 ##### Section D
 - [ ] Chapter 80

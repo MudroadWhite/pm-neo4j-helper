@@ -9,6 +9,13 @@ import re
 #  [ ] Change init method to initiating an App instance from inside rather than outside(refactor class?)
 #  [ ] Try app function... catch errors from app
 
+
+# TODO: Syntax to be designed:
+#  Script = Location Str | Prop Str [Info]* | tactic Str [Str]+
+#  Location = volume | part | section | page
+#  Prop = Thm | Df | Pp
+#  Info = <- [Str]+ | name Str
+
 def is_prop_number(s):
     return bool(re.match(r"\d+\.\d+", s))
 
