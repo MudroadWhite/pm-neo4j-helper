@@ -30,6 +30,8 @@ Also, a way to safely *delete* redundant relations being added by mistake has no
 
 Functionalities are being tested on Windows 10 with PyCharm.
 
+Current progress: relations for part I has been tested for conflicts, and can be uploaded to database.
+
 ## Running the Helper
 
 After installing Python(>3.9), Python's library for Neo4j is also required.
@@ -157,24 +159,24 @@ python.exe main.py --help
 ##### Section A
 - [x] Chapter 50
 - [x] Chapter 51
-- [ ] Chapter 52 (In progress)
-- [ ] Chapter 53 (In progress)
-- [ ] Chapter 54 (In progress)
-- [ ] Chapter 55 (In progress)
-- [ ] Chapter 56 (In progress)
+- [x] Chapter 52
+- [x] Chapter 53
+- [x] Chapter 54
+- [x] Chapter 55
+- [x] Chapter 56
 
 ##### Section B
-- [ ] Chapter 60
-- [ ] Chapter 61
-- [ ] Chapter 62
-- [ ] Chapter 63
-- [ ] Chapter 64
-- [ ] Chapter 65
+- [x] Chapter 60
+- [x] Chapter 61
+- [x] Chapter 62
+- [ ] Chapter 63 (In progress)
+- [ ] Chapter 64 (In progress)
+- [x] Chapter 65
 
 ##### Section C
-- [ ] Chapter 70
-- [ ] Chapter 71
-- [ ] Chapter 72
+- [ ] Chapter 70 (In progress)
+- [ ] Chapter 71 (In progress)
+- [ ] Chapter 72 (In progress)
 - [ ] Chapter 73
 - [ ] Chapter 74
 

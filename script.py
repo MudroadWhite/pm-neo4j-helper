@@ -7,7 +7,7 @@ import re
 # TODO:
 #  [ ] Change print to log?
 #  [ ] Change init method to initiating an App instance from inside rather than outside(refactor class?)
-
+#  [ ] Try app function... catch errors from app
 
 def is_prop_number(s):
     return bool(re.match(r"\d+\.\d+", s))
@@ -75,7 +75,7 @@ class Script:
             # TODO: if is not prop number, set back to "null"
             self.currentprop = args[0]
             self.app.create_pm_prop(args[0], self.volume, self.part, self.section, self.page, command)
-        elif command == "<-":  # add proof support for current proposition
+        elif command == "<-":  # add proof relation for current proposition
             self.parse_proof_line(args, linenum)
         elif command.lower() == "name":  # add name x
             self.app.update_prop_name(self.currentprop, args[0])

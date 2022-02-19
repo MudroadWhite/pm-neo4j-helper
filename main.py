@@ -8,7 +8,7 @@ from logging import BASIC_FORMAT
 from neo4j import GraphDatabase
 from neo4j.exceptions import ServiceUnavailable
 
-# from test import *
+# from test import test
 from app import App
 from script import Script
 
@@ -43,23 +43,6 @@ user = "neo4j"
 password = "neo4j"
 tactics = "scripts/tactics.txt"
 scripts = []
-
-
-def test():
-    # test_prop_check_exists()  # passed
-    # test_update_prop()  # passed
-    # test_update_prop_name()  # passed
-    # test_conn_check_exists()  # passed
-    # test_open_file()  # passed
-    # test_script_prop()  # passed
-    # test_script_conn()  # passed
-    # test_script_name()  # passed
-    # test_script_load_tactics()  # passed
-    # test_script_use_tactics()  # passed
-    # test_script_run()  # passed
-    # test_script_run2()  # passed
-    # test_script_chinese_comment()  # passed
-    pass
 
 
 def run():
@@ -135,7 +118,7 @@ if __name__ == "__main__":
     # run()
     # test()
     # TODO: Logging
-    #  1. INFO -> log file, detailed formatter/basic formatter option
+    #  1. INFO -> log file, detailed formatter/basic formatter option (verbose / basic / silent)
     #  2. ERROR -> error file, detailed formatter
     #  3. ERROR -> stdout, basic formatter
     #  https://stackoverflow.com/questions/16757578/what-is-pythons-default-logging-formatter
@@ -143,9 +126,13 @@ if __name__ == "__main__":
     #  https://docs.python.org/3/library/logging.html
     #  https://www.loggly.com/ultimate-guide/python-logging-basics/
 
-    # TODO: Logging for Neo4j.PMNeo4jHelper.App
-
     # TODO: Logging for Neo4j.PMNeo4jHelper.Script
+
+    # TODO: Neo4j.PMNeo4jHelper.App error raise to Script class?
+
+    # TODO:
+    #  1. Script sets up the logger with name
+    #  2. App tries to log with logger in this name?
 
     formatter = logging.Formatter("[%(asctime)s] %(levelname)s [%(name)s.%(funcName)s:%(lineno)d] %(message)s",
                                   datefmt="%d/%b/%Y %H:%M:%S")

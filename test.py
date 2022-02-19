@@ -1,5 +1,5 @@
-import logging
-import sys
+# import logging
+# import sys
 from app import App
 from script import Script
 
@@ -7,7 +7,25 @@ logfile = "log_pmneo4j.txt"
 bolt_url = "bolt://localhost:7687"
 user = "neo4j"
 password = "neo4j"
-App.enable_log(logging.INFO, sys.stdout)
+
+
+def test():
+    # test_prop_check_exists()  # passed
+    # test_update_prop()  # passed
+    # test_update_prop_name()  # passed
+    # test_conn_check_exists()  # passed
+    # test_open_file()  # passed
+    # test_script_prop()  # passed
+    # test_script_conn()  # passed
+    # test_script_name()  # passed
+    # test_script_load_tactics()  # passed
+    # test_script_use_tactics()  # passed
+    # test_script_run()  # passed
+    # test_script_run2()  # passed
+    # test_script_chinese_comment()  # passed
+    pass
+
+####################
 
 
 def test_prop_check_exists():
