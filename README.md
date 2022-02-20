@@ -181,16 +181,16 @@ python.exe main.py --help
 - [x] Chapter 74 (2 NOTEs)
 
 ##### Section D
-- [ ] Chapter 80 (In progress)
-- [ ] Chapter 81 (In progress)
-- [ ] Chapter 82 (In progress)
+- [x] Chapter 80 (1 NOTE)
+- [x] Chapter 81
+- [x] Chapter 82 (New tactic []<., new tactic []->R)
 - [ ] Chapter 83 (In progress)
 - [ ] Chapter 84 (In progress)
 - [ ] Chapter 85 (In progress)
 - [ ] Chapter 88 (In progress)
 
 ##### Section E
-- [ ] Chapter 90
+- [ ] Chapter 90 (In progress)
 - [ ] Chapter 91
 - [ ] Chapter 92
 - [ ] Chapter 93

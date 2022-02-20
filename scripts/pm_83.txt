@@ -3,3 +3,122 @@
 volume 1
 part 2
 section D
+
+page 509
+Thm 83.1
+
+Thm 83.11
+
+Thm 83.12
+
+Thm 83.13
+
+Thm 83.14
+
+Thm 83.15
+
+Thm 83.16
+
+
+page 510
+Thm 83.2
+
+Thm 83.21
+
+Thm 83.22
+
+Thm 83.23
+
+Thm 83.24
+
+Thm 83.25
+
+Thm 83.26
+
+Thm 83.27
+
+Thm 83.271
+
+Thm 83.28
+
+Thm 83.29
+
+Thm 83.3
+
+Thm 83.31
+
+Thm 83.4
+
+Thm 83.41
+
+Thm 83.42
+
+
+page 511
+Thm 83.43
+
+Thm 83.44
+
+Thm 83.5
+
+Thm 83.51
+
+Thm 83.52
+
+Thm 83.54
+
+Thm 83.55
+
+
+page 512
+Thm 83.56
+
+Thm 83.57
+
+Thm 83.58
+
+Thm 83.6
+
+
+page 513
+Thm 83.62
+
+Thm 83.63
+
+Thm 83.64
+
+Thm 83.641
+
+Thm 83.65
+
+Thm 83.66
+
+Thm 83.7
+
+Thm 83.71
+
+
+page 515
+Thm 83.72
+
+Thm 83.73
+
+Thm 83.731
+
+Thm 83.74
+
+Thm 83.8
+
+
+page 516
+Thm 83.81
+
+Thm 83.9
+
+Thm 83.901
+
+Thm 83.902
+
+Thm 83.903
+
+Thm 83.904
