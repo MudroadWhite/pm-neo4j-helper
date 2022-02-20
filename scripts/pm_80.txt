@@ -3,3 +3,177 @@
 volume 1
 part 2
 section D
+
+page 484
+Df 80.01
+Thm 80.1
+
+Thm 80.11
+
+Thm 80.12
+
+Thm 80.13
+
+Thm 80.14
+
+Thm 80.15
+
+Thm 80.16
+
+Thm 80.17
+
+Thm 80.2
+
+
+page 485
+Thm 80.21
+
+Thm 80.22
+
+Thm 80.23
+
+Thm 80.24
+
+Thm 80.25
+
+Thm 80.26
+
+Thm 80.27
+
+
+page 486
+Thm 80.28
+
+Thm 80.29
+
+Thm 80.291
+
+Thm 80.3
+
+Thm 80.31
+
+Thm 80.32
+
+Thm 80.33
+
+Thm 80.34
+
+
+page 487
+Thm 80.35
+
+Thm 80.36
+
+Thm 80.4
+
+Thm 80.41
+
+Thm 80.42
+
+
+page 488
+Thm 80.43
+
+Thm 80.44
+
+Thm 80.45
+
+Thm 80.46
+
+Thm 80.5
+
+
+page 489
+Thm 80.51
+
+Thm 80.511
+
+Thm 80.52
+
+Thm 80.53
+
+
+page 490
+Thm 80.54
+
+Thm 80.6
+
+Thm 80.61
+
+Thm 80.62
+
+Thm 80.621
+
+Thm 80.63
+
+Thm 80.64
+
+
+page 491
+Thm 80.65
+
+Thm 80.651
+
+Thm 80.66
+
+Thm 80.661
+
+Thm 80.67
+
+
+page 492
+Thm 80.68
+
+Thm 80.69
+
+Thm 80.7
+
+Thm 80.71
+
+Thm 80.72
+
+Thm 80.73
+
+Thm 80.731
+
+
+page 493
+Thm 80.732
+
+Thm 80.74
+
+Thm 80.75
+
+Thm 80.76
+
+Thm 80.761
+
+Thm 80.77
+
+
+page 494
+Thm 80.771
+
+Thm 80.78
+
+Thm 80.8
+
+Thm 80.81
+
+Thm 80.82
+
+Thm 80.83
+
+
+page 495
+Thm 80.84
+
+Thm 80.9
+
+Thm 80.91
+
+Thm 80.92
+
+Thm 80.93
+
+Thm 80.94

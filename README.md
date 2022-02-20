@@ -177,17 +177,17 @@ python.exe main.py --help
 - [x] Chapter 70
 - [x] Chapter 71
 - [x] Chapter 72
-- [ ] Chapter 73 (In progress)
-- [ ] Chapter 74 (In progress)
+- [x] Chapter 73 (New tactic hp prop)
+- [x] Chapter 74 (2 NOTEs)
 
 ##### Section D
 - [ ] Chapter 80 (In progress)
 - [ ] Chapter 81 (In progress)
 - [ ] Chapter 82 (In progress)
-- [ ] Chapter 83
-- [ ] Chapter 84
-- [ ] Chapter 85
-- [ ] Chapter 88
+- [ ] Chapter 83 (In progress)
+- [ ] Chapter 84 (In progress)
+- [ ] Chapter 85 (In progress)
+- [ ] Chapter 88 (In progress)
 
 ##### Section E
 - [ ] Chapter 90

@@ -8,5 +8,21 @@ Important notes that could be helpful to organize or use the script, will be put
 
 In some files, I write comments to indicate that, there might be some tactic not being added into the proof relation, because I haven't digested the tests so far yet. It can also be that, the original text has so much ambiguity that unless you comprehend the text, your proof relation might be completely go wrong. If I don't write these comment carefully, the situarion would be worse - and sadly I am not a careful person.
 
-## New Tactic X, Similar Proof Y
-I tried to be as carefully as possible when lableing some proof relations that I cannot add currently in the comments, and tactic / similar proof are the most common twos. I can ensure that I label `new tactic` for some proofs involving new unidentified tactics as much as possible. But for `similar proof` the situation is worse. Whenever there could be reasons involving checking the "similar proof" issues in the original texts, it's recommended to examine the original texts throughly, and rely less on the comments in the scripts. There could even be typos typing "similar proof" if it's also a helpful suggestion...
+## Known Issues
+
+##### Tactic []=
+Some proofs involve lines using `\[etc\] = proposition`. It's needed to figure out what theorem supports this abbrevation.
+
+##### Tactic []<-
+Similar to above, some proofs involve `\[etc\] <- proposition`. It appears at later chapter so it's harder to figure out.
+
+##### Tactic Hp-Prop
+`Hp` stands for hypothesis. Some proofs in very later chapters uses abbreviations like `Hp77.77` to indicate the hypothesis of proposition `77.77`.
+
+##### Similar Proof
+Some proof are omitted and written "similar proof" only. It's severely ambiguous, and the actual proof relation can be known only after one has comprehended the texts.
+For tactics above, I have a chance to label those tactics as clearly as I can in comments. But for similar proof, I might be very careless... It's recommended to
+check through original text to figure out where `similar proof` has been used to abbreviate the texts.
+
+##### Missing Dot
+On page 470, Thm 74.3, there's a line of proof writing `10 11.23.35`. It cannot be determined whether this happens from missing a dot, or misplacing a space.

@@ -3,3 +3,48 @@
 volume 1
 part 2
 section D
+
+page 497
+Thm 81.1
+
+Thm 81.11
+
+
+page 498
+Thm 81.12
+
+Thm 81.13
+
+Thm 81.14
+
+Thm 81.15
+
+Thm 81.2
+
+Thm 81.21
+
+
+page 499
+Thm 81.211
+
+Thm 81.212
+
+Thm 81.22
+
+
+page 499
+Thm 81.221
+
+Thm 81.23
+
+Thm 81.24
+
+Thm 81.25
+
+Thm 81.26
+
+
+page 500
+Thm 81.3
+
+Thm 81.31
