@@ -1,6 +1,8 @@
 import logging
 import sys
 
+from logging import BASIC_FORMAT
+
 from neo4j import GraphDatabase
 from neo4j.exceptions import ServiceUnavailable
 
@@ -21,11 +23,19 @@ class App:
         self.driver.close()
 
     @staticmethod
-    def enable_log(level, output_stream):
+    def enable_log(level, output_stream, verbose=False):
+        formatter = logging.Formatter(BASIC_FORMAT) if not verbose else \
+            logging.Formatter("[%(asctime)s] %(levelname)s [%(name)s.%(funcName)s:%(lineno)d] %(message)s",
+                              datefmt="%d/%b/%Y %H:%M:%S")
         handler = logging.StreamHandler(output_stream)
-        handler.setLevel(level)
-        logging.getLogger("neo4j").addHandler(handler)
-        logging.getLogger("neo4j").setLevel(level)
+        handler.setLevel(level)  # output stream handler... ERROR / WARNING
+        # to be configured using outside control
+        # TODO: handler 2: output to file?
+        handler.setFormatter(formatter)
+        nl = logging.getLogger("App")
+        nl.addHandler(handler)
+        nl.setLevel(level)
+        # nl.debug("Neo4j")
 
     def clear_all(self):
         with self.driver.session() as session:

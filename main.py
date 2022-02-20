@@ -3,7 +3,7 @@ import sys
 import json
 import argparse
 from os.path import exists
-from logging import BASIC_FORMAT
+
 
 from neo4j import GraphDatabase
 from neo4j.exceptions import ServiceUnavailable
@@ -134,12 +134,12 @@ if __name__ == "__main__":
     #  1. Script sets up the logger with name
     #  2. App tries to log with logger in this name?
 
-    formatter = logging.Formatter("[%(asctime)s] %(levelname)s [%(name)s.%(funcName)s:%(lineno)d] %(message)s",
-                                  datefmt="%d/%b/%Y %H:%M:%S")
-    handler = logging.StreamHandler(sys.stdout)
-    handler.setFormatter(formatter)
-    nl = logging.getLogger("App")
-    nl.addHandler(handler)
-    nl.setLevel(logging.DEBUG)
-    nl.debug("Neo4j")
+    # formatter = logging.Formatter("[%(asctime)s] %(levelname)s [%(name)s.%(funcName)s:%(lineno)d] %(message)s",
+    #                               datefmt="%d/%b/%Y %H:%M:%S")
+    # handler = logging.StreamHandler(sys.stdout)
+    # handler.setFormatter(formatter)
+    # nl = logging.getLogger("App")
+    # nl.addHandler(handler)
+    # nl.setLevel(logging.DEBUG)
+    # nl.debug("Neo4j")
     pass

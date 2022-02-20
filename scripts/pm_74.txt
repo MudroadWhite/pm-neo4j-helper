@@ -3,3 +3,192 @@
 volume 1
 part 2
 section C
+
+page 469
+Thm 74.1
+
+Thm 74.11
+
+Thm 74.12
+
+Thm 74.13
+
+Thm 74.131
+
+Thm 74.14
+
+Thm 74.141
+
+Thm 74.15
+
+Thm 74.151
+
+Thm 74.16
+
+Thm 74.161
+
+Thm 74.17
+
+Thm 74.171
+
+Thm 74.2
+
+Thm 74.201
+
+Thm 74.21
+
+Thm 74.211
+
+Thm 74.22
+
+Thm 74.221
+
+
+page 470
+Thm 74.23
+
+Thm 74.231
+
+Thm 74.24
+
+Thm 74.25
+
+Thm 74.25
+
+Thm 74.26
+
+Thm 74.27
+
+Thm 74.271
+
+Thm 74.3
+
+
+page 471
+Thm 74.301
+
+Thm 74.31
+
+Thm 74.311
+
+Thm 74.32
+
+Thm 74.4
+
+Thm 74.41
+
+Thm 74.42
+
+Thm 74.43
+
+Thm 74.44
+
+
+page 472
+Thm 74.5
+
+Thm 74.51
+
+Thm 74.511
+
+Thm 74.52
+
+Thm 74.521
+
+Thm 74.53
+
+Thm 74.531
+
+
+page 473
+Thm 74.6
+
+Thm 74.61
+
+Thm 74.62
+
+Thm 74.63
+
+Thm 74.631
+
+Thm 74.632
+
+Thm 74.7
+
+Thm 74.701
+
+Thm 74.71
+
+Thm 74.711
+
+
+page 474
+Thm 74.72
+
+Thm 74.721
+
+Thm 74.73
+
+Thm 74.731
+
+Thm 74.74
+
+Thm 74.741
+
+Thm 74.75
+
+Thm 74.751
+
+Thm 74.76
+
+Thm 74.761
+
+Thm 74.77
+
+Thm 74.771
+
+
+page 475
+Thm 74.772
+
+Thm 74.773
+
+Thm 74.774
+
+Thm 74.775
+
+Thm 74.8
+
+Thm 74.801
+
+Thm 74.81
+
+Thm 74.811
+
+Thm 74.82
+
+
+page 476
+Thm 74.821
+
+Thm 74.822
+
+Thm 74.823
+
+Thm 74.83
+
+Thm 74.831
+
+Thm 74.832
+
+Thm 74.833
+
+Thm 74.84
+
+
+page 477
+Thm 74.841
+
+Thm 74.842
+
+Thm 74.843
