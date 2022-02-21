@@ -116,7 +116,7 @@ def run():
 
 
 if __name__ == "__main__":
-    run()
+    # run()
     # test()
     # TODO: Logging
     #  1. INFO -> log file, detailed formatter/basic formatter option (verbose / basic / silent)
@@ -135,12 +135,12 @@ if __name__ == "__main__":
     #  1. Script sets up the logger with name
     #  2. App tries to log with logger in this name?
 
-    # formatter = logging.Formatter("[%(asctime)s] %(levelname)s [%(name)s.%(funcName)s:%(lineno)d] %(message)s",
-    #                               datefmt="%d/%b/%Y %H:%M:%S")
-    # handler = logging.StreamHandler(sys.stdout)
-    # handler.setFormatter(formatter)
-    # nl = logging.getLogger("App")
-    # nl.addHandler(handler)
-    # nl.setLevel(logging.DEBUG)
-    # nl.debug("Neo4j")
+    formatter = logging.Formatter("[%(asctime)s] %(levelname)s [%(name)s.%(funcName)s:%(lineno)d] %(message)s",
+                                  datefmt="%d/%b/%Y %H:%M:%S")
+    handler = logging.StreamHandler(sys.stdout)
+    handler.setFormatter(formatter)
+    nl = logging.getLogger("App")
+    nl.addHandler(handler)
+    nl.setLevel(logging.DEBUG)
+    nl.debug("Neo4j")
     pass

@@ -96,7 +96,7 @@ def test_open_file():
     line = file.readline()
     print("Successfully read tactics file, line 1: " + line)
     file.close()
-    file = open("scripts/pm.txt", 'r')
+    file = open("scripts/v1/pm.txt", 'r')
     line = file.readline()
     print("Successfully read pm file, line 1: " + line)
     file.close()

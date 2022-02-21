@@ -69,7 +69,9 @@ Command line arguments are also available to use. See the [configuration](#confi
 
 ### Proof Relation Recording
 
-`<- a1 a2 a3...` sends relations `a1 proves x`, `a2 proves x`... to Neo4j database, where `x` is the last proposition being recorded. 
+`<- a1 a2 a3...` sends relations `a1 proves x`, `a2 proves x`... to Neo4j database, where `x` is the last proposition being recorded.
+
+NOTE: Unrecognized proof relations due to unexist proposition numbers, unexist tactic names, won't affect the rest proof relations being added into the database.
 
 `tactic x y1 y2 y3...` adds a tactic involving a proof pattern supported by several propositions, for future translation. Abstracting the proof patterns can simplify the proof in PM. Tactic's name is `x`, and the involved propositions are `y`s. These `y`s will be added into proof relations that proves the last proposition being recorded.
 
@@ -113,94 +115,7 @@ python.exe main.py --help
 ## PM Recording Progress
 
 ### Volume 1
-#### Part 1
-##### Section A
+[Progress](scripts/v1/readme.md#Recording Progress)
+### Volume 2
 
-- [x] Chapter 1
-- [x] Chapter 2
-- [x] Chapter 3
-- [x] Chapter 4
-- [x] Chapter 5 (Texts to be digested)
-
-##### Section B (Texts to be digested)
-- [x] Chapter 9
-- [x] Chapter 10 (New abbreviation to be checked)
-- [x] Chapter 11 (New abbreviation to be checked)
-- [x] Chapter 12
-- [x] Chapter 13
-- [x] Chapter 14
-  
-##### Section C (Stuck on "similar proof" reference, to be checked carefully in future)
-- [x] Chapter 20
-- [x] Chapter 21 
-- [x] Chapter 22
-- [x] Chapter 23
-- [x] Chapter 24 (New tactic []=)
-- [x] Chapter 25 
-  
-##### Section D
-- [x] Chapter 30
-- [x] Chapter 31
-- [x] Chapter 32
-- [x] Chapter 33
-- [x] Chapter 34 (New tactic []<-)
-- [x] Chapter 35
-- [x] Chapter 36
-- [x] Chapter 37
-- [x] Chapter 38
-
-##### Section E
-- [x] Chapter 40 (New tactic []<->___)
-- [x] Chapter 41
-- [x] Chapter 42
-- [x] Chapter 43
-
-#### Part 2
-##### Section A
-- [x] Chapter 50
-- [x] Chapter 51
-- [x] Chapter 52
-- [x] Chapter 53
-- [x] Chapter 54
-- [x] Chapter 55
-- [x] Chapter 56
-
-##### Section B
-- [x] Chapter 60
-- [x] Chapter 61
-- [x] Chapter 62
-- [x] Chapter 63
-- [x] Chapter 64
-- [x] Chapter 65
-
-##### Section C
-- [x] Chapter 70
-- [x] Chapter 71
-- [x] Chapter 72
-- [x] Chapter 73 (New tactic hp prop)
-- [x] Chapter 74 (2 NOTEs)
-
-##### Section D
-- [x] Chapter 80 (1 NOTE)
-- [x] Chapter 81
-- [x] Chapter 82 (New tactic []<., new tactic []->R)
-- [x] Chapter 83
-- [x] Chapter 84 (Beautiful proof x1)
-- [x] Chapter 85
-- [x] Chapter 88
-
-##### Section E
-- [x] Chapter 90
-- [ ] Chapter 91 (In progress)
-- [ ] Chapter 92 (In progress)
-- [ ] Chapter 93 (In progress)
-- [ ] Chapter 94 (In progress)
-- [ ] Chapter 95 (In progress)
-- [ ] Chapter 96 (In progress)
-- [ ] Chapter 97 (In progress)
-
-#### Appendix A
-- [ ] Chapter 8
-
-#### Appendix B
-- [ ] Chapter 89
+### Volume 3

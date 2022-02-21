@@ -11,7 +11,8 @@ import re
 
 
 # TODO: Syntax to be designed:
-#  Script = Location Str | Prop Str [Info]* | tactic Str [Str]+
+#  Script = [Line]*
+#  Line = Location Str | Prop Str [Info]* | tactic Str [Str]+
 #  Location = volume | part | section | page
 #  Prop = Thm | Df | Pp
 #  Info = <- [Str]+ | name Str
@@ -42,13 +43,6 @@ class Script:
 
     def close(self):
         self.app.close()
-
-    @staticmethod
-    def enable_log(level, output_stream):
-        handler = logging.StreamHandler(output_stream)
-        handler.setLevel(level)
-        logging.getLogger("neo4j").addHandler(handler)
-        logging.getLogger("neo4j").setLevel(level)
 
     def parse_file(self):
         script = open(self.script, 'r', encoding="utf8")
