@@ -28,13 +28,11 @@ Also, a way to safely *delete* redundant relations being added by mistake has no
 
 ## More Information
 
-Functionalities are being tested on Windows 10 with PyCharm.
-
-Current progress: relations for part I has been tested for conflicts, and can be uploaded to database.
+Functionalities are being tested on Windows 10 with PyCharm and Python 3.9.0.
 
 ## Running the Helper
 
-After installing Python(>3.9), Python's library for Neo4j is also required.
+After installing Python(>=3.9), Python's library for Neo4j is also required.
 
 ```commandline
 python.exe -m pip install neo4j
@@ -135,7 +133,7 @@ python.exe main.py --help
 - [x] Chapter 21 
 - [x] Chapter 22
 - [x] Chapter 23
-- [x] Chapter 24 (New tactic []= to be checked)
+- [x] Chapter 24 (New tactic []=)
 - [x] Chapter 25 
   
 ##### Section D
@@ -184,16 +182,16 @@ python.exe main.py --help
 - [x] Chapter 80 (1 NOTE)
 - [x] Chapter 81
 - [x] Chapter 82 (New tactic []<., new tactic []->R)
-- [ ] Chapter 83 (In progress)
-- [ ] Chapter 84 (In progress)
-- [ ] Chapter 85 (In progress)
-- [ ] Chapter 88 (In progress)
+- [x] Chapter 83
+- [x] Chapter 84 (Beautiful proof x 1)
+- [x] Chapter 85
+- [x] Chapter 88
 
 ##### Section E
 - [ ] Chapter 90 (In progress)
-- [ ] Chapter 91
-- [ ] Chapter 92
-- [ ] Chapter 93
+- [ ] Chapter 91 (In progress)
+- [ ] Chapter 92 (In progress)
+- [ ] Chapter 93 (In progress)
 - [ ] Chapter 94
 - [ ] Chapter 95
 - [ ] Chapter 96

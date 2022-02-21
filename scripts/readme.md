@@ -26,3 +26,6 @@ check through original text to figure out where `similar proof` has been used to
 
 ##### Missing Dot
 On page 470, Thm 74.3, there's a line of proof writing `10 11.23.35`. It cannot be determined whether this happens from missing a dot, or misplacing a space.
+
+##### Alternative Proof
+Some propositions might be provided more than one proofs. My current way to manage with the proof relation recording is writing both sets of relations in the scripts, but commenting out one of them. 
