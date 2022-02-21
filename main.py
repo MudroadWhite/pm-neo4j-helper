@@ -35,7 +35,8 @@ from script import Script
 # Cypher command to change password:
 # ALTER USER neo4j SET PASSWORD 'neo4j'
 
-conffile = "conf_40_43.json"
+# Configuration file variable
+conffile = "conf.json"
 
 logfile = "log_pmneo4j.txt"
 bolt_url = "bolt://localhost:7687"
@@ -115,7 +116,7 @@ def run():
 
 
 if __name__ == "__main__":
-    # run()
+    run()
     # test()
     # TODO: Logging
     #  1. INFO -> log file, detailed formatter/basic formatter option (verbose / basic / silent)

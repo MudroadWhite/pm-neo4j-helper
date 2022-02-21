@@ -89,7 +89,9 @@ By default, the helper can load a `conf.json` file under the project folder, inc
 - password: The password of the database.
 - logfile: The location for the helper to output its logs.
 - tactics: The location for the helper to load tactics.
-- scripts: A list of file paths of scripts that will be sent into the helper. The helper will then translate the scripts to be processed, one by one.
+- scripts: A list of file paths of scripts that will be sent into the helper. The helper will then process the scripts one by one.
+
+You can also change the configuration file to some other files by changing the variable in `main.py`.
 
 Command line arguments have higher priority over `conf.json`, and will override the settings in `conf.json`. To see help information for command line arguments, run
 
@@ -183,7 +185,7 @@ python.exe main.py --help
 - [x] Chapter 81
 - [x] Chapter 82 (New tactic []<., new tactic []->R)
 - [x] Chapter 83
-- [x] Chapter 84 (Beautiful proof x 1)
+- [x] Chapter 84 (Beautiful proof x1)
 - [x] Chapter 85
 - [x] Chapter 88
 
