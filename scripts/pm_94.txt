@@ -3,3 +3,66 @@
 volume 1
 part 2
 section E
+
+page 591
+Thm 94.12
+
+Thm 94.13
+
+Thm 94.14
+
+Thm 94.2
+
+Thm 94.201
+
+
+page 592
+Thm 94.21
+
+Thm 94.22
+
+Thm 94.3
+
+
+page 593
+Thm 94.31
+
+Thm 94.4
+
+Thm 94.401
+
+Thm 94.402
+
+Thm 94.41
+
+
+page 594
+Thm 94.42
+
+Thm 94.43
+
+Thm 94.441
+
+Thm 94.442
+
+Thm 94.5
+
+Thm 94.51
+
+Thm 94.52
+
+Thm 94.53
+
+Thm 94.54
+
+
+page 595
+Thm 94.6
+
+Thm 94.61
+
+Thm 94.62
+
+Thm 94.63
+
+Thm 94.64

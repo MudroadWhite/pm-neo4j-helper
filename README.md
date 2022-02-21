@@ -192,10 +192,10 @@ python.exe main.py --help
 - [ ] Chapter 91 (In progress)
 - [ ] Chapter 92 (In progress)
 - [ ] Chapter 93 (In progress)
-- [ ] Chapter 94
-- [ ] Chapter 95
-- [ ] Chapter 96
-- [ ] Chapter 97
+- [ ] Chapter 94 (In progress)
+- [ ] Chapter 95 (In progress)
+- [ ] Chapter 96 (In progress)
+- [ ] Chapter 97 (In progress)
 
 #### Appendix A
 - [ ] Chapter 8
