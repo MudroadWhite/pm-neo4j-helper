@@ -188,7 +188,7 @@ python.exe main.py --help
 - [x] Chapter 88
 
 ##### Section E
-- [ ] Chapter 90 (In progress)
+- [x] Chapter 90
 - [ ] Chapter 91 (In progress)
 - [ ] Chapter 92 (In progress)
 - [ ] Chapter 93 (In progress)
