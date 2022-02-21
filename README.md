@@ -115,7 +115,7 @@ python.exe main.py --help
 ## PM Recording Progress
 
 ### Volume 1
-[Progress](scripts/v1/readme.md#Recording Progress)
+[Progress](scripts/v1/readme)
 ### Volume 2
 
 ### Volume 3
