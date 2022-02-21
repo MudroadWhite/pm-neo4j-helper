@@ -35,5 +35,5 @@
     "scripts/pm_42.txt",
     "scripts/pm_43.txt"
   ],
-  "comment": "Configuration to load all chapters"
+  "comment": "Configuration to load all chapters in part 1"
 }
