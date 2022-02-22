@@ -3,18 +3,18 @@
   "username": "neo4j",
   "password": "neo4j",
   "logfile" : "log_pmneo4j.txt",
-  "tactics" : "scripts/tactics.txt",
+  "tactics" : "scripts/v1/tactics.txt",
   "scripts": [
-    "scripts/pm.txt",
-    "scripts/pm_3.txt",
-    "scripts/pm_4.txt",
-    "scripts/pm_5.txt",
-    "scripts/pm_9.txt",
-    "scripts/pm_10.txt",
-    "scripts/pm_11.txt",
-    "scripts/pm_12.txt",
-    "scripts/pm_13.txt",
-    "scripts/pm_14.txt"
+    "scripts/v1/pm.txt",
+    "scripts/v1/pm_3.txt",
+    "scripts/v1/pm_4.txt",
+    "scripts/v1/pm_5.txt",
+    "scripts/v1/pm_9.txt",
+    "scripts/v1/pm_10.txt",
+    "scripts/v1/pm_11.txt",
+    "scripts/v1/pm_12.txt",
+    "scripts/v1/pm_13.txt",
+    "scripts/v1/pm_14.txt"
   ],
   "comment": "Configuration for chapter 1 - 14"
 }

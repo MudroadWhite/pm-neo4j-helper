@@ -6,9 +6,9 @@ verbose = logging.Formatter("[%(asctime)s] %(levelname)s [%(name)s.%(funcName)s:
 
 basic = logging.Formatter(BASIC_FORMAT)
 
-infolog = "info.log"
+infolog = "info.log" # set date...
 
-errorlog = "error.log"
+errorlog = "error.log" # set date...
 
 
 def enable_log(level, output_stream, v=False):

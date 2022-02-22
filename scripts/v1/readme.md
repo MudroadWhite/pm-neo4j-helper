@@ -38,7 +38,7 @@ Most proofs in chapter 8 in Appendix A are given in texts, and in a lot of cases
 
 --------
 
-## Recording Progress
+## Recording Progress : FINISHED
 
 #### Part 1
 ##### Section A
