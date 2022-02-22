@@ -89,7 +89,7 @@ By default, the helper can load a `conf.json` file under the project folder, inc
 - bolt_url: The bolt url of the database to be linked to. 
 - username: The username of the database.
 - password: The password of the database.
-- logfile: The location for the helper to output its logs.
+- logfile: The location for the helper to output its logs(Unimplemented).
 - tactics: The location for the helper to load tactics.
 - scripts: A list of file paths of scripts that will be sent into the helper. The helper will then process the scripts one by one.
 
