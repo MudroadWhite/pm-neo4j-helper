@@ -53,6 +53,13 @@ Change password:
 ALTER USER neo4j SET PASSWORD 'neo4j'
 ````
 
+Export whole database to JSON object:
+````cypher
+CALL apoc.export.json.all("pm.json",{useTypes:true})
+````
+Find the json object under the database's `import/` folder.
+
+
 --------
 
 ## Recording Progress : Finished

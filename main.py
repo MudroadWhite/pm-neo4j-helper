@@ -94,8 +94,7 @@ def run():
 
     print("Username: '{u}', url: {url}".format(u=user, url=bolt_url))
 
-    # TODO: enhance logging
-    # App.enable_log(logging.INFO, sys.stdout)
+    # TODO: set logging info
 
     app = App(bolt_url, user, password)
     s = Script(app, tactics)
