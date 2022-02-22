@@ -26,15 +26,6 @@ from script import Script
 
 # TODO: logging file to be implemented
 
-# Cypher commands to color the nodes by chapters(APOC library required):
-# MATCH (n:Prop)
-# WITH DISTINCT n.chapter AS chapter, collect(DISTINCT n) AS props
-# CALL apoc.create.addLabels(props, [apoc.text.upperCamelCase(chapter)]) YIELD node
-# RETURN *
-
-# Cypher command to change password:
-# ALTER USER neo4j SET PASSWORD 'neo4j'
-
 # Configuration file variable
 conffile = "conf.json"
 
@@ -95,12 +86,16 @@ def run():
         if "scripts" in cmd:
             scripts = cmd["scripts"]
 
+    if len(scripts) == 0:
+        print("No files found. Quit.")
+        exit()
+
     ####################################
 
     print("Username: '{u}', url: {url}".format(u=user, url=bolt_url))
 
     # TODO: enhance logging
-    App.enable_log(logging.INFO, sys.stdout)
+    # App.enable_log(logging.INFO, sys.stdout)
 
     app = App(bolt_url, user, password)
     s = Script(app, tactics)

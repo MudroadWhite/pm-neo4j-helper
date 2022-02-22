@@ -30,6 +30,7 @@ Thm 23.4
 Thm 23.41
 Thm 23.42
 Thm 23.43
+Thm 23.44
 Thm 23.441
 
 page 214

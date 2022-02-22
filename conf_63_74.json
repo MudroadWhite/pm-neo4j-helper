@@ -1,0 +1,18 @@
+{
+  "bolt_url": "bolt://localhost:7687",
+  "username": "neo4j",
+  "password": "neo4j",
+  "logfile" : "log_pmneo4j.txt",
+  "tactics" : "scripts/tactics.txt",
+  "scripts": [
+    "scripts/v1/pm_63.txt",
+    "scripts/v1/pm_64.txt",
+    "scripts/v1/pm_65.txt",
+    "scripts/v1/pm_70.txt",
+    "scripts/v1/pm_71.txt",
+    "scripts/v1/pm_72.txt",
+    "scripts/v1/pm_73.txt",
+    "scripts/v1/pm_74.txt"
+  ],
+  "comment": "Configuration for chapter 63 - 74 (Unchecked)"
+}

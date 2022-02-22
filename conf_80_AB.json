@@ -1,0 +1,27 @@
+{
+  "bolt_url": "bolt://localhost:7687",
+  "username": "neo4j",
+  "password": "neo4j",
+  "logfile" : "log_pmneo4j.txt",
+  "tactics" : "scripts/tactics.txt",
+  "scripts": [
+    "scripts/v1/pm_80.txt",
+    "scripts/v1/pm_81.txt",
+    "scripts/v1/pm_82.txt",
+    "scripts/v1/pm_83.txt",
+    "scripts/v1/pm_84.txt",
+    "scripts/v1/pm_85.txt",
+    "scripts/v1/pm_88.txt",
+    "scripts/v1/pm_90.txt",
+    "scripts/v1/pm_91.txt",
+    "scripts/v1/pm_92.txt",
+    "scripts/v1/pm_93.txt",
+    "scripts/v1/pm_94.txt",
+    "scripts/v1/pm_95.txt",
+    "scripts/v1/pm_96.txt",
+    "scripts/v1/pm_97.txt",
+    "scripts/v1/pm_8.txt",
+    "scripts/v1/pm_89.txt"
+  ],
+  "comment": "Configuration for chapter 80 - Appendix B"
+}

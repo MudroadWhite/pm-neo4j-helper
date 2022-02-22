@@ -1,6 +1,6 @@
 # Note to Readers
 
-Important notes that could be helpful to organize or use the script, will be put in this file.
+Important notes that could be helpful to organize or use the script, will be listed out in this file.
 
 --------
 
@@ -38,7 +38,24 @@ Most proofs in chapter 8 in Appendix A are given in texts, and in a lot of cases
 
 --------
 
-## Recording Progress : FINISHED
+## Useful Cypher Snippets
+
+Color the nodes by chapters(APOC library required):
+````cypher
+MATCH (n:Prop)
+WITH DISTINCT n.chapter AS chapter, collect(DISTINCT n) AS props
+CALL apoc.create.addLabels(props, [apoc.text.upperCamelCase(chapter)]) YIELD node
+RETURN *
+````
+
+Change password:
+````cypher
+ALTER USER neo4j SET PASSWORD 'neo4j'
+````
+
+--------
+
+## Recording Progress : Finished
 
 #### Part 1
 ##### Section A

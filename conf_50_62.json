@@ -1,0 +1,20 @@
+{
+  "bolt_url": "bolt://localhost:7687",
+  "username": "neo4j",
+  "password": "neo4j",
+  "logfile" : "log_pmneo4j.txt",
+  "tactics" : "scripts/tactics.txt",
+  "scripts": [
+    "scripts/v1/pm_50.txt",
+    "scripts/v1/pm_51.txt",
+    "scripts/v1/pm_52.txt",
+    "scripts/v1/pm_53.txt",
+    "scripts/v1/pm_54.txt",
+    "scripts/v1/pm_55.txt",
+    "scripts/v1/pm_56.txt",
+    "scripts/v1/pm_60.txt",
+    "scripts/v1/pm_61.txt",
+    "scripts/v1/pm_62.txt"
+  ],
+  "comment": "Configuration for chapter 50 - 62 (Unchecked)"
+}
