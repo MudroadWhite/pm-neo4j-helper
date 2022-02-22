@@ -115,13 +115,13 @@ Some propositions might be provided more than one proofs. My current way to mana
 - [x] Chapter 91
 - [x] Chapter 92
 - [x] Chapter 93
-- [ ] Chapter 94 (In progress)
-- [ ] Chapter 95 (In progress)
+- [x] Chapter 94
+- [ ] Chapter 95 (Unknown symbol "Dft")
 - [ ] Chapter 96 (In progress)
 - [ ] Chapter 97 (In progress)
 
 #### Appendix A
-- [ ] Chapter 8
+- [ ] Chapter 8 (In progress)
 
 #### Appendix B
-- [ ] Chapter 89
+- [ ] Chapter 89 (In progress)

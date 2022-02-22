@@ -3,3 +3,92 @@
 volume 1
 part 2
 section E
+
+page 597
+# NOTE: Meaning of Dft?!
+Df 95.01
+Thm 95.1
+
+Thm 95.11
+
+Thm 95.12
+
+Thm 95.13
+
+Thm 95.131
+
+Thm 95.132
+
+
+page 598
+Thm 95.14
+
+Thm 95.21
+
+Thm 95.211
+
+Thm 95.212
+
+Thm 95.22
+
+Thm 95.221
+
+
+page 599
+Thm 95.222
+
+Thm 95.23
+
+Thm 95.24
+
+Thm 95.3
+
+Thm 95.301
+
+Thm 95.302
+
+Thm 95.303
+
+Thm 95.304
+
+Thm 95.305
+
+Thm 95.31
+
+Thm 95.32
+
+Thm 95.33
+
+
+page 600
+Thm 95.34
+
+Thm 95.35
+
+Thm 95.351
+
+Thm 95.352
+
+Thm 95.36
+
+Thm 95.361
+
+Thm 95.37
+
+Thm 95.38
+
+
+page 601
+Thm 95.381
+
+Thm 95.382
+
+Thm 95.383
+
+Thm 95.4
+
+Thm 95.41
+
+Thm 95.411
+
+Thm 95.42

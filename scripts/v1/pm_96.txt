@@ -3,3 +3,198 @@
 volume 1
 part 2
 section E
+
+page 610
+# new symbol Dft
+Df 96.01
+Df 96.02
+Thm 96.1
+
+Thm 96.101
+
+Thm 96.102
+
+# NOTE: weird "R & W I ... 39" at the end of the page
+Thm 96.103
+
+
+page 610
+Thm 96.104
+
+Thm 96.11
+
+Thm 96.111
+
+Thm 96.112
+
+Thm 96.121
+
+Thm 96.122
+
+Thm 96.13
+
+
+page 611
+Thm 96.131
+
+Thm 96.14
+
+Thm 96.141
+
+Thm 96.142
+
+Thm 96.143
+
+Thm 96.144
+
+Thm 96.15
+
+Thm 96.151
+
+Thm 96.152
+
+Thm 96.153
+
+Thm 96.154
+
+
+page 612
+Thm 96.155
+
+Thm 96.156
+
+Thm 96.157
+
+Thm 96.158
+
+Thm 96.159
+
+Thm 96.16
+
+Thm 96.2
+
+Thm 96.21
+
+
+page 613
+Thm 96.22
+
+Thm 96.23
+
+Thm 96.24
+
+Thm 96.25
+
+
+page 614
+Thm 96.3
+
+Thm 96.301
+
+Thm 96.302
+
+Thm 96.303
+
+Thm 96.31
+
+Thm 96.311
+
+Thm 96.32
+
+Thm 96.33
+
+Thm 96.331
+
+
+page 615
+Thm 96.34
+
+Thm 96.341
+
+Thm 96.342
+
+Thm 96.35
+
+Thm 96.351
+
+Thm 96.352
+
+Thm 96.4
+
+Thm 96.401
+
+
+page 616
+Thm 96.402
+
+Thm 96.403
+
+Thm 96.41
+
+Thm 96.42
+
+Thm 96.421
+
+
+page 617
+Thm 96.431
+
+Thm 96.432
+
+Thm 96.44
+
+Thm 96.441
+
+Thm 96.442
+
+Thm 96.45
+
+Thm 96.451
+
+
+page 618
+Thm 96.452
+
+Thm 96.453
+
+Thm 96.46
+
+Thm 96.461
+
+
+page 619
+Thm 96.4642
+
+Thm 96.47
+
+Thm 96.472
+
+
+page 620
+Thm 96.473
+
+Thm 96.474
+
+Thm 96.475
+
+Thm 96.48
+
+
+page 621
+Thm 96.49
+
+Thm 96.491
+
+Thm 96.492
+
+Thm 96.5
+
+Thm 96.501
+
+
+page 622
+Thm 96.502
+
+Thm 96.51
+
+Thm 96.52
