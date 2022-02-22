@@ -30,6 +30,12 @@ On page 470, Thm 74.3, there's a line of proof writing `10 11.23.35`. It cannot 
 ##### Alternative Proof
 Some propositions might be provided more than one proofs. My current way to manage with the proof relation recording is writing both sets of relations in the scripts, but commenting out one of them. 
 
+##### Dft
+Dft appears in the very later chapters of the texts, and I cannot understand its meaning. It seems to be different from Df, Thm or Pp, and the real meaning remains to be figured out. 
+
+##### Volatile Ch.8
+Most proofs in chapter 8 in Appendix A are given in texts, and in a lot of cases the proofs mention other propositions as "similar proof". Without these mentions, the proofs contain no propositions at all.
+
 --------
 
 ## Recording Progress
@@ -116,12 +122,12 @@ Some propositions might be provided more than one proofs. My current way to mana
 - [x] Chapter 92
 - [x] Chapter 93
 - [x] Chapter 94
-- [ ] Chapter 95 (Unknown symbol "Dft")
-- [ ] Chapter 96 (In progress)
-- [ ] Chapter 97 (In progress)
+- [x] Chapter 95 (Unknown symbol "Dft")
+- [x] Chapter 96 (1 NOTE)
+- [x] Chapter 97
 
 #### Appendix A
-- [ ] Chapter 8 (In progress)
+- [x] Chapter 8 (1 NOTE)
 
 #### Appendix B
-- [ ] Chapter 89 (In progress)
+- [x] Chapter 89

@@ -5,10 +5,10 @@
   "logfile" : "log_pmneo4j.txt",
   "tactics" : "scripts/tactics.txt",
   "scripts": [
-    "scripts/pm_40.txt",
-    "scripts/pm_41.txt",
-    "scripts/pm_42.txt",
-    "scripts/pm_43.txt"
+    "scripts/v1/pm_40.txt",
+    "scripts/v1/pm_41.txt",
+    "scripts/v1/pm_42.txt",
+    "scripts/v1/pm_43.txt"
   ],
   "comment": "Configuration for chapter 40 - 43"
 }
