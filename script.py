@@ -5,9 +5,8 @@ import re
 # import lib?
 
 # TODO:
-#  [ ] Change print to log?
 #  [ ] Change init method to initiating an App instance from inside rather than outside(refactor class?)
-#  [ ] Try app function... catch errors from app
+#  [ ] try (App function) ... catch errors from app
 
 
 # TODO: Syntax to be designed:
@@ -81,7 +80,7 @@ class Script:
         elif command.lower() == "name":  # add name x
             self.app.update_prop_name(self.currentprop, args[0])
         else:
-            print("Unidentified line {linenum}: ".format(linenum=(linenum+1)) + line)
+            logging.getLogger("PMNeo4jHelper").error("Unidentified line {linenum}: ".format(linenum=(linenum+1)) + line)
         return
 
     def parse_proof_line(self, bs, linenum):
@@ -95,14 +94,13 @@ class Script:
                     for c in cs:
                         self.app.connect_pm(c, self.currentprop)
                 else:
-                    # TODO: enhance the error report
-                    print("Unidentified tactic/proposition name {b} in line {linenum}".format(b=b, linenum=linenum))
+                    logging.getLogger("PMNeo4jHelper").error("Unidentified tactic/proposition name {b} in line {linenum}".format(b=b, linenum=linenum))
                     # return
 
     def load_tactics(self):
         if self.tacticfile == "":
-            print("Cannot find tactic file to read")
-            print("Setting default tactic file to /scripts/tactics.txt...")
+            logging.getLogger("PMNeo4jHelper").info("Cannot find tactic file to read")
+            logging.getLogger("PMNeo4jHelper").info("Setting default tactic file to /scripts/tactics.txt...")
             self.tacticfile = "scripts/tactics.txt"
             return
         # clear the tactics...
@@ -114,17 +112,17 @@ class Script:
         for line in tactics:
             parse = list(filter(is_not_empty, line.split(" ")))
             if len(parse) < 2:
-                print("Error loading tactics at line {i}: insufficient arguments".format(i=i))
+                logging.getLogger("PMNeo4jHelper").error("Error loading tactics at line {i}: insufficient arguments".format(i=i))
                 return
             self.tactics[parse[0]] = parse[1:]
             i += 1
 
     def save_tactics(self):
         if self.tacticfile == "":
-            print("Cannot find tactic file to read")
-            print("Setting default tactic file to /scripts/tactics.txt...")
+            logging.getLogger("PMNeo4jHelper").info("Cannot find tactic file to read")
+            logging.getLogger("PMNeo4jHelper").info("Setting default tactic file to /scripts/tactics.txt...")
             self.tacticfile = "scripts/tactics.txt"
-        print("Saving tactics to {f}...".format(f=self.tacticfile))
+        logging.getLogger("PMNeo4jHelper").info("Saving tactics to {f}...".format(f=self.tacticfile))
         f = open(self.tacticfile, 'w', encoding="utf8")
         for k in self.tactics:  # tactic name
             f.write(k)
@@ -141,10 +139,10 @@ class Script:
 
         # 1. Process script
         if self.script == "":
-            print("No scripts loaded")
+            logging.getLogger("PMNeo4jHelper").info("No scripts loaded")
             return
         else:
-            print("Processing script file from {f}...".format(f=self.script))
+            logging.getLogger("PMNeo4jHelper").info("Processing script file from {f}...".format(f=self.script))
             self.parse_file()
 
-        print("...Done")
+        logging.getLogger("PMNeo4jHelper").info("...Done")

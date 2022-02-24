@@ -70,5 +70,5 @@
     "scripts/v1/pm_8.txt",
     "scripts/v1/pm_89.txt"
   ],
-  "comment": "Configuration for all chapters(in volume 1)"
+  "comment": "Configuration for default processing(currently all chapters in v1)"
 }

@@ -3,6 +3,7 @@ import sys
 import json
 import argparse
 from os.path import exists
+from log import setup
 
 
 from neo4j import GraphDatabase
@@ -23,19 +24,19 @@ from script import Script
 #  [ ] Good checking for proposition's format, duplication, etc
 #  [ ] Good tactic name format
 #  [ ] Message printing options for cmd & conf?
+#  [ ] Possibility to set up threads?
 
 # TODO: logging file to be implemented
 
 # Configuration file variable
 conffile = "conf.json"
 
-logfile = "log_pmneo4j.txt"
+# logfile = "log_pmneo4j.txt"
 bolt_url = "bolt://localhost:7687"
 user = "neo4j"
 password = "neo4j"
 tactics = "scripts/tactics.txt"
 scripts = []
-
 
 def run():
     print("PM-Neo4j helper")
@@ -90,11 +91,13 @@ def run():
         print("No files found. Quit.")
         exit()
 
+    # logging setup
+    setup()
+
     ####################################
 
-    print("Username: '{u}', url: {url}".format(u=user, url=bolt_url))
 
-    # TODO: set logging info
+    print("Username: '{u}', url: {url}".format(u=user, url=bolt_url))
 
     app = App(bolt_url, user, password)
     s = Script(app, tactics)

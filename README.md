@@ -118,6 +118,7 @@ python.exe main.py --help
 [Progress](scripts/v1/readme.md)
 ### Volume 2
 Not started yet
+> Note: For working on volume 2, volume 1's data is required to generate complete database. Same for volume 3.  
 
 ### Volume 3
 Not started yet

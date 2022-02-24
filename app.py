@@ -1,13 +1,10 @@
 import logging
 import sys
 
-from logging import BASIC_FORMAT
-
 from neo4j import GraphDatabase
 from neo4j.exceptions import ServiceUnavailable
 
 # TODO:
-#  [ ] Change print into logging?
 #  [ ] Identical relation a->a checking?
 #  [ ] Refresh whole graph for uniqueness & no identical relations
 #  [ ] Raise error to Script instance to enhance error printing
@@ -35,12 +32,12 @@ class App:
 
     def create_pm_prop(self, pnum, vol, part, sect, pg, tp):
         if self.check_prop_exists(pnum):
-            # print("Proposition {pnum} {tp}(updated)".format(pnum=pnum, tp=tp))
+            logging.getLogger("PMNeo4jHelper").info("Proposition {pnum} {tp}(updated)".format(pnum=pnum, tp=tp))
             with self.driver.session() as session:
                 result = session.write_transaction(
                     self._update_pm_prop_and_return, pnum, vol, part, sect, pg, tp)
         else:
-            # print("Proposition {pnum} {tp}".format(pnum=pnum, tp=tp))
+            logging.getLogger("PMNeo4jHelper").info("Proposition {pnum} {tp}".format(pnum=pnum, tp=tp))
             with self.driver.session() as session:
                 result = session.write_transaction(
                     self._create_pm_prop_and_return, pnum, vol, part, sect, pg, tp)
@@ -76,16 +73,16 @@ class App:
 
     def connect_pm(self, p1, p2):
         if not self.check_prop_exists(p1):
-            print("Proof relation error: {p1} not found for {p1}->{p2}".format(p1=p1, p2=p2))
+            logging.getLogger("PMNeo4jHelper").error("Proof relation error: {p1} not found for {p1}->{p2}".format(p1=p1, p2=p2))
         elif not self.check_prop_exists(p2):
-            print("Proof relation error: {p2} not found for {p1}->{p2}".format(p1=p1, p2=p2))
+            logging.getLogger("PMNeo4jHelper").error("Proof relation error: {p2} not found for {p1}->{p2}".format(p1=p1, p2=p2))
         elif not self.check_conn_exists(p1, p2):
-            # print(p2 + " <-[Proves]- " + p1)
+            logging.getLogger("PMNeo4jHelper").info(p2 + " <-[Proves]- " + p1)
             with self.driver.session() as session:
                 result = session.write_transaction(self._connect_pm_prop, p1, p2)
                 return result
         else:
-            # print("{p2} <-[Proves]- {p1}(already exists)".format(p1=p1, p2=p2))
+            logging.getLogger("PMNeo4jHelper").info("{p2} <-[Proves]- {p1}(already exists)".format(p1=p1, p2=p2))
             pass
         return None
 
@@ -104,7 +101,7 @@ class App:
                 result = session.write_transaction(self._update_prop_name_return, p, name)
                 return result
         else:
-            print("No proposition {p} found in database for name {name}".format(p=p, name=name))
+            logging.getLogger("PMNeo4jHelper").error("No proposition {p} found in database for name {name}".format(p=p, name=name))
             pass
 
     @staticmethod
@@ -129,7 +126,7 @@ class App:
             count = result["count"]
             return count
         except ServiceUnavailable as exception:
-            logging.error("{query} raised an error: \n {exception}".format(
+            logging.getLogger("PMNeo4jHelper").error("{query} raised an error: \n {exception}".format(
                 query=query, exception=exception))
             raise
 
@@ -150,6 +147,6 @@ class App:
             count = result["count"]
             return count
         except ServiceUnavailable as exception:
-            logging.error("{query} raised an error: \n {exception}".format(
+            logging.getLogger("PMNeo4jHelper").error("{query} raised an error: \n {exception}".format(
                 query=query, exception=exception))
             raise
