@@ -17,9 +17,10 @@ from script import Script
 #  [x] Unique tactic name(done?)
 #  [x] Implement cmd parameters
 #  [x] Comment support UTF-8 or so, at least for Chinese
-#  [ ] *** Logging implementation, collect error messages(log & errors)
+#  [x] Logging implementation, collect error messages(log & errors)
+#  [ ] ***** Implement a JSON Parser
 #  [ ] ** Make a pip package
-#  [ ] ** App -> Script raise error, for better error printing
+#  [ ] *** App -> Script raise error, for better error printing
 #  [ ] * Eliminate redundant relations: check for one node, all relations that doesn't being fed at current time
 #  [ ] Good checking for proposition's format, duplication, etc
 #  [ ] Good tactic name format

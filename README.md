@@ -106,8 +106,9 @@ python.exe main.py --help
 - [x] All core functionalities
 - [x] Test all core functionalities
 - [x] Implement cmd arguments & options
-- [ ] (Important)Implement logging functionalities?
+- [x] Implement logging functionalities
 - [x] File supports UTF-8 or so, at least for Chinese
+- [ ] Implement a JSON Parser(Important)
 - [ ] Make a pip package?
 - [ ] Gradually transplant the language onto a parser?  
 - [ ] More functionalities to fix bugs...
