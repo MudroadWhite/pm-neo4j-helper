@@ -13,12 +13,12 @@ This volume requires data from volume 1 to work properly.
 ### Part 3
 #### Section A
 
-- [ ] Chapter 100
-- [ ] Chapter 101
-- [ ] Chapter 102
-- [ ] Chapter 103
-- [ ] Chapter 104
-- [ ] Chapter 105
+- [x] Chapter 100
+- [ ] Chapter 101 (In Progress)
+- [ ] Chapter 102 (In Progress)
+- [ ] Chapter 103 (In Progress)
+- [ ] Chapter 104 (In Progress)
+- [ ] Chapter 105 (In Progress)
 - [ ] Chapter 106
 
 #### Section B

@@ -15,7 +15,7 @@ from script import Script
 #  [x] Implement cmd parameters
 #  [x] Comment support UTF-8 or so, at least for Chinese
 #  [x] Logging implementation, collect error messages(log & errors)
-#  [ ] ***** Implement a JSON Parser
+#  [ ] ***** Implement a JSON Parser(Side project)
 #  [ ] ** Make a pip package
 #  [ ] *** App -> Script raise error, for better error printing
 #  [ ] * Eliminate redundant relations: check for one node, all relations that doesn't being fed at current time
