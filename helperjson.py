@@ -9,13 +9,6 @@
 
 BUFFER_SIZE = 1024
 
-class JsonContext:
-    pos = 0
-    json = None
-
-    def __init__(self, json):
-        self.json = json
-
 class JsonType:
     NULL = 0,
     FALSE = 1,
@@ -31,7 +24,15 @@ class JsonParseErrorType:
     INVALID_VALUE = 2,
     ROOT_NOT_SINGULAR = 3
 
+class JsonContext:
+    pos = 0
+    json = None
+
+    def __init__(self, json):
+        self.json = json
+
 class JsonValue:
+    u = None # Union {Double; {Char; Length;}}
     def __init__(self, type):
         self.type = type
         pass

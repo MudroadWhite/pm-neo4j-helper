@@ -1,13 +1,10 @@
-import logging
 import sys
 import json
 import argparse
 from os.path import exists
 from log import setup
 
-
-from neo4j import GraphDatabase
-from neo4j.exceptions import ServiceUnavailable
+# from neo4j import GraphDatabase
 
 # from test import test
 from app import App
