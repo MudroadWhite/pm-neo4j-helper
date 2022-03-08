@@ -8,24 +8,42 @@ verbose = logging.Formatter("[%(asctime)s] %(levelname)s [%(name)s.%(funcName)s:
 
 basic = logging.Formatter(BASIC_FORMAT)
 
+simple = logging.Formatter("%(message)s")
+
 infolog = "info.log" # set date...
 
 errorlog = "error.log" # set date...
 
 
 def setup():
+    print("Setting up logging...")
     nl = logging.getLogger("PMNeo4jHelper")
+    nl.setLevel(logging.INFO)
+
+    stdinfo = logging.StreamHandler(sys.stdout)
+    stdinfo.setLevel(logging.INFO)
+    stdinfo.setFormatter(simple)
+    nl.addHandler(stdinfo)
+    nl.info("Console logger setup complete")
+
     stderror = logging.StreamHandler(sys.stdout)
     stderror.setLevel(logging.ERROR)
-    stderror.setFormatter(logging.Formatter("%(message)s"))
+    stderror.setFormatter(simple)
     nl.addHandler(stderror)
+    nl.info("Console output error setup complete")
 
     fileerror = logging.FileHandler('error.log')
     fileerror.setLevel(logging.ERROR)
     fileerror.setFormatter(verbose)
     nl.addHandler(fileerror)
+    nl.info("File error logger setup complete")
 
     fileinfo = logging.FileHandler('info.log')
-    fileinfo.setLevel(logging.INFO)
+    fileinfo.setLevel(logging.DEBUG)
     fileinfo.setFormatter(basic)
     nl.addHandler(fileinfo)
+    nl.info("File logger setup complete")
+
+    nl.info("...Setup done")
+
+    logging.getLogger("PMNeo4jHelper").debug("test")

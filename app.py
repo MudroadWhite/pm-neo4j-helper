@@ -32,12 +32,12 @@ class App:
 
     def create_pm_prop(self, pnum, vol, part, sect, pg, tp):
         if self.check_prop_exists(pnum):
-            logging.getLogger("PMNeo4jHelper").info("Proposition {pnum} {tp}(updated)".format(pnum=pnum, tp=tp))
+            logging.getLogger("PMNeo4jHelper").debug("Proposition {pnum} {tp}(updated)".format(pnum=pnum, tp=tp))
             with self.driver.session() as session:
                 result = session.write_transaction(
                     self._update_pm_prop_and_return, pnum, vol, part, sect, pg, tp)
         else:
-            logging.getLogger("PMNeo4jHelper").info("Proposition {pnum} {tp}".format(pnum=pnum, tp=tp))
+            logging.getLogger("PMNeo4jHelper").debug("Proposition {pnum} {tp}".format(pnum=pnum, tp=tp))
             with self.driver.session() as session:
                 result = session.write_transaction(
                     self._create_pm_prop_and_return, pnum, vol, part, sect, pg, tp)
@@ -82,7 +82,7 @@ class App:
                 result = session.write_transaction(self._connect_pm_prop, p1, p2)
                 return result
         else:
-            logging.getLogger("PMNeo4jHelper").info("{p2} <-[Proves]- {p1}(already exists)".format(p1=p1, p2=p2))
+            logging.getLogger("PMNeo4jHelper").debug("{p2} <-[Proves]- {p1}(already exists)".format(p1=p1, p2=p2))
             pass
         return None
 

@@ -94,7 +94,6 @@ def run():
 
     ####################################
 
-
     print("Username: '{u}', url: {url}".format(u=user, url=bolt_url))
 
     app = App(bolt_url, user, password)
@@ -112,6 +111,8 @@ def run():
 
 if __name__ == "__main__":
     run()
+    # setup()
+
     # test()
     # TODO: Logging
     #  1. INFO -> log file, detailed formatter/basic formatter option (verbose / basic / silent)
