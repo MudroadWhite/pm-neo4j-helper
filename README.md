@@ -53,7 +53,7 @@ dbms.connector.bolt.listen_address=:7687
 
 On the helper side, username, password, and bolt url for the Neo4j database should be set up in `conf.json` under the root directory. 
 
-Command line arguments are also available to use. See the [configuration](#configuration) section below.
+Command line arguments are also available. See the [configuration](#configuration) section below.
 
 ## Script Syntax & Functionalities
 
@@ -108,7 +108,8 @@ python.exe main.py --help
 - [x] Implement cmd arguments & options
 - [x] Implement logging functionalities
 - [x] File supports UTF-8 or so, at least for Chinese
-- [ ] Implement a JSON Parser(Important)
+- [ ] Implement a JSON Parser(Important side project)
+- [ ] Enhance logging functionality  
 - [ ] Make a pip package?
 - [ ] Gradually transplant the language onto a parser?  
 - [ ] More functionalities to fix bugs...
