@@ -15,15 +15,15 @@ This volume requires data from volume 1 to work properly.
 
 - [x] Chapter 100
 - [x] Chapter 101
-- [ ] Chapter 102 (In Progress)
+- [x] Chapter 102
 - [ ] Chapter 103 (In Progress)
 - [ ] Chapter 104 (In Progress)
 - [ ] Chapter 105 (In Progress)
-- [ ] Chapter 106
+- [ ] Chapter 106 (In Progress)
 
 #### Section B
 
-- [ ] Chapter 110
+- [ ] Chapter 110 (In Progress)
 - [ ] Chapter 111
 - [ ] Chapter 112
 - [ ] Chapter 113
