@@ -19,7 +19,7 @@ This volume requires data from volume 1 to work properly.
 - [x] Chapter 103
 - [x] Chapter 104
 - [x] Chapter 105
-- [ ] Chapter 106 (In Progress)
+- [x] Chapter 106
 
 #### Section B
 
