@@ -14,7 +14,7 @@ This volume requires data from volume 1 to work properly.
 #### Section A
 
 - [x] Chapter 100
-- [ ] Chapter 101 (In Progress)
+- [x] Chapter 101
 - [ ] Chapter 102 (In Progress)
 - [ ] Chapter 103 (In Progress)
 - [ ] Chapter 104 (In Progress)
