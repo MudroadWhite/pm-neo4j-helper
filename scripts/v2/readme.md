@@ -16,21 +16,21 @@ This volume requires data from volume 1 to work properly.
 - [x] Chapter 100
 - [x] Chapter 101
 - [x] Chapter 102
-- [ ] Chapter 103 (In Progress)
-- [ ] Chapter 104 (In Progress)
-- [ ] Chapter 105 (In Progress)
+- [x] Chapter 103
+- [x] Chapter 104
+- [x] Chapter 105
 - [ ] Chapter 106 (In Progress)
 
 #### Section B
 
 - [ ] Chapter 110 (In Progress)
-- [ ] Chapter 111
-- [ ] Chapter 112
-- [ ] Chapter 113
-- [ ] Chapter 114
-- [ ] Chapter 115
-- [ ] Chapter 116
-- [ ] Chapter 117
+- [ ] Chapter 111 (In Progress)
+- [ ] Chapter 112 (In Progress)
+- [ ] Chapter 113 (In Progress)
+- [ ] Chapter 114 (In Progress)
+- [ ] Chapter 115 (In Progress)
+- [ ] Chapter 116 (In Progress)
+- [ ] Chapter 117 (In Progress)
 
 #### Section C
 

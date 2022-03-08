@@ -2,7 +2,7 @@ import sys
 import json
 import argparse
 from os.path import exists
-from log import setup
+from log import setup_loggers
 
 # from neo4j import GraphDatabase
 
@@ -89,8 +89,7 @@ def run():
         print("No files found. Quit.")
         exit()
 
-    # logging setup
-    setup()
+    setup_loggers()
 
     ####################################
 
@@ -111,7 +110,7 @@ def run():
 
 if __name__ == "__main__":
     run()
-    # setup()
+    # setup_loggers()
 
     # test()
     # TODO: Logging

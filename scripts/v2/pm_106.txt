@@ -3,3 +3,112 @@
 volume 2
 part 3
 section A
+
+# page 58: Df etc???
+page 58
+Df 106.01
+Df 106.011
+# new tactic Df etc.
+Df 106.012
+# new tactic Df etc.
+Df 106.02
+# new tactic Df etc.
+Df 106.021
+# new tactic Df etc.
+Df 106.03
+Df 106.04
+# new tactic Df etc.
+Df 106.041
+Thm 106.1
+
+Thm 106.101
+
+Thm 106.11
+
+Thm 106.12
+
+Thm 106.121
+
+Thm 106.13
+
+
+page 59
+Thm 106.14
+
+Thm 106.141
+
+Thm 106.2
+
+Thm 106.201
+
+Thm 106.202
+
+Thm 106.203
+
+Thm 106.204
+
+Thm 106.21
+
+Thm 106.211
+
+Thm 106.212
+
+Thm 106.213
+
+Thm 106.22
+
+Thm 106.221
+
+Thm 106.222
+
+
+page 60
+Thm 106.223
+
+Thm 106.23
+
+Thm 106.231
+
+Thm 106.24
+
+Thm 106.241
+
+Thm 106.25
+
+Thm 106.251
+
+Thm 106.31
+
+Thm 106.311
+
+Thm 106.312
+
+
+page 61
+Thm 106.32
+
+Thm 106.4
+
+Thm 106.402
+
+Thm 106.41
+
+Thm 106.411
+
+Thm 106.43
+
+Thm 106.44
+
+
+page 62
+Thm 106.5
+
+Thm 106.51
+
+Thm 106.52
+
+Thm 106.53
+
+Thm 106.54
+
+Thm 106.55

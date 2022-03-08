@@ -14,8 +14,9 @@ infolog = "info.log" # set date...
 
 errorlog = "error.log" # set date...
 
+# TODO: clear info log
 
-def setup():
+def setup_loggers():
     print("Setting up logging...")
     nl = logging.getLogger("PMNeo4jHelper")
     nl.setLevel(logging.INFO)

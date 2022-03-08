@@ -71,7 +71,7 @@ Command line arguments are also available to use. See the [configuration](#confi
 
 `<- a1 a2 a3...` sends relations `a1 proves x`, `a2 proves x`... to Neo4j database, where `x` is the last proposition being recorded.
 
-NOTE: Unrecognized proof relations due to unexist proposition numbers, unexist tactic names, won't affect the rest proof relations being added into the database.
+> NOTE: Unrecognized proof relations due to unexist proposition numbers, unexist tactic names, won't affect the rest proof relations being added into the database.
 
 `tactic x y1 y2 y3...` adds a tactic involving a proof pattern supported by several propositions, for future translation. Abstracting the proof patterns can simplify the proof in PM. Tactic's name is `x`, and the involved propositions are `y`s. These `y`s will be added into proof relations that proves the last proposition being recorded.
 
