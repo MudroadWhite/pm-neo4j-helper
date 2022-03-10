@@ -79,7 +79,7 @@ Tactics can be saved in a local file. When the helper starts, the helper will tr
 
 ### Comments
 
-`# x`, a line starts with a `#` and a space, is a line of comment. Use it to enhance the readability of your script. 
+`# x`, a line starts with a `#` and a space, is a line of comment, for enhancing readability.
 
 Any length of `#` is allowed, for giving weights to the comments. e.g. `#`, `##`, `###`...
 

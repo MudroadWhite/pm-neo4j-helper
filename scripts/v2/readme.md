@@ -26,8 +26,8 @@ This volume requires data from volume 1 to work properly.
 - [x] Chapter 110
 - [x] Chapter 111
 - [x] Chapter 112
-- [ ] Chapter 113 (In Progress)
-- [ ] Chapter 114 (In Progress)
+- [x] Chapter 113
+- [x] Chapter 114
 - [ ] Chapter 115 (In Progress)
 - [ ] Chapter 116 (In Progress)
 - [ ] Chapter 117 (In Progress)

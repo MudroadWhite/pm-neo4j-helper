@@ -11,10 +11,10 @@ import re
 
 # TODO: Syntax to be designed:
 #  Script = [Line]*
-#  Line = Location Str | Prop Str [Info]* | tactic Str [Str]+
+#  Line = Location (Str) | Prop1 (Str) | Thm (Str) [Info]* | tactic (Str) [(Str)]+
 #  Location = volume | part | section | page
-#  Prop = Thm | Df | Pp
-#  Info = <- [Str]+ | name Str
+#  Prop1 = Df | Pp
+#  Info = <- [(Str)]+ | name (Str)
 
 def is_prop_number(s):
     return bool(re.match(r"\d+\.\d+", s))
@@ -76,6 +76,7 @@ class Script:
             self.currentprop = args[0]
             self.app.create_pm_prop(args[0], self.volume, self.part, self.section, self.page, command)
         elif command == "<-":  # add proof relation for current proposition
+            # TODO: Df ... <- ... (prevent illegal situation)
             self.parse_proof_line(args, linenum)
         elif command.lower() == "name":  # add name x
             self.app.update_prop_name(self.currentprop, args[0])
