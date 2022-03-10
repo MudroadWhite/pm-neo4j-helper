@@ -2,9 +2,17 @@
 
 Important notes that could be helpful to organize or use the script, will be listed out in this file.
 
+This volume requires data from volume 1 to work properly.
+
 --------
 
-This volume requires data from volume 1 to work properly.
+## Known issues
+
+### Hp prop
+At chapter 116, I found that most Hp prop "tactics" only appear in the proposition to be proved, rather than the proving procedure. Therefore, the proposition that
+Hp prop mentioned should be ignored. Which means, Hp prop issues should only exist before chapter 116, and it's only necessary
+to check chapters before 116 to fix redundant references. All of them should have been already commented `# new tactic Hp prop`.
+
 
 --------
 
@@ -28,8 +36,8 @@ This volume requires data from volume 1 to work properly.
 - [x] Chapter 112
 - [x] Chapter 113
 - [x] Chapter 114
-- [ ] Chapter 115 (In Progress)
-- [ ] Chapter 116 (In Progress)
+- [x] Chapter 115
+- [x] Chapter 116
 - [ ] Chapter 117 (In Progress)
 
 #### Section C

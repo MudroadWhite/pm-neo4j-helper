@@ -120,7 +120,7 @@ python.exe main.py --help
 [Progress](scripts/v1/)
 ### Volume 2
 [Progress](scripts/v2/)
-> Note: For working on volume 2, volume 1's data is required to generate complete database. Same for volume 3.  
+> Note: For working on volume 2, volume 1's data is required to generate complete database. Volume 3 also applies.  
 
 ### Volume 3
 Not started yet
