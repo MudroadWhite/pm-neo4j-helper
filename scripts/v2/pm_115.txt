@@ -1,0 +1,149 @@
+# PM Chapter 115 proof relations
+
+volume 2
+part 3
+section B
+
+page 131
+Df 115.01
+Df 115.02
+Thm 115.1
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+
+Thm 115.
+

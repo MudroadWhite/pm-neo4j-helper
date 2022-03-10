@@ -23,9 +23,9 @@ This volume requires data from volume 1 to work properly.
 
 #### Section B
 
-- [ ] Chapter 110 (In Progress)
-- [ ] Chapter 111 (In Progress)
-- [ ] Chapter 112 (In Progress)
+- [x] Chapter 110
+- [x] Chapter 111
+- [x] Chapter 112
 - [ ] Chapter 113 (In Progress)
 - [ ] Chapter 114 (In Progress)
 - [ ] Chapter 115 (In Progress)
@@ -34,15 +34,15 @@ This volume requires data from volume 1 to work properly.
 
 #### Section C
 
-- [ ] Chapter 118
-- [ ] Chapter 119
-- [ ] Chapter 120
-- [ ] Chapter 121
-- [ ] Chapter 122
-- [ ] Chapter 123
-- [ ] Chapter 124
-- [ ] Chapter 125
-- [ ] Chapter 126
+- [ ] Chapter 118 (In Progress)
+- [ ] Chapter 119 (In Progress)
+- [ ] Chapter 120 (In Progress)
+- [ ] Chapter 121 (In Progress)
+- [ ] Chapter 122 (In Progress)
+- [ ] Chapter 123 (In Progress)
+- [ ] Chapter 124 (In Progress)
+- [ ] Chapter 125 (In Progress)
+- [ ] Chapter 126 (In Progress)
 
 ### Part 4
 #### Section A

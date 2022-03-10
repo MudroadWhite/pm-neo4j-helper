@@ -117,9 +117,9 @@ python.exe main.py --help
 ## PM Recording Progress
 
 ### Volume 1
-[Progress](scripts/v1/readme)
+[Progress](scripts/v1/)
 ### Volume 2
-[Progress](scripts/v2/readme)
+[Progress](scripts/v2/)
 > Note: For working on volume 2, volume 1's data is required to generate complete database. Same for volume 3.  
 
 ### Volume 3
