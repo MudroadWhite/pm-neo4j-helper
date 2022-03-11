@@ -38,13 +38,13 @@ to check chapters before 116 to fix redundant references. All of them should hav
 - [x] Chapter 114
 - [x] Chapter 115
 - [x] Chapter 116
-- [ ] Chapter 117 (In Progress)
+- [x] Chapter 117
 
 #### Section C
 
-- [ ] Chapter 118 (In Progress)
-- [ ] Chapter 119 (In Progress)
-- [ ] Chapter 120 (In Progress)
+- [x] Chapter 118 (13 NOTEs)
+- [x] Chapter 119
+- [x] Chapter 120
 - [ ] Chapter 121 (In Progress)
 - [ ] Chapter 122 (In Progress)
 - [ ] Chapter 123 (In Progress)
@@ -55,7 +55,7 @@ to check chapters before 116 to fix redundant references. All of them should hav
 ### Part 4
 #### Section A
 
-- [ ] Chapter 150
+- [ ] Chapter 150  (In Progress)
 - [ ] Chapter 151
 - [ ] Chapter 152
 - [ ] Chapter 153

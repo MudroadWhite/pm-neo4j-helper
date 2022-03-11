@@ -1,0 +1,139 @@
+# PM Chapter 123 proof relations
+
+volume 2
+part 3
+section C
+
+page 262
+Df 123.01
+# new tactic Dft
+Df 123.02
+Thm 123.1
+
+Thm 123.101
+
+Thm 123.11
+
+Thm 123.12
+
+
+page 262
+Thm 123.13
+
+Thm 123.14
+
+Thm 123.15
+
+Thm 123.16
+
+Thm 123.17
+
+Thm 123.18
+
+Thm 123.19
+
+Thm 123.191
+
+Thm 123.192
+
+Thm 123.2
+
+Thm 123.21
+
+Thm 123.22
+
+
+page 263
+Thm 123.23
+
+Thm 123.24
+
+Thm 123.25
+
+Thm 123.26
+
+Thm 123.27
+
+Thm 123.3
+
+
+page 264
+Thm 123.31
+
+Thm 123.311
+
+Thm 123.312
+
+Thm 123.313
+
+Thm 123.32
+
+
+page 265
+Thm 123.321
+
+Thm 123.322
+
+Thm 123.323
+
+Thm 123.33
+
+Thm 123.34
+
+Thm 123.35
+
+Thm 123.36
+
+Thm 123.361
+
+Thm 123.37
+
+Thm 123.39
+
+Thm 123.4
+
+Thm 123.41
+
+Thm 123.411
+
+
+page 266
+Thm 123.42
+
+Thm 123.421
+
+Thm 123.422
+
+Thm 123.43
+
+
+page 267
+Thm 123.44
+
+Thm 123.45
+
+Thm 123.46
+
+Thm 123.47
+
+Thm 123.5
+
+
+page 268
+Thm 123.501
+
+Thm 123.502
+
+Thm 123.503
+
+
+page 269
+Thm 123.504
+
+Thm 123.51
+
+Thm 123.52
+
+Thm 123.53
+
+Thm 123.7
