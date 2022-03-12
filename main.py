@@ -24,8 +24,6 @@ from script import Script
 #  [ ] Message printing options for cmd & conf?
 #  [ ] Possibility to set up threads?
 
-# TODO: logging file to be implemented
-
 # Configuration file variable
 conffile = "conf.json"
 
@@ -110,32 +108,7 @@ def run():
 
 if __name__ == "__main__":
     run()
-    # setup_loggers()
-
     # test()
-    # TODO: Logging
-    #  1. INFO -> log file, detailed formatter/basic formatter option (verbose / basic / silent)
-    #  2. ERROR -> error file, detailed formatter
-    #  3. ERROR -> stdout, basic formatter
-    #  https://stackoverflow.com/questions/16757578/what-is-pythons-default-logging-formatter
-    #  https://www.cnblogs.com/yyds/p/6901864.html
-    #  https://docs.python.org/3/library/logging.html
-    #  https://www.loggly.com/ultimate-guide/python-logging-basics/
-
-    # TODO: Logging for Neo4j.PMNeo4jHelper.Script
-
     # TODO: Neo4j.PMNeo4jHelper.App error raise to Script class?
 
-    # TODO:
-    #  1. Script sets up the logger with name
-    #  2. App tries to log with logger in this name?
-
-    # formatter = logging.Formatter("[%(asctime)s] %(levelname)s [%(name)s.%(funcName)s:%(lineno)d] %(message)s",
-    #                               datefmt="%d/%b/%Y %H:%M:%S")
-    # handler = logging.StreamHandler(sys.stdout)
-    # handler.setFormatter(formatter)
-    # nl = logging.getLogger("App")
-    # nl.addHandler(handler)
-    # nl.setLevel(logging.DEBUG)
-    # nl.debug("Neo4j")
     pass
