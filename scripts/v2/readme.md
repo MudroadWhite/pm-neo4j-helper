@@ -56,21 +56,21 @@ to check chapters before 116 to fix redundant references. All of them should hav
 #### Section A
 
 - [x] Chapter 150
-- [ ] Chapter 151 (In Progress)
-- [ ] Chapter 152 (In Progress)
-- [ ] Chapter 153 (In Progress)
-- [ ] Chapter 154 (In Progress)
-- [ ] Chapter 155 (In Progress)
+- [x] Chapter 151
+- [x] Chapter 152
+- [x] Chapter 153
+- [x] Chapter 154
+- [x] Chapter 155
 
 #### Section B
 
 - [ ] Chapter 160 (In Progress)
 - [ ] Chapter 161 (In Progress)
 - [ ] Chapter 162 (In Progress)
-- [ ] Chapter 163
-- [ ] Chapter 164
-- [ ] Chapter 165
-- [ ] Chapter 166
+- [ ] Chapter 163 (In Progress)
+- [ ] Chapter 164 (In Progress)
+- [ ] Chapter 165 (In Progress)
+- [ ] Chapter 166 (In Progress)
   
 #### Section C
 
