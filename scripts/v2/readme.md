@@ -55,7 +55,7 @@ to check chapters before 116 to fix redundant references. All of them should hav
 ### Part 4
 #### Section A
 
-- [ ] Chapter 150 (In Progress)
+- [x] Chapter 150
 - [ ] Chapter 151 (In Progress)
 - [ ] Chapter 152 (In Progress)
 - [ ] Chapter 153 (In Progress)
@@ -66,7 +66,7 @@ to check chapters before 116 to fix redundant references. All of them should hav
 
 - [ ] Chapter 160 (In Progress)
 - [ ] Chapter 161 (In Progress)
-- [ ] Chapter 162
+- [ ] Chapter 162 (In Progress)
 - [ ] Chapter 163
 - [ ] Chapter 164
 - [ ] Chapter 165
