@@ -48,9 +48,9 @@ to check chapters before 116 to fix redundant references. All of them should hav
 - [x] Chapter 121
 - [x] Chapter 122
 - [x] Chapter 123
-- [ ] Chapter 124 (In Progress)
-- [ ] Chapter 125 (In Progress)
-- [ ] Chapter 126 (In Progress)
+- [x] Chapter 124
+- [x] Chapter 125
+- [x] Chapter 126
 
 ### Part 4
 #### Section A
@@ -64,8 +64,8 @@ to check chapters before 116 to fix redundant references. All of them should hav
 
 #### Section B
 
-- [ ] Chapter 160
-- [ ] Chapter 161
+- [ ] Chapter 160 (In Progress)
+- [ ] Chapter 161 (In Progress)
 - [ ] Chapter 162
 - [ ] Chapter 163
 - [ ] Chapter 164
