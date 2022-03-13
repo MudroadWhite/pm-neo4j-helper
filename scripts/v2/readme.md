@@ -66,27 +66,27 @@ to check chapters before 116 to fix redundant references. All of them should hav
 
 - [x] Chapter 160
 - [x] Chapter 161
-- [ ] Chapter 162 (In Progress)
-- [ ] Chapter 163 (In Progress)
-- [ ] Chapter 164 (In Progress)
-- [ ] Chapter 165 (In Progress)
-- [ ] Chapter 166 (In Progress)
+- [x] Chapter 162
+- [x] Chapter 163
+- [x] Chapter 164
+- [x] Chapter 165
+- [x] Chapter 166
   
 #### Section C
 
 - [ ] Chapter 170 (In Progress)
 - [ ] Chapter 171 (In Progress)
-- [ ] Chapter 172
-- [ ] Chapter 173
-- [ ] Chapter 174
-- [ ] Chapter 175
-- [ ] Chapter 176
-- [ ] Chapter 177
+- [ ] Chapter 172 (In Progress)
+- [ ] Chapter 173 (In Progress)
+- [ ] Chapter 174 (In Progress)
+- [ ] Chapter 175 (In Progress)
+- [ ] Chapter 176 (In Progress)
+- [ ] Chapter 177 (In Progress)
   
 #### Section D
 
-- [ ] Chapter 180
-- [ ] Chapter 181
+- [ ] Chapter 180 (In Progress)
+- [ ] Chapter 181 (In Progress)
 - [ ] Chapter 182
 - [ ] Chapter 183
 - [ ] Chapter 184
