@@ -2,4 +2,102 @@
 
 volume 2
 part 4
-section A
+section B
+
+page 385
+Df 166.01
+Thm 166.1
+
+Thm 166.11
+
+Thm 166.111
+
+Thm 166.112
+
+Thm 166.113
+
+Thm 166.12
+
+Thm 166.13
+
+Thm 166.14
+
+Thm 166.15
+
+Thm 166.16
+
+Thm 166.2
+
+
+page 386
+Thm 166.21
+
+Thm 166.22
+
+Thm 166.23
+
+Thm 166.24
+
+Thm 166.3
+
+Thm 166.31
+
+Thm 166.311
+
+Thm 166.312
+
+Thm 166.4
+
+
+page 387
+Thm 166.401
+
+Thm 166.41
+
+
+page 288
+Thm 166.42
+
+Thm 166.421
+
+Thm 166.44
+
+Thm 166.45
+
+Thm 166.46
+
+Thm 166.461
+
+Thm 166.462
+
+
+page 389
+Thm 166.463
+
+Thm 166.464
+
+Thm 166.47
+
+Thm 166.471
+
+Thm 166.472
+
+Thm 166.5
+
+
+page 390
+Thm 166.51
+
+Thm 166.511
+
+Thm 166.52
+
+Thm 166.521
+
+Thm 166.53
+
+Thm 166.531
+
+Thm 166.54
+
+Thm 166.541
