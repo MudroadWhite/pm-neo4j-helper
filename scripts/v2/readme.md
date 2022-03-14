@@ -78,10 +78,9 @@ to check chapters before 116 to fix redundant references. All of them should hav
 - [x] Chapter 171
 - [x] Chapter 172
 - [x] Chapter 173
-- [ ] Chapter 174 (In Progress)
-- [ ] Chapter 175 (In Progress)
-- [ ] Chapter 176 (In Progress)
-- [ ] Chapter 177 (In Progress)
+- [x] Chapter 174
+- [x] Chapter 176
+- [x] Chapter 177
   
 #### Section D
 
@@ -90,13 +89,13 @@ to check chapters before 116 to fix redundant references. All of them should hav
 - [ ] Chapter 182 (In Progress)
 - [ ] Chapter 183 (In Progress)
 - [ ] Chapter 184 (In Progress)
-- [ ] Chapter 185
-- [ ] Chapter 186
+- [ ] Chapter 185 (In Progress)
+- [ ] Chapter 186 (In Progress)
 
 ### Part 5
 #### Section A
 
-- [ ] Chapter 200
+- [ ] Chapter 200 (In Progress)
 - [ ] Chapter 201
 - [ ] Chapter 202
 - [ ] Chapter 204
