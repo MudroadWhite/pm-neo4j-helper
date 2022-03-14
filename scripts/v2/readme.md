@@ -84,25 +84,25 @@ to check chapters before 116 to fix redundant references. All of them should hav
   
 #### Section D
 
-- [ ] Chapter 180 (In Progress)
-- [ ] Chapter 181 (In Progress)
-- [ ] Chapter 182 (In Progress)
-- [ ] Chapter 183 (In Progress)
-- [ ] Chapter 184 (In Progress)
-- [ ] Chapter 185 (In Progress)
-- [ ] Chapter 186 (In Progress)
+- [x] Chapter 180
+- [x] Chapter 181
+- [x] Chapter 182
+- [x] Chapter 183
+- [x] Chapter 184
+- [x] Chapter 185
+- [x] Chapter 186
 
 ### Part 5
 #### Section A
 
 - [ ] Chapter 200 (In Progress)
-- [ ] Chapter 201
-- [ ] Chapter 202
-- [ ] Chapter 204
-- [ ] Chapter 205
-- [ ] Chapter 206
-- [ ] Chapter 207
-- [ ] Chapter 208
+- [ ] Chapter 201 (In Progress)
+- [ ] Chapter 202 (In Progress)
+- [ ] Chapter 204 (In Progress)
+- [ ] Chapter 205 (In Progress)
+- [ ] Chapter 206 (In Progress)
+- [ ] Chapter 207 (In Progress)
+- [ ] Chapter 208 (In Progress)
   
 #### Section B
 - [ ] Chapter 210
