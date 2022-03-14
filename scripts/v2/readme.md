@@ -74,10 +74,10 @@ to check chapters before 116 to fix redundant references. All of them should hav
   
 #### Section C
 
-- [ ] Chapter 170 (In Progress)
-- [ ] Chapter 171 (In Progress)
-- [ ] Chapter 172 (In Progress)
-- [ ] Chapter 173 (In Progress)
+- [x] Chapter 170
+- [x] Chapter 171
+- [x] Chapter 172
+- [x] Chapter 173
 - [ ] Chapter 174 (In Progress)
 - [ ] Chapter 175 (In Progress)
 - [ ] Chapter 176 (In Progress)
@@ -87,9 +87,9 @@ to check chapters before 116 to fix redundant references. All of them should hav
 
 - [ ] Chapter 180 (In Progress)
 - [ ] Chapter 181 (In Progress)
-- [ ] Chapter 182
-- [ ] Chapter 183
-- [ ] Chapter 184
+- [ ] Chapter 182 (In Progress)
+- [ ] Chapter 183 (In Progress)
+- [ ] Chapter 184 (In Progress)
 - [ ] Chapter 185
 - [ ] Chapter 186
 
