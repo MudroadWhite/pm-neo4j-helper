@@ -3,3 +3,70 @@
 volume 2
 part 5
 section B
+
+page 683
+Thm 217.1
+
+Thm 217.11
+
+Thm 217.12
+
+Thm 217.13
+
+Thm 217.14
+
+Thm 217.15
+
+Thm 217.16
+
+Thm 217.17
+
+Thm 217.18
+
+
+page 684
+Thm 217.2
+
+Thm 217.21
+
+Thm 217.22
+
+Thm 217.23
+
+Thm 217.24
+
+Thm 217.25
+
+Thm 217.3
+
+Thm 217.301
+
+
+page 685
+Thm 217.31
+
+Thm 217.32
+
+Thm 217.33
+
+Thm 217.34
+
+Thm 217.35
+
+Thm 217.36
+
+
+page 686
+Thm 217.37
+
+Thm 217.38
+
+Thm 217.4
+
+Thm 217.41
+
+Thm 217.411
+
+Thm 217.42
+
+Thm 217.43

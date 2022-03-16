@@ -105,10 +105,10 @@ to check chapters before 116 to fix redundant references. All of them should hav
 - [x] Chapter 208
   
 #### Section B
-- [ ] Chapter 210 (In Progress)
-- [ ] Chapter 211 (In Progress)
-- [ ] Chapter 212 (In Progress)
-- [ ] Chapter 213 (In Progress)
+- [x] Chapter 210
+- [x] Chapter 211
+- [x] Chapter 212
+- [x] Chapter 213
 - [ ] Chapter 214 (In Progress)
 - [ ] Chapter 215 (In Progress)
 - [ ] Chapter 216 (In Progress)
@@ -116,7 +116,7 @@ to check chapters before 116 to fix redundant references. All of them should hav
   
 #### Section C
 - [ ] Chapter 230 (In Progress)
-- [ ] Chapter 231
-- [ ] Chapter 232
-- [ ] Chapter 233
-- [ ] Chapter 234
+- [ ] Chapter 231 (In Progress)
+- [ ] Chapter 232 (In Progress)
+- [ ] Chapter 233 (In Progress)
+- [ ] Chapter 234 (In Progress)
