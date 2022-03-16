@@ -115,8 +115,8 @@ to check chapters before 116 to fix redundant references. All of them should hav
 - [x] Chapter 217
   
 #### Section C
-- [ ] Chapter 230 (In Progress)
-- [ ] Chapter 231 (In Progress)
-- [ ] Chapter 232 (In Progress)
-- [ ] Chapter 233 (In Progress)
+- [x] Chapter 230
+- [x] Chapter 231
+- [x] Chapter 232
+- [x] Chapter 233
 - [ ] Chapter 234 (In Progress)
