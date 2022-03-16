@@ -16,7 +16,7 @@ to check chapters before 116 to fix redundant references. All of them should hav
 
 --------
 
-## Recording Progress
+## Recording Progress (To be checked)
 
 ### Part 3
 #### Section A
@@ -119,4 +119,4 @@ to check chapters before 116 to fix redundant references. All of them should hav
 - [x] Chapter 231
 - [x] Chapter 232
 - [x] Chapter 233
-- [ ] Chapter 234 (In Progress)
+- [x] Chapter 234
