@@ -109,9 +109,9 @@ to check chapters before 116 to fix redundant references. All of them should hav
 - [x] Chapter 211
 - [x] Chapter 212
 - [x] Chapter 213
-- [ ] Chapter 214 (In Progress)
-- [ ] Chapter 215 (In Progress)
-- [ ] Chapter 216 (In Progress)
+- [x] Chapter 214
+- [x] Chapter 215
+- [x] Chapter 216
 - [ ] Chapter 217 (In Progress)
   
 #### Section C
