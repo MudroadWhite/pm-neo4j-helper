@@ -1,6 +1,6 @@
 # Note to Readers
 
-Important notes that could be helpful to organize or use the script, will be listed out in this file.
+Important notes that could be helpful to organize or use the scripts, will be listed out in this file.
 
 --------
 

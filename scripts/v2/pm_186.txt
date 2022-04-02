@@ -17,6 +17,9 @@ Thm 186.12
 <- 180.22 180.03 180.031
 
 page 493
+# NOTE: cannot determine exact proof relation for this proposition
+Thm 186.13
+<- 180.22 180.03 180.031
 # new tactic []=
 Thm 186.14
 <- 180.4 186.111 186.13 180.3 176.42 180.11 180.12 176.22 166.23 186.13 184.13

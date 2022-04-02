@@ -1,6 +1,6 @@
 # Note to Readers
 
-Important notes that could be helpful to organize or use the script, will be listed out in this file.
+Important notes that could be helpful to organize or use the scripts, will be listed out in this file.
 
 This volume requires graph generated from volume 1 to work properly.
 
@@ -15,11 +15,17 @@ to check chapters before 116 to fix redundant references. All of them should hav
 
 ### Proposition Not Found
 Several proofs mention some propositions that are not found in book. These propositions include:
+- 24.59
 - 116.111
 - 116.113
 - 120.421
 - 152.201
+- 153.102
 - 162.123
+
+### Reference to later proposition
+In chapter 173, there's one proposition referred to some later chapter's proposition. I cannot decide if it is intended 
+or actually a typo.
 
 --------
 
@@ -84,7 +90,7 @@ Several proofs mention some propositions that are not found in book. These propo
 - [x] Chapter 170
 - [x] Chapter 171
 - [x] Chapter 172
-- [x] Chapter 173
+- [x] Chapter 173 (1 NOTE)
 - [x] Chapter 174
 - [x] Chapter 176
 - [x] Chapter 177
@@ -97,7 +103,7 @@ Several proofs mention some propositions that are not found in book. These propo
 - [x] Chapter 183
 - [x] Chapter 184
 - [x] Chapter 185
-- [x] Chapter 186
+- [x] Chapter 186 (1 NOTE)
 
 ### Part 5
 #### Section A
@@ -105,7 +111,7 @@ Several proofs mention some propositions that are not found in book. These propo
 - [x] Chapter 200
 - [x] Chapter 201
 - [x] Chapter 202
-- [x] Chapter 204
+- [x] Chapter 204 (1 ERROR)
 - [x] Chapter 205
 - [x] Chapter 206
 - [x] Chapter 207
@@ -116,7 +122,7 @@ Several proofs mention some propositions that are not found in book. These propo
 - [x] Chapter 211
 - [x] Chapter 212
 - [x] Chapter 213
-- [x] Chapter 214
+- [x] Chapter 214 (1 ERROR)
 - [x] Chapter 215
 - [x] Chapter 216
 - [x] Chapter 217
