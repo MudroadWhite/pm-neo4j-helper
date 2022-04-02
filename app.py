@@ -9,7 +9,6 @@ from neo4j.exceptions import ServiceUnavailable
 #  [ ] Refresh whole graph for uniqueness & no identical relations
 #  [ ] Raise error to Script instance to enhance error printing
 
-
 class App:
 
     def __init__(self, url, user, password):
@@ -77,7 +76,7 @@ class App:
         elif not self.check_prop_exists(p2):
             logging.getLogger("PMNeo4jHelper").error("Proof relation error: {p2} not found for {p1}->{p2}".format(p1=p1, p2=p2))
         elif not self.check_conn_exists(p1, p2):
-            logging.getLogger("PMNeo4jHelper").info(p2 + " <-[Proves]- " + p1)
+            logging.getLogger("PMNeo4jHelper").debug(p2 + " <-[Proves]- " + p1)
             with self.driver.session() as session:
                 result = session.write_transaction(self._connect_pm_prop, p1, p2)
                 return result

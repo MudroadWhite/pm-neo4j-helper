@@ -46,10 +46,14 @@ Thm 166.311
 <- 113.116 166.12 33.24
 Thm 166.312
 <- 113.118 166.12
+# ERROR: proposition 116.111 not found in book
+# ERROR: proposition 116.113 not found in book
 Thm 166.4
 <- 116.111 116.12 113.101 13.22 116.113 55.202 []<->
 
 page 387
+# ERROR: proposition 116.111 not found in book
+# ERROR: proposition 116.113 not found in book
 Thm 166.401
 <- 116.111 116.12 113.101 13.22 116.113 55.202 []<->
 Thm 166.41

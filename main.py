@@ -25,7 +25,8 @@ from script import Script
 #  [ ] Possibility to set up threads?
 
 # Configuration file variable
-conffile = "conf.json"
+conffile = "conf_180_186.json"
+# conffile = "conf_200_234.json"
 
 # logfile = "log_pmneo4j.txt"
 bolt_url = "bolt://localhost:7687"

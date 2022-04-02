@@ -8,7 +8,6 @@ import re
 #  [ ] Change init method to initiating an App instance from inside rather than outside(refactor class?)
 #  [ ] try (App function) ... catch errors from app
 
-
 # TODO: Syntax to be designed:
 #  Script = [Line]*
 #  Line = Location (Str) | Prop1 (Str) | Thm (Str) [Info]* | tactic (Str) [(Str)]+
@@ -95,7 +94,7 @@ class Script:
                     for c in cs:
                         self.app.connect_pm(c, self.currentprop)
                 else:
-                    logging.getLogger("PMNeo4jHelper").error("Unidentified tactic/proposition name {b} in line {linenum}".format(b=b, linenum=linenum))
+                    logging.getLogger("PMNeo4jHelper").error("Unidentified tactic/proposition name {b} in line {linenum}".format(b=b, linenum=linenum+1))
                     # return
 
     def load_tactics(self):

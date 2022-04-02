@@ -1,0 +1,31 @@
+{
+  "bolt_url": "bolt://localhost:7687",
+  "username": "neo4j",
+  "password": "neo4j",
+  "logfile" : "log_pmneo4j.txt",
+  "tactics" : "scripts/tactics.txt",
+  "scripts": [
+    "scripts/v2/pm_150.txt",
+    "scripts/v2/pm_151.txt",
+    "scripts/v2/pm_152.txt",
+    "scripts/v2/pm_153.txt",
+    "scripts/v2/pm_154.txt",
+    "scripts/v2/pm_155.txt",
+    "scripts/v2/pm_160.txt",
+    "scripts/v2/pm_161.txt",
+    "scripts/v2/pm_162.txt",
+    "scripts/v2/pm_163.txt",
+    "scripts/v2/pm_164.txt",
+    "scripts/v2/pm_165.txt",
+    "scripts/v2/pm_166.txt",
+    "scripts/v2/pm_170.txt",
+    "scripts/v2/pm_171.txt",
+    "scripts/v2/pm_172.txt",
+    "scripts/v2/pm_173.txt",
+    "scripts/v2/pm_174.txt",
+    "scripts/v2/pm_176.txt",
+    "scripts/v2/pm_177.txt"
+
+  ],
+  "comment": "Configuration for chapter 150 - 177"
+}

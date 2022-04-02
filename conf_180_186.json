@@ -1,0 +1,17 @@
+{
+  "bolt_url": "bolt://localhost:7687",
+  "username": "neo4j",
+  "password": "neo4j",
+  "logfile" : "log_pmneo4j.txt",
+  "tactics" : "scripts/tactics.txt",
+  "scripts": [
+    "scripts/v2/pm_180.txt",
+    "scripts/v2/pm_181.txt",
+    "scripts/v2/pm_182.txt",
+    "scripts/v2/pm_183.txt",
+    "scripts/v2/pm_184.txt",
+    "scripts/v2/pm_185.txt",
+    "scripts/v2/pm_186.txt"
+  ],
+  "comment": "Configuration for chapter 180 - 186"
+}

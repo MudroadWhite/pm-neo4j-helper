@@ -6,6 +6,7 @@ section C
 
 page 430
 Df 173.01
+# Note: Potential error: refferred to proposition in later chapter
 Thm 173.1
 <- 175.01
 Thm 173.11

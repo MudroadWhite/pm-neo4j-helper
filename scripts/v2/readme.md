@@ -2,7 +2,7 @@
 
 Important notes that could be helpful to organize or use the script, will be listed out in this file.
 
-This volume requires data from volume 1 to work properly.
+This volume requires graph generated from volume 1 to work properly.
 
 --------
 
@@ -13,10 +13,17 @@ At chapter 116, I found that most Hp prop "tactics" only appear in the propositi
 Hp prop mentioned should be ignored. Which means, Hp prop issues should only exist before chapter 116, and it's only necessary
 to check chapters before 116 to fix redundant references. All of them should have been already commented `# new tactic Hp prop`.
 
+### Proposition Not Found
+Several proofs mention some propositions that are not found in book. These propositions include:
+- 116.111
+- 116.113
+- 120.421
+- 152.201
+- 162.123
 
 --------
 
-## Recording Progress (To be checked)
+## Recording Progress
 
 ### Part 3
 #### Section A
@@ -45,9 +52,9 @@ to check chapters before 116 to fix redundant references. All of them should hav
 - [x] Chapter 118 (13 NOTEs)
 - [x] Chapter 119
 - [x] Chapter 120
-- [x] Chapter 121
+- [x] Chapter 121 (1 ERROR)
 - [x] Chapter 122
-- [x] Chapter 123
+- [x] Chapter 123 (1 ERROR)
 - [x] Chapter 124
 - [x] Chapter 125
 - [x] Chapter 126
@@ -59,18 +66,18 @@ to check chapters before 116 to fix redundant references. All of them should hav
 - [x] Chapter 151
 - [x] Chapter 152
 - [x] Chapter 153
-- [x] Chapter 154
+- [x] Chapter 154 (1 ERROR)
 - [x] Chapter 155
 
 #### Section B
 
 - [x] Chapter 160
 - [x] Chapter 161
-- [x] Chapter 162
+- [x] Chapter 162 (1 ERROR)
 - [x] Chapter 163
 - [x] Chapter 164
 - [x] Chapter 165
-- [x] Chapter 166
+- [x] Chapter 166 (4 ERRORs)
   
 #### Section C
 
