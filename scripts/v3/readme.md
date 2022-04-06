@@ -21,11 +21,11 @@ This volume requires graphs generated from volume 1 & 2 to work properly.
 - [x] Chapter 255 (1 NOTE)
 - [x] Chapter 256
 - [x] Chapter 257
-- [ ] Chapter 258 (In progress)
-- [ ] Chapter 259 (In progress)
+- [x] Chapter 258
+- [x] Chapter 259 (1 NOTE)
 
 #### Section E
-- [ ] Chapter 260 (In progress)
+- [x] Chapter 260
 - [ ] Chapter 261 (In progress)
 - [ ] Chapter 262 (In progress)
 - [ ] Chapter 263 (In progress)
@@ -34,10 +34,10 @@ This volume requires graphs generated from volume 1 & 2 to work properly.
 
 #### Section F
 - [ ] Chapter 270 (In progress)
-- [ ] Chapter 271
-- [ ] Chapter 272
-- [ ] Chapter 273
-- [ ] Chapter 274
+- [ ] Chapter 271 (In progress)
+- [ ] Chapter 272 (In progress)
+- [ ] Chapter 273 (In progress)
+- [ ] Chapter 274 (In progress)
 - [ ] Chapter 275
 - [ ] Chapter 276
 
