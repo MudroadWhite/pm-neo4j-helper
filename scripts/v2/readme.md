@@ -8,22 +8,22 @@ This volume requires graph generated from volume 1 to work properly.
 
 ## Known issues
 
-### Hp prop
+##### Hp prop
 At chapter 116, I found that most Hp prop "tactics" only appear in the proposition to be proved, rather than the proving procedure. Therefore, the proposition that
 Hp prop mentioned should be ignored. Which means, Hp prop issues should only exist before chapter 116, and it's only necessary
 to check chapters before 116 to fix redundant references. All of them should have been already commented `# new tactic Hp prop`.
 
-### Proposition Not Found
-Several proofs mention some propositions that are not found in book. These propositions include:
+##### Proposition Not Found (labeled with `ERROR`s)
+Several proofs mention some propositions that are not found in the book. These propositions include:
 - 24.59
 - 116.111
 - 116.113
 - 120.421
 - 152.201
 - 153.102
-- 162.123
+- 162.123 
 
-### Reference to later proposition
+##### Reference to later proposition (labeled with `NOTE`)
 In chapter 173, there's one proposition referred to some later chapter's proposition. I cannot decide if it is intended 
 or actually a typo.
 

@@ -3,3 +3,63 @@
 volume 3
 part 5
 section D
+
+page 103
+# new tactic Dft
+Df 259.01
+# new tactic Dft
+Df 259.02
+Df 259.03
+Thm 259.1
+
+Thm 259.11
+
+
+page 104
+Thm 259.111
+
+Thm 259.12
+
+Thm 259.121
+
+Thm 259.122
+
+Thm 259.13
+
+Thm 259.14
+
+Thm 259.141
+
+
+page 105
+Thm 259.15
+
+Thm 259.16
+
+Thm 259.17
+
+Thm 259.171
+
+Thm 259.2
+
+
+page 106
+Thm 259.21
+
+Thm 259.211
+
+Thm 259.22
+
+Thm 259.221
+
+Thm 259.222
+
+Thm 259.223
+
+Thm 259.23
+
+
+page 107
+Thm 259.24
+
+Thm 259.25

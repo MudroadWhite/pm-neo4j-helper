@@ -18,15 +18,15 @@ This volume requires graphs generated from volume 1 & 2 to work properly.
 - [x] Chapter 252
 - [x] Chapter 253
 - [x] Chapter 254
-- [ ] Chapter 255 (In progress)
-- [ ] Chapter 256 (In progress)
+- [x] Chapter 255 (1 NOTE)
+- [x] Chapter 256
 - [ ] Chapter 257 (In progress)
 - [ ] Chapter 258 (In progress)
 - [ ] Chapter 259 (In progress)
 
 #### Section E
 - [ ] Chapter 260 (In progress)
-- [ ] Chapter 261
+- [ ] Chapter 261 (In progress)
 - [ ] Chapter 262
 - [ ] Chapter 263
 - [ ] Chapter 264

@@ -6,7 +6,7 @@ Important notes that could be helpful to organize or use the scripts, will be li
 
 ## Comments are More Useful than You Think 
 
-In some files, I write comments to indicate that, there might be some tactic not being added into the proof relation, because I haven't digested the tests so far yet. It can also be that, the original text has so much ambiguity that unless you comprehend the text, your proof relation might be completely go wrong. If I don't write these comment carefully, the situarion would be worse - and sadly I am not a careful person.
+In some files, I write comments to indicate that, there might be some tactic not being added into the proof relation, because I haven't digested the tests so far yet. It can also be that, the original text has so much ambiguity that unless you comprehend the text, your proof relation might be completely go wrong. If I don't write these comment carefully, the situation would be worse - and sadly I am not a careful person.
 
 ## Known Issues
 
@@ -20,7 +20,7 @@ Similar to above, some proofs involve `\[etc\] <- proposition`. It appears at la
 `Hp` stands for hypothesis. Some proofs in very later chapters uses abbreviations like `Hp77.77` to indicate the hypothesis of proposition `77.77`.
 
 ##### Similar Proof
-Some proof are omitted and written "similar proof" only. It's severely ambiguous, and the actual proof relation can be known only after one has comprehended the texts.
+Some proofs are omitted and written "similar proof" only. It's severely ambiguous, and the actual proof relation can be known only after one has comprehended the texts.
 For tactics above, I have a chance to label those tactics as clearly as I can in comments. But for similar proof, I might be very careless... It's recommended to
 check through original text to figure out where `similar proof` has been used to abbreviate the texts.
 
@@ -57,7 +57,7 @@ Export whole database to JSON object(APOC library required):
 ````cypher
 CALL apoc.export.json.all("pm.json",{useTypes:true})
 ````
-Find the json object under the database's `import/` folder.
+Find the json object under the database's `import/` folder, or open the project's `import` folder from settings.
 
 
 --------

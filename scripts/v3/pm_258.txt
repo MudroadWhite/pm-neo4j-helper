@@ -3,3 +3,79 @@
 volume 3
 part 5
 section D
+
+page 97
+Thm 258.1
+
+page 98
+Thm 258.101
+
+Thm 258.11
+
+Thm 258.111
+
+Thm 258.12
+
+Thm 258.13
+
+Thm 258.131
+
+Thm 258.14
+
+Thm 258.2
+
+Thm 258.201
+
+Thm 258.202
+
+Thm 258.203
+
+Thm 258.21
+
+Thm 258.211
+
+
+page 99
+Thm 258.22
+
+Thm 258.221
+
+Thm 258.23
+
+Thm 258.231
+
+Thm 258.24
+
+Thm 258.241
+
+Thm 258.242
+
+Thm 258.243
+
+Thm 258.3
+
+
+page 100
+Thm 258.301
+
+Thm 258.31
+
+Thm 258.32
+
+Thm 258.321
+
+Thm 258.33
+
+
+page 101
+Thm 258.34
+
+Thm 258.35
+
+Thm 258.36
+
+Thm 258.37
+
+Thm 258.38
+
+Thm 258.39
