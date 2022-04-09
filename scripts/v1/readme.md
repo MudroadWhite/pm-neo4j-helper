@@ -4,6 +4,18 @@ Important notes that could be helpful to organize or use the scripts, will be li
 
 --------
 
+## Errors Being Detected
+Within the helper I have built a simple error checking system that checks errors while parsing the scripts. Errors that can be detected
+includes:
+
+1. General syntax errors that mentioned in `README.md`.
+2. Propositions that don't exist in the database while reading a line.
+
+Because of this, several types of error that could be critical, cannot be detected. They might include:
+1. Wrong proof relation `a <- b`, assigning a proposition `a` to a proof proposition `b` whose name *exists* in the database.
+2. Missing proof relations, tactics due to carelessness.
+3. Missing propositions not being record, which should occur at a very low chance.
+
 ## Comments are More Useful than You Think 
 
 In some files, I write comments to indicate that, there might be some tactic not being added into the proof relation, because I haven't digested the tests so far yet. It can also be that, the original text has so much ambiguity that unless you comprehend the text, your proof relation might be completely go wrong. If I don't write these comment carefully, the situation would be worse - and sadly I am not a careful person.

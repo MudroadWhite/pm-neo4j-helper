@@ -2,9 +2,14 @@
 
 Important notes that could be helpful to organize or use the scripts, will be listed out in this file.
 
+This volume requires graphs generated from volume 1 & 2 to work properly.
+
 --------
 
-This volume requires graphs generated from volume 1 & 2 to work properly.
+## Known Issues
+
+##### Tactic Induct
+Same as those tactics in volume 1, `Induct` is a tactic not being recognized.
 
 --------
 
@@ -26,9 +31,9 @@ This volume requires graphs generated from volume 1 & 2 to work properly.
 
 #### Section E
 - [x] Chapter 260
-- [ ] Chapter 261 (In progress)
-- [ ] Chapter 262 (In progress)
-- [ ] Chapter 263 (In progress)
+- [x] Chapter 261
+- [x] Chapter 262 (new tactic Induct, 7 NOTES)
+- [x] Chapter 263
 - [ ] Chapter 264 (In progress)
 - [ ] Chapter 265 (In progress)
 
@@ -38,8 +43,8 @@ This volume requires graphs generated from volume 1 & 2 to work properly.
 - [ ] Chapter 272 (In progress)
 - [ ] Chapter 273 (In progress)
 - [ ] Chapter 274 (In progress)
-- [ ] Chapter 275
-- [ ] Chapter 276
+- [ ] Chapter 275 (In progress)
+- [ ] Chapter 276 (In progress)
 
 ### Part 6
 #### Section A

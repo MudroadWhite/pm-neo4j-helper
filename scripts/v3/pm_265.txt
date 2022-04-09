@@ -3,3 +3,120 @@
 volume 3
 part 5
 section E
+
+page 171
+Df 265.01
+Df 265.02
+Df 265.03
+Df 265.04
+# new tactic Dft
+Df 265.05
+# new tactic Dft
+Df 265.06
+Thm 265.1
+
+Thm 265.11
+
+
+page 172
+Thm 265.12
+
+Thm 265.13
+
+Thm 265.2
+
+Thm 265.21
+
+Thm 265.22
+
+Thm 265.23
+
+Thm 265.24
+
+Thm 265.25
+
+Thm 265.26
+
+
+page 173
+Thm 265.27
+
+Thm 265.28
+
+Thm 265.3
+
+Thm 265.31
+
+
+page 174
+Thm 265.32
+
+Thm 265.33
+
+Thm 265.34
+
+Thm 265.35
+
+Thm 265.351
+
+Thm 265.36
+
+Thm 265.361
+
+Thm 265.4
+
+Thm 265.401
+
+
+page 175
+Thm 265.41
+
+Thm 265.42
+
+Thm 265.43
+
+Thm 265.431
+
+Thm 265.44
+
+
+page 176
+Thm 265.441
+
+Thm 265.45
+
+Thm 265.451
+
+
+page 177
+Thm 265.452
+
+Thm 265.453
+
+Thm 265.454
+
+Thm 265.46
+
+Thm 265.461
+
+Thm 265.47
+
+Thm 265.48
+
+Thm 265.481
+
+Thm 265.49
+
+Thm 265.5
+
+
+page 178
+Thm 265.51
+
+Thm 265.52
+
+Thm 265.53
+
+Thm 265.54
+
+Thm 265.55
