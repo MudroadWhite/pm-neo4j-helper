@@ -8,8 +8,12 @@ This volume requires graphs generated from volume 1 & 2 to work properly.
 
 ## Known Issues
 
-##### Tactic Induct
-Same as those tactics in volume 1, `Induct` is a tactic not being recognized.
+##### Unrecognized tactics
+Same as tactics in volume 1,several new tactics have been found but due to my limit I cannot determine
+the exact propositions that involve within. Below at the progress their appearance should be easy to be found,
+and following the scripts their locations on the book should also be easy to be checked out. These tactics include:
+- tactic Induct
+- tactic []<=
 
 --------
 
@@ -34,8 +38,8 @@ Same as those tactics in volume 1, `Induct` is a tactic not being recognized.
 - [x] Chapter 261
 - [x] Chapter 262 (new tactic Induct, 7 NOTES)
 - [x] Chapter 263
-- [ ] Chapter 264 (In progress)
-- [ ] Chapter 265 (In progress)
+- [x] Chapter 264 (new tactic []<=)
+- [x] Chapter 265
 
 #### Section F
 - [ ] Chapter 270 (In progress)
@@ -48,7 +52,7 @@ Same as those tactics in volume 1, `Induct` is a tactic not being recognized.
 
 ### Part 6
 #### Section A
-- [ ] Chapter 300
+- [ ] Chapter 300 (In progress)
 - [ ] Chapter 301
 - [ ] Chapter 302
 - [ ] Chapter 303
