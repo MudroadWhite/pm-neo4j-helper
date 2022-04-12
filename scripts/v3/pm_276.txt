@@ -3,3 +3,103 @@
 volume 3
 part 5
 section F
+
+page 223
+Df 276.01
+# new tactic Dft
+Df 276.02
+# new tactic Dft
+Df 276.03
+# new tactic Dft
+Df 276.04
+# new tactic Dft
+Df 276.05
+Thm 276.1
+
+Thm 276.11
+
+Thm 276.12
+
+Thm 276.121
+
+
+page 224
+Thm 276.122
+
+Thm 276.123
+
+Thm 276.13
+
+Thm 276.14
+
+Thm 276.2
+
+Thm 276.3
+
+Thm 276.301
+
+Thm 276.302
+
+Thm 276.303
+
+
+page 225
+Thm 276.304
+
+Thm 276.305
+
+Thm 276.31
+
+Thm 276.32
+
+Thm 276.321
+
+Thm 276.322
+
+Thm 276.33
+
+Thm 276.331
+
+Thm 276.34
+
+
+page 226
+Thm 276.341
+
+Thm 276.342
+
+Thm 276.35
+
+Thm 276.351
+
+Thm 276.352
+
+Thm 276.353
+
+
+page 227
+Thm 276.354
+
+Thm 276.355
+
+Thm 276.36
+
+Thm 276.361
+
+Thm 276.37
+
+
+page 228
+Thm 276.38
+
+Thm 276.381
+
+Thm 276.39
+
+Thm 276.4
+
+Thm 276.41
+
+Thm 276.42
+
+Thm 276.43

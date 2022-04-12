@@ -3,3 +3,37 @@
 volume 3
 part 5
 section F
+
+page 219
+Df 275.01
+Thm 275.1
+
+Thm 275.11
+
+Thm 275.12
+
+Thm 275.13
+
+Thm 275.14
+
+Thm 275.2
+
+
+page 220
+Thm 275.21
+
+Thm 275.22
+
+Thm 275.23
+
+Thm 275.24
+
+Thm 275.25
+
+Thm 275.3
+
+Thm 275.31
+
+Thm 275.32
+
+Thm 275.33

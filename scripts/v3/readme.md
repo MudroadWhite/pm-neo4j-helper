@@ -39,13 +39,13 @@ and following the scripts their locations on the book should also be easy to be 
 - [x] Chapter 262 (new tactic Induct, 7 NOTES)
 - [x] Chapter 263
 - [x] Chapter 264 (new tactic []<=)
-- [x] Chapter 265
+- [x] Chapter 265 (1 NOTE)
 
 #### Section F
-- [ ] Chapter 270 (In progress)
-- [ ] Chapter 271 (In progress)
-- [ ] Chapter 272 (In progress)
-- [ ] Chapter 273 (In progress)
+- [x] Chapter 270
+- [x] Chapter 271
+- [x] Chapter 272
+- [x] Chapter 273
 - [ ] Chapter 274 (In progress)
 - [ ] Chapter 275 (In progress)
 - [ ] Chapter 276 (In progress)
@@ -53,10 +53,10 @@ and following the scripts their locations on the book should also be easy to be 
 ### Part 6
 #### Section A
 - [ ] Chapter 300 (In progress)
-- [ ] Chapter 301
-- [ ] Chapter 302
-- [ ] Chapter 303
-- [ ] Chapter 304
+- [ ] Chapter 301 (In progress)
+- [ ] Chapter 302 (In progress)
+- [ ] Chapter 303 (In progress)
+- [ ] Chapter 304 (In progress)
 - [ ] Chapter 305
 - [ ] Chapter 306
 - [ ] Chapter 307
