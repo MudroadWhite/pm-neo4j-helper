@@ -46,9 +46,9 @@ and following the scripts their locations on the book should also be easy to be 
 - [x] Chapter 271
 - [x] Chapter 272
 - [x] Chapter 273
-- [ ] Chapter 274 (In progress)
-- [ ] Chapter 275 (In progress)
-- [ ] Chapter 276 (In progress)
+- [x] Chapter 274
+- [x] Chapter 275
+- [x] Chapter 276
 
 ### Part 6
 #### Section A
@@ -57,8 +57,8 @@ and following the scripts their locations on the book should also be easy to be 
 - [ ] Chapter 302 (In progress)
 - [ ] Chapter 303 (In progress)
 - [ ] Chapter 304 (In progress)
-- [ ] Chapter 305
-- [ ] Chapter 306
+- [ ] Chapter 305 (In progress)
+- [ ] Chapter 306 (In progress)
 - [ ] Chapter 307
 - [ ] Chapter 308
 - [ ] Chapter 309
