@@ -15,6 +15,7 @@ and following the scripts their locations on the book should also be easy to be 
 - tactic Induct
 - tactic []<=
 - tactic []>=
+- tactic []<
 
 --------
 
@@ -59,15 +60,15 @@ and following the scripts their locations on the book should also be easy to be 
 - [x] Chapter 303
 - [x] Chapter 304 (new tactic []>=)
 - [x] Chapter 305
-- [ ] Chapter 306 (In progress)
-- [ ] Chapter 307 (In progress)
-- [ ] Chapter 308 (In progress)
+- [x] Chapter 306 (new tactic []<)
+- [x] Chapter 307
+- [x] Chapter 308
 - [ ] Chapter 309 (In progress)
 - [ ] Chapter 310 (In progress)
 - [ ] Chapter 311 (In progress)
 - [ ] Chapter 312 (In progress)
-- [ ] Chapter 313
-- [ ] Chapter 314
+- [x] Chapter 313
+- [ ] Chapter 314 (In progress)
 
 #### Section B
 - [ ] Chapter 330

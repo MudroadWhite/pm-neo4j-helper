@@ -3,3 +3,95 @@
 volume 3
 part 6
 section A
+
+page 309
+Df 309.01
+Thm 309.1
+
+Thm 309.101
+
+Thm 309.102
+
+Thm 309.11
+
+Thm 309.12
+
+Thm 309.121
+
+
+page 310
+Thm 309.122
+
+Thm 309.13
+
+Thm 309.131
+
+Thm 309.133
+
+Thm 309.14
+
+Thm 309.141
+
+Thm 309.142
+
+Thm 309.143
+
+Thm 309.15
+
+Thm 309.16
+
+Thm 309.17
+
+
+page 311
+Thm 309.21
+
+Thm 309.22
+
+Thm 309.23
+
+Thm 309.24
+
+
+page 312
+Thm 309.25
+
+Thm 309.251
+
+Thm 309.26
+
+Thm 309.31
+
+Thm 309.311
+
+Thm 309.32
+
+
+page 313
+Thm 309.33
+
+Thm 309.34
+
+Thm 309.35
+
+Thm 309.36
+
+Thm 309.361
+
+
+page 314
+Thm 309.362
+
+Thm 309.363
+
+Thm 309.37
+
+Thm 309.41
+
+
+page 315
+Thm 309.42
+
+Thm 309.5
+
+Thm 309.51
