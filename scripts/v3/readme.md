@@ -14,6 +14,7 @@ the exact propositions that involve within. Below at the progress their appearan
 and following the scripts their locations on the book should also be easy to be checked out. These tactics include:
 - tactic Induct
 - tactic []<=
+- tactic []>=
 
 --------
 
@@ -52,19 +53,19 @@ and following the scripts their locations on the book should also be easy to be 
 
 ### Part 6
 #### Section A
-- [ ] Chapter 300 (In progress)
-- [ ] Chapter 301 (In progress)
-- [ ] Chapter 302 (In progress)
-- [ ] Chapter 303 (In progress)
-- [ ] Chapter 304 (In progress)
-- [ ] Chapter 305 (In progress)
+- [x] Chapter 300
+- [x] Chapter 301
+- [x] Chapter 302
+- [x] Chapter 303
+- [x] Chapter 304 (new tactic []>=)
+- [x] Chapter 305
 - [ ] Chapter 306 (In progress)
-- [ ] Chapter 307
-- [ ] Chapter 308
-- [ ] Chapter 309
-- [ ] Chapter 310
-- [ ] Chapter 311
-- [ ] Chapter 312
+- [ ] Chapter 307 (In progress)
+- [ ] Chapter 308 (In progress)
+- [ ] Chapter 309 (In progress)
+- [ ] Chapter 310 (In progress)
+- [ ] Chapter 311 (In progress)
+- [ ] Chapter 312 (In progress)
 - [ ] Chapter 313
 - [ ] Chapter 314
 
