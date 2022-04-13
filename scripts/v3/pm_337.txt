@@ -3,3 +3,36 @@
 volume 3
 part 6
 section B
+
+page 404
+Thm 337.1
+
+Thm 337.11
+
+Thm 337.12
+
+Thm 337.13
+
+
+page 405
+Thm 337.14
+
+Thm 337.2
+
+Thm 337.21
+
+Thm 337.22
+
+Thm 337.23
+
+
+page 406
+Thm 337.24
+
+Thm 337.241
+
+Thm 337.25
+
+Thm 337.26
+
+Thm 337.27

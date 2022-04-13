@@ -16,6 +16,7 @@ and following the scripts their locations on the book should also be easy to be 
 - tactic []<=
 - tactic []>=
 - tactic []<
+- tactic []<.
 
 --------
 
@@ -71,10 +72,10 @@ and following the scripts their locations on the book should also be easy to be 
 - [x] Chapter 314
 
 #### Section B
-- [ ] Chapter 330 (In progress)
-- [ ] Chapter 331 (In progress)
-- [ ] Chapter 332 (In progress)
-- [ ] Chapter 333 (In progress)
+- [x] Chapter 330 (new tactic []<.)
+- [x] Chapter 331
+- [x] Chapter 332
+- [x] Chapter 333
 - [ ] Chapter 334 (In progress)
 - [ ] Chapter 335 (In progress)
 - [ ] Chapter 336 (In progress)
@@ -82,8 +83,8 @@ and following the scripts their locations on the book should also be easy to be 
 
 #### Section C
 - [ ] Chapter 350 (In progress)
-- [ ] Chapter 351
-- [ ] Chapter 352
+- [ ] Chapter 351 (In progress)
+- [ ] Chapter 352 (In progress)
 - [ ] Chapter 353
 - [ ] Chapter 354
 - [ ] Chapter 356
