@@ -76,24 +76,24 @@ and following the scripts their locations on the book should also be easy to be 
 - [x] Chapter 331
 - [x] Chapter 332
 - [x] Chapter 333
-- [ ] Chapter 334 (In progress)
-- [ ] Chapter 335 (In progress)
-- [ ] Chapter 336 (In progress)
-- [ ] Chapter 337 (In progress)
+- [x] Chapter 334
+- [x] Chapter 335
+- [x] Chapter 336
+- [x] Chapter 337
 
 #### Section C
 - [ ] Chapter 350 (In progress)
 - [ ] Chapter 351 (In progress)
 - [ ] Chapter 352 (In progress)
-- [ ] Chapter 353
-- [ ] Chapter 354
-- [ ] Chapter 356
-- [ ] Chapter 359
+- [ ] Chapter 353 (In progress)
+- [ ] Chapter 354 (In progress)
+- [ ] Chapter 356 (In progress)
+- [ ] Chapter 359 (In progress)
 
 #### Section D
-- [ ] Chapter 370
-- [ ] Chapter 371
-- [ ] Chapter 372
+- [ ] Chapter 370 (In progress)
+- [ ] Chapter 371 (In progress)
+- [ ] Chapter 372 (In progress)
 - [ ] Chapter 373
 - [ ] Chapter 374
 - [ ] Chapter 375
