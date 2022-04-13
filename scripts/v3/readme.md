@@ -82,7 +82,7 @@ and following the scripts their locations on the book should also be easy to be 
 - [x] Chapter 337
 
 #### Section C
-- [ ] Chapter 350 (In progress)
+- [x] Chapter 350
 - [ ] Chapter 351 (In progress)
 - [ ] Chapter 352 (In progress)
 - [ ] Chapter 353 (In progress)
@@ -94,6 +94,6 @@ and following the scripts their locations on the book should also be easy to be 
 - [ ] Chapter 370 (In progress)
 - [ ] Chapter 371 (In progress)
 - [ ] Chapter 372 (In progress)
-- [ ] Chapter 373
-- [ ] Chapter 374
-- [ ] Chapter 375
+- [ ] Chapter 373 (In progress)
+- [ ] Chapter 374 (In progress)
+- [ ] Chapter 375 (In progress)
