@@ -8,7 +8,7 @@ This volume requires graphs generated from volume 1 & 2 to work properly.
 
 ## Known Issues
 
-##### Unrecognized tactics
+##### Unrecognized Tactics
 Same as tactics in volume 1,several new tactics have been found but due to my limit I cannot determine
 the exact propositions that involve within. Below at the progress their appearance should be easy to be found,
 and following the scripts their locations on the book should also be easy to be checked out. These tactics include:
@@ -17,6 +17,10 @@ and following the scripts their locations on the book should also be easy to be 
 - tactic []>=
 - tactic []<
 - tactic []<.
+
+##### Proposition Not Found (labeled with `ERROR`s)
+Same as in volume 2, these propositions have not found in the book:
+- 225.174
 
 --------
 
@@ -31,7 +35,7 @@ and following the scripts their locations on the book should also be easy to be 
 - [x] Chapter 253
 - [x] Chapter 254
 - [x] Chapter 255 (1 NOTE)
-- [x] Chapter 256
+- [x] Chapter 256 (1 ERROR)
 - [x] Chapter 257
 - [x] Chapter 258
 - [x] Chapter 259 (1 NOTE)
@@ -39,7 +43,7 @@ and following the scripts their locations on the book should also be easy to be 
 #### Section E
 - [x] Chapter 260
 - [x] Chapter 261
-- [x] Chapter 262 (new tactic Induct, 7 NOTES)
+- [x] Chapter 262 (new tactic Induct, 8 NOTES)
 - [x] Chapter 263
 - [x] Chapter 264 (new tactic []<=)
 - [x] Chapter 265 (1 NOTE)

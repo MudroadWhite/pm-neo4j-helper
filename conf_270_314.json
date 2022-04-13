@@ -1,0 +1,32 @@
+{
+  "bolt_url": "bolt://localhost:7687",
+  "username": "neo4j",
+  "password": "neo4j",
+  "logfile": "log_pmneo4j.txt",
+  "tactics": "scripts/tactics.txt",
+  "scripts": [
+    "scripts/v3/pm_270.txt",
+    "scripts/v3/pm_271.txt",
+    "scripts/v3/pm_272.txt",
+    "scripts/v3/pm_273.txt",
+    "scripts/v3/pm_274.txt",
+    "scripts/v3/pm_275.txt",
+    "scripts/v3/pm_276.txt",
+    "scripts/v3/pm_300.txt",
+    "scripts/v3/pm_301.txt",
+    "scripts/v3/pm_302.txt",
+    "scripts/v3/pm_303.txt",
+    "scripts/v3/pm_304.txt",
+    "scripts/v3/pm_305.txt",
+    "scripts/v3/pm_306.txt",
+    "scripts/v3/pm_307.txt",
+    "scripts/v3/pm_308.txt",
+    "scripts/v3/pm_309.txt",
+    "scripts/v3/pm_310.txt",
+    "scripts/v3/pm_311.txt",
+    "scripts/v3/pm_312.txt",
+    "scripts/v3/pm_313.txt",
+    "scripts/v3/pm_314.txt"
+  ],
+  "comment": "Configuration for chapter 270 - 314"
+}

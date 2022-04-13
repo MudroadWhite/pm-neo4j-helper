@@ -1,0 +1,26 @@
+{
+  "bolt_url": "bolt://localhost:7687",
+  "username": "neo4j",
+  "password": "neo4j",
+  "logfile": "log_pmneo4j.txt",
+  "tactics": "scripts/tactics.txt",
+  "scripts": [
+    "scripts/v3/pm_250.txt",
+    "scripts/v3/pm_251.txt",
+    "scripts/v3/pm_252.txt",
+    "scripts/v3/pm_253.txt",
+    "scripts/v3/pm_254.txt",
+    "scripts/v3/pm_255.txt",
+    "scripts/v3/pm_256.txt",
+    "scripts/v3/pm_257.txt",
+    "scripts/v3/pm_258.txt",
+    "scripts/v3/pm_259.txt",
+    "scripts/v3/pm_260.txt",
+    "scripts/v3/pm_261.txt",
+    "scripts/v3/pm_262.txt",
+    "scripts/v3/pm_263.txt",
+    "scripts/v3/pm_264.txt",
+    "scripts/v3/pm_265.txt"
+  ],
+  "comment": "Configuration for chapter 250 - 265"
+}
