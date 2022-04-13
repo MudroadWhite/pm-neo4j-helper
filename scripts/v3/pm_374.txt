@@ -3,3 +3,21 @@
 volume 3
 part 6
 section D
+
+page 485
+Thm 374.1
+<-
+
+page 486
+Thm 374.11
+<-
+Thm 374.12
+<-
+Thm 374.13
+<-
+Thm 374.14
+<-
+Thm 374.2
+<-
+Thm 374.21
+<-
