@@ -63,25 +63,25 @@ and following the scripts their locations on the book should also be easy to be 
 - [x] Chapter 306 (new tactic []<)
 - [x] Chapter 307
 - [x] Chapter 308
-- [ ] Chapter 309 (In progress)
-- [ ] Chapter 310 (In progress)
-- [ ] Chapter 311 (In progress)
-- [ ] Chapter 312 (In progress)
+- [x] Chapter 309
+- [x] Chapter 310
+- [x] Chapter 311
+- [x] Chapter 312
 - [x] Chapter 313
-- [ ] Chapter 314 (In progress)
+- [x] Chapter 314
 
 #### Section B
-- [ ] Chapter 330
-- [ ] Chapter 331
-- [ ] Chapter 332
-- [ ] Chapter 333
-- [ ] Chapter 334
-- [ ] Chapter 335
-- [ ] Chapter 336
-- [ ] Chapter 337
+- [ ] Chapter 330 (In progress)
+- [ ] Chapter 331 (In progress)
+- [ ] Chapter 332 (In progress)
+- [ ] Chapter 333 (In progress)
+- [ ] Chapter 334 (In progress)
+- [ ] Chapter 335 (In progress)
+- [ ] Chapter 336 (In progress)
+- [ ] Chapter 337 (In progress)
 
 #### Section C
-- [ ] Chapter 350
+- [ ] Chapter 350 (In progress)
 - [ ] Chapter 351
 - [ ] Chapter 352
 - [ ] Chapter 353
