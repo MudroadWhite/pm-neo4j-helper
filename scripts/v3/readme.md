@@ -20,7 +20,7 @@ and following the scripts their locations on the book should also be easy to be 
 
 --------
 
-## Recording Progress
+## Recording Progress (To be checked)
 
 ### Part 5
 #### Section D
@@ -83,17 +83,17 @@ and following the scripts their locations on the book should also be easy to be 
 
 #### Section C
 - [x] Chapter 350
-- [ ] Chapter 351 (In progress)
-- [ ] Chapter 352 (In progress)
-- [ ] Chapter 353 (In progress)
-- [ ] Chapter 354 (In progress)
-- [ ] Chapter 356 (In progress)
-- [ ] Chapter 359 (In progress)
+- [x] Chapter 351 (2 NOTE)
+- [x] Chapter 352
+- [x] Chapter 353
+- [x] Chapter 354
+- [x] Chapter 356
+- [x] Chapter 359
 
 #### Section D
-- [ ] Chapter 370 (In progress)
-- [ ] Chapter 371 (In progress)
-- [ ] Chapter 372 (In progress)
-- [ ] Chapter 373 (In progress)
-- [ ] Chapter 374 (In progress)
-- [ ] Chapter 375 (In progress)
+- [x] Chapter 370
+- [x] Chapter 371
+- [x] Chapter 372
+- [x] Chapter 373 (1 NOTE)
+- [x] Chapter 374
+- [x] Chapter 375

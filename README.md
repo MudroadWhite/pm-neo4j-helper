@@ -124,4 +124,4 @@ python.exe main.py --help
 > Note: For working on volume 2, volume 1's data is required to generate complete database. Volume 3 also applies.  
 
 ### Volume 3
-[Progress](scripts/v3/readme) (Recording)
+[Progress](scripts/v3/readme) (To be checked)
