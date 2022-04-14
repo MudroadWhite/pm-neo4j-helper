@@ -21,6 +21,8 @@ and following the scripts their locations on the book should also be easy to be 
 ##### Proposition Not Found (labeled with `ERROR`s)
 Same as in volume 2, these propositions have not found in the book:
 - 225.174
+- 331.124
+- 372.152
 
 --------
 
@@ -78,7 +80,7 @@ Same as in volume 2, these propositions have not found in the book:
 #### Section B
 - [x] Chapter 330 (new tactic []<.)
 - [x] Chapter 331
-- [x] Chapter 332
+- [x] Chapter 332 (1 ERROR)
 - [x] Chapter 333
 - [x] Chapter 334
 - [x] Chapter 335
@@ -100,4 +102,4 @@ Same as in volume 2, these propositions have not found in the book:
 - [x] Chapter 372
 - [x] Chapter 373 (1 NOTE)
 - [x] Chapter 374
-- [x] Chapter 375
+- [x] Chapter 375 (1 ERROR)
