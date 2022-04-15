@@ -9,17 +9,16 @@ This volume requires graphs generated from volume 1 & 2 to work properly.
 ## Known Issues
 
 ##### Unrecognized Tactics
-Same as tactics in [volume 1](scripts/v1/readme), several new tactics have been found. Due to my limit, I cannot determine
+Same as tactics in [volume 1](scripts/v1/readme.md), several new tactics have been found. Due to my limit, I cannot determine
 the exact propositions that involve within. Below at the progress their appearances should be easily found,
 and following the scripts their locations on the book also should be easily checked out. These tactics include:
 - tactic Induct
 - tactic []<=
 - tactic []>=
 - tactic []<
-- tactic []<.
 
 ##### Proposition Not Found (labeled with `ERROR`s)
-Same as in [volume 2](scripts/v2/readme), several propositions have not found their appearances:
+Same as in [volume 2](scripts/v2/readme.md), several propositions have not found their appearances:
 - 225.174
 - 331.124
 - 372.152
@@ -78,7 +77,7 @@ Same as in [volume 2](scripts/v2/readme), several propositions have not found th
 - [x] Chapter 314
 
 #### Section B
-- [x] Chapter 330 (new tactic []<.)
+- [x] Chapter 330
 - [x] Chapter 331
 - [x] Chapter 332 (1 ERROR)
 - [x] Chapter 333

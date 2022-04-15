@@ -23,7 +23,7 @@ Several proofs mention some propositions that are not found in the book. These p
 - 153.102
 - 162.123 
 
-##### Reference to later proposition (labeled with `NOTE`)
+##### Reference to later proposition (labeled with `NOTE`s)
 In chapter 173, there's one proposition referred to some later chapter's proposition. I cannot decide if it is intended 
 or actually a typo.
 

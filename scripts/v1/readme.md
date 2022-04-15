@@ -8,13 +8,13 @@ Important notes that could be helpful to organize or use the scripts, will be li
 Within the helper I have built a simple error checking system that checks errors while parsing the scripts. Errors that can be detected
 includes:
 
-1. General syntax errors that mentioned in `README.md`.
+1. General syntax errors that mentioned in [README.md](/README.md).
 2. Propositions that don't exist in the database while reading a line.
 
-Because of this, several types of error that could be critical, cannot be detected. They might include:
-1. Wrong proof relation `a <- b`, assigning a proposition `a` to a proof proposition `b` whose name *exists* in the database.
+Because of the nature(brutality), several types of critical errors cannot be detected. They include:
+1. Wrong proof relation `a <- b`, assigning a proposition `a` to a proof proposition `b`, where the name `b` *exists* in the database.
 2. Missing proof relations, tactics due to carelessness.
-3. Missing propositions not being record, which should occur at a very low chance.
+3. Missing proposition numbers not being recorded, which should occur at a very low chance.
 
 ## Comments are More Useful than You Think 
 
@@ -93,7 +93,7 @@ Find the json object under the database's `import/` folder, or open the project'
 - [x] Chapter 13
 - [x] Chapter 14
   
-#### Section C (Stuck on "similar proof" reference, to be checked carefully in future)
+#### Section C (Stuck on "similar proof" references, to be checked carefully in future)
 - [x] Chapter 20
 - [x] Chapter 21 
 - [x] Chapter 22
