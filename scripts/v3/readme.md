@@ -9,9 +9,9 @@ This volume requires graphs generated from volume 1 & 2 to work properly.
 ## Known Issues
 
 ##### Unrecognized Tactics
-Same as tactics in volume 1,several new tactics have been found but due to my limit I cannot determine
-the exact propositions that involve within. Below at the progress their appearance should be easy to be found,
-and following the scripts their locations on the book should also be easy to be checked out. These tactics include:
+Same as tactics in [volume 1](scripts/v1/readme), several new tactics have been found. Due to my limit, I cannot determine
+the exact propositions that involve within. Below at the progress their appearances should be easily found,
+and following the scripts their locations on the book also should be easily checked out. These tactics include:
 - tactic Induct
 - tactic []<=
 - tactic []>=
@@ -19,14 +19,14 @@ and following the scripts their locations on the book should also be easy to be 
 - tactic []<.
 
 ##### Proposition Not Found (labeled with `ERROR`s)
-Same as in volume 2, these propositions have not found in the book:
+Same as in [volume 2](scripts/v2/readme), several propositions have not found their appearances:
 - 225.174
 - 331.124
 - 372.152
 
 --------
 
-## Recording Progress (To be checked)
+## Recording Progress
 
 ### Part 5
 #### Section D

@@ -93,7 +93,11 @@ By default, the helper can load a `conf.json` file under the project folder, inc
 - tactics: The location for the helper to load tactics.
 - scripts: A list of file paths of scripts that will be sent into the helper. The helper will then process the scripts one by one.
 
-You can also change the configuration file to some other files by changing the variable in `main.py`.
+You can also change the configuration file to some other files by changing the variable in `main.py`. Specifically, you might want to focus on this line:
+```python
+# Configuration file variable
+conffile = "conf.json"
+```
 
 Command line arguments have higher priority over `conf.json`, and will override the settings in `conf.json`. To see help information for command line arguments, run
 
@@ -114,7 +118,7 @@ python.exe main.py --help
 - [ ] Gradually transplant the language onto a parser?  
 - [ ] More functionalities to fix bugs...
 
-## PM Recording Progress
+## PM Recording Progress (Finished)
 
 ### Volume 1
 [Progress](scripts/v1/readme) (Finished)
@@ -124,4 +128,4 @@ python.exe main.py --help
 > Note: For working on volume 2, volume 1's data is required to generate complete database. Volume 3 also applies.  
 
 ### Volume 3
-[Progress](scripts/v3/readme) (To be checked)
+[Progress](scripts/v3/readme) (Finished)
