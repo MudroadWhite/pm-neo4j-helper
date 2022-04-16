@@ -24,8 +24,9 @@ from script import Script
 #  [ ] Message printing options for cmd & conf?
 #  [ ] Possibility to set up threads?
 
+
 # Configuration file variable
-conffile = "conf.json"
+conffile = "conf/conf_v3.json"
 
 # logfile = "log_pmneo4j.txt"
 bolt_url = "bolt://localhost:7687"
