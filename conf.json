@@ -180,5 +180,5 @@
     "scripts/v3/pm_374.txt",
     "scripts/v3/pm_375.txt"
   ],
-  "comment": "Configuration for default processing(currently all chapters in all volumes)"
+  "comment": "Configuration for default processing(currently all chapters in all volumes). Shorter configuration files for chapters can be found in /conf/ ."
 }

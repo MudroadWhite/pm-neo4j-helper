@@ -59,13 +59,15 @@ Command line arguments are also available. See the [configuration](#configuratio
 
 ### General Location Info Setting
 
-`volume x`, `part x`, `section x`, `page x` set `volume`, `part`, `section`, `page` to `x` respectively. 
+`volume x`, `part x`, `section x`, `page x` set `volume`, `part`, `section`, `page` of propositions being recorded upon to `x`, respectively. It's usually
+declared before recording any propositions, whose process is in the following section.
 
 ### Proposition Recording
 
-`Thm x`, `Df x`, `Pp x` send queries adding proposition `x` with type `Thm`, `Df` or `Pp` into the database respectively. If a proposition is in the database, it will be updated with the corresponded new type. `x` will also be set as the last proposition being recorded in the script.
+`Thm x`, `Df x`, `Pp x` send queries adding proposition `x` with type `Thm`, `Df` or `Pp` into the database respectively, along with the location info. If a proposition is already in the database, 
+it will be updated with the corresponded new location info & new type. `x` will also be set as the last proposition being recorded in the script.
 
-`name x` adds a name to an already existing proposition in the database.
+`name x` immediately adds a name to an already existing proposition in the database.
 
 ### Proof Relation Recording
 
@@ -75,7 +77,7 @@ Command line arguments are also available. See the [configuration](#configuratio
 
 `tactic x y1 y2 y3...` adds a tactic involving a proof pattern supported by several propositions, for future translation. Abstracting the proof patterns can simplify the proof in PM. Tactic's name is `x`, and the involved propositions are `y`s. These `y`s will be added into proof relations that proves the last proposition being recorded.
 
-Tactics can be saved in a local file. When the helper starts, the helper will try to read tactics from the local file. When the helper is finished, the helper will save/update new tactics back to the local file.
+Tactics can be saved in a local file. Before the helper processes scripts, the helper will read tactics from the local file. After finished processing scripts, the helper will save/update new tactics back to the local file.
 
 ### Comments
 
