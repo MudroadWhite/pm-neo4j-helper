@@ -57,6 +57,29 @@ Command line arguments are also available. See the [configuration](#configuratio
 
 ## Script Syntax & Functionalities
 
+A complete example involving all functionalities is as followed:
+
+``` python
+# Example comment
+## Another example comment
+volume 1111
+part 1111
+section Example_Section
+
+page 1111
+Df 1111.1111
+Pp 1111.1112
+name Example_Proposition
+# We add a tactic to be used
+tactic Example_Tactic 1111.1111
+Thm 1111.1113 
+# We can assign name before giving proof relations
+name Example_Theorem
+# These propositions will be related to Thm 1111.1113
+<- 1111.1111 Example_Tactic
+
+```
+
 ### General Location Info Setting
 
 `volume x`, `part x`, `section x`, `page x` set `volume`, `part`, `section`, `page` of propositions being recorded upon to `x`, respectively. It's usually

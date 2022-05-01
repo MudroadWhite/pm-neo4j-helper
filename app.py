@@ -9,6 +9,7 @@ from neo4j.exceptions import ServiceUnavailable
 #  [ ] Refresh whole graph for uniqueness & no identical relations
 #  [ ] Raise error to Script instance to enhance error printing
 
+# Underlying atomic query options for the helper. App is a bad name and I actually copied it from some tutorial.
 class App:
 
     def __init__(self, url, user, password):
@@ -115,19 +116,18 @@ class App:
         with self.driver.session() as session:
             result = session.read_transaction(self._check_prop_exists_return, p)
             return False if result == 0 else True
-            # return result
 
     @staticmethod
     def _check_prop_exists_return(tx, p):
         query = "MATCH (n:Prop {number: '" + p + "'}) " + "RETURN count(n) AS count"
-        result = tx.run(query).single()
         try:
+            result = tx.run(query).single()
             count = result["count"]
-            return count
         except ServiceUnavailable as exception:
             logging.getLogger("PMNeo4jHelper").error("{query} raised an error: \n {exception}".format(
                 query=query, exception=exception))
             raise
+        return count
 
     def check_conn_exists(self, p1, p2):
         with self.driver.session() as session:
@@ -141,11 +141,11 @@ class App:
                 "-[r:Proves]->" \
                 "(p2:Prop {number: '" + p2 + "'}) " \
                 "RETURN count(r) AS count"
-        result = tx.run(query).single()
         try:
+            result = tx.run(query).single()
             count = result["count"]
-            return count
         except ServiceUnavailable as exception:
             logging.getLogger("PMNeo4jHelper").error("{query} raised an error: \n {exception}".format(
                 query=query, exception=exception))
             raise
+        return count

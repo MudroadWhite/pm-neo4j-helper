@@ -15,6 +15,7 @@ import re
 #  Prop1 = Df | Pp
 #  Info = <- [(Str)]+ | name (Str)
 
+
 def is_prop_number(s):
     return bool(re.match(r"\d+\.\d+", s))
 

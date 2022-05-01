@@ -16,9 +16,11 @@ errorlog = "error.log" # set date...
 
 def setup_loggers():
     # TODO: logfile.clear()
+    # TODO: DEBUG VS INFO for file / std output?
     print("Initializing logging...")
     nl = logging.getLogger("PMNeo4jHelper")
-    nl.setLevel(logging.INFO)
+    nl.setLevel(logging.DEBUG)
+    # nl.setLevel(logging.INFO)
 
     stdinfo = logging.StreamHandler(sys.stdout)
     stdinfo.setLevel(logging.INFO)
@@ -32,17 +34,17 @@ def setup_loggers():
     nl.addHandler(stderror)
     nl.info("Console output error setup complete")
 
-    fileerror = logging.FileHandler('error.log')
-    fileerror.setLevel(logging.ERROR)
-    fileerror.setFormatter(verbose)
-    nl.addHandler(fileerror)
-    nl.info("File error logger setup complete")
-
     fileinfo = logging.FileHandler('info.log')
     fileinfo.setLevel(logging.DEBUG)
     fileinfo.setFormatter(basic)
     nl.addHandler(fileinfo)
     nl.info("File logger setup complete")
+
+    fileerror = logging.FileHandler('error.log')
+    fileerror.setLevel(logging.ERROR)
+    fileerror.setFormatter(verbose)
+    nl.addHandler(fileerror)
+    nl.info("File error logger setup complete")
 
     nl.info("...Setup done")
 
