@@ -57,7 +57,7 @@ Command line arguments are also available. See the [configuration](#configuratio
 
 ## Script Syntax & Functionalities
 
-A complete example involving all functionalities is as followed:
+A complete example involving all functionalities is as below:
 
 ``` python
 # Example comment
@@ -77,7 +77,6 @@ Thm 1111.1113
 name Example_Theorem
 # These propositions will be related to Thm 1111.1113
 <- 1111.1111 Example_Tactic
-
 ```
 
 ### General Location Info Setting
@@ -114,7 +113,7 @@ By default, the helper can load a `conf.json` file under the project folder, inc
 - bolt_url: The bolt url of the database to be linked to. 
 - username: The username of the database.
 - password: The password of the database.
-- logfile: The location for the helper to output its logs(Unimplemented).
+- (Unfinished, unstable)logfile: The location for the helper to output its logs.
 - tactics: The location for the helper to load tactics.
 - scripts: A list of file paths of scripts that will be sent into the helper. The helper will then process the scripts one by one.
 
@@ -137,7 +136,8 @@ python.exe main.py --help
 - [x] Implement cmd arguments & options
 - [x] Implement logging functionalities
 - [x] File supports UTF-8 or so, at least for Chinese
-- [ ] Implement a JSON Parser(Important side project)
+- [ ] (IMPORTANT) Multi threading! Up to 8 threads. 
+- [ ] Implement a JSON Parser(side project)
 - [ ] Enhance logging functionality  
 - [ ] Make a pip package?
 - [ ] Gradually transplant the language onto a parser?  

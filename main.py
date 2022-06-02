@@ -24,15 +24,6 @@ from script import Script
 #  [ ] Message printing options for cmd & conf?
 #  [ ] Possibility to set up threads?
 
-[[[]],
- [[1]],
- [[1, 1], [2], [2], [2]],
- [[1, 1, 1], [1, 2], [1, 2], [1, 2]],
- [[1, 1, 1, 1], [1, 1, 2], [2, 2], [1, 1, 2], [2, 2], [2, 2], [1, 1, 2], [2, 2], [2, 2], [2, 2]],
- [[1, 1, 1, 1, 1], [1, 1, 1, 2], [1, 2, 2], [1, 1, 1, 2], [1, 2, 2], [1, 2, 2], [1, 1, 1, 2], [1, 2, 2], [1, 2, 2], [1, 2, 2], [5]]]
-
-
-
 # Configuration file variable
 conffile = "conf/conf_v3.json"
 
