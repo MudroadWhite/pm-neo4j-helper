@@ -24,6 +24,14 @@ from script import Script
 #  [ ] Message printing options for cmd & conf?
 #  [ ] Possibility to set up threads?
 
+# TODO: Thread support. Major speedup in updating the nodes
+#   - Max thread: 8 / strange new parameter
+#   - Read files and load them in the memory
+#   - Check if there already exists node of the file
+#   -   No  -> wait
+#   -   Yes -> update the nodes from file
+#   -   Buffer logout?
+
 # Configuration file variable
 conffile = "conf/conf_v3.json"
 

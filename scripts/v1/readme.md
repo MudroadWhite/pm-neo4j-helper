@@ -4,7 +4,7 @@ Important notes that could be helpful to organize or use the scripts, will be li
 
 --------
 
-## Errors Being Detected
+## Detectable Errors
 Within the helper I have built a simple error checking system that checks errors while parsing the scripts. Errors that can be detected
 includes:
 
@@ -47,6 +47,16 @@ Dft appears in the very later chapters of the texts, and I cannot understand its
 
 ##### Volatile Ch.8
 Most proofs in chapter 8 in Appendix A are given in texts, and in a lot of cases the proofs mention other propositions as "similar proof". Without these mentions, the proofs contain no propositions at all.
+
+##### Tactics with subscripts(___)
+There could be some connectives being added subscript(s), and the use of these connectives are being recognized as using 
+a tactic. One example is the `[]<->___` in chapter 40. Currently I have found out that they act as an abbreviation of 
+`forall`, as stated in page 22:
+```
+Fx (->_x) Gx <-> forall x. (Fx -> Gx) Df
+```
+Since it's a collection of tactics, I won't give complete treatment in the forseeable future to identify exact 
+definitions to the connective abbreviations. However, I have made NOTES on where they're being used. 
 
 --------
 
