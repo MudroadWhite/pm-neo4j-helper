@@ -9,7 +9,9 @@ Df 1.01
 Df 1.1
 
 page 95
-# NOTE: If we can write |- Fx, and we can write |- Fx->Gx, then we can write |-Gx
+# NOTE: Pp 1.11: If we can write |- Fx, and we can write |- Fx->Gx, then we can write |-Gx
+#       To my current understanding this is not being used as premises in proofs but rather
+#       inference rules to specify how we can write valid proofs
 Pp 1.11
 
 page 96
