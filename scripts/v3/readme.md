@@ -8,7 +8,7 @@ This volume requires graphs generated from volume 1 & 2 to work properly.
 
 ## Known Issues
 
-##### Unrecognized Tactics
+##### Tactics []?, and Other Unrecognized Tactics
 Same as tactics in [volume 1](scripts/v1/readme.md), several new tactics have been found. Due to my limit, I cannot determine
 the exact propositions that involve within. Below at the progress their appearances should be easily found,
 and following the scripts their locations on the book also should be easily checked out. These tactics include:

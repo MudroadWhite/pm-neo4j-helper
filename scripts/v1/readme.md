@@ -22,11 +22,23 @@ In some files, I write comments to indicate that, there might be some tactic not
 
 ## Known Issues
 
-##### Tactic []=
-Some proofs involve lines using `\[etc\] = proposition`. It's needed to figure out what theorem supports this abbrevation.
+##### Tactic collections of []?
+Several tactics involve using [] following by a connective in the proofs. These tactics include:
+- tactic []=
+- tactic []<-
 
-##### Tactic []<-
-Similar to above, some proofs involve `\[etc\] <- proposition`. It appears at later chapter so it's harder to figure out.
+##### Tactics with subscripts(___)
+There could be some connectives being added subscript(s), and the use of these connectives are being recognized as using 
+a tactic. One example is the `[]<->___` in chapter 40. Currently I have found out that they act as an abbreviation of 
+`forall`, as stated in page 22:
+```
+Fx (->_x) Gx <-> forall x. (Fx -> Gx) Df
+```
+Since it's a collection of tactics, I won't give complete treatment in the forseeable future to identify exact 
+definitions to the connective abbreviations. However, I have made NOTES on where they're being used.
+
+Mostly, these tactics have to deal with 1.11 as it's very fundamental. However there could be some more exact statements in
+some chapters stating that they could be used, so I cannot track the exact definitions' numbers that they correspond to.
 
 ##### Tactic Hp-Prop
 `Hp` stands for hypothesis. Some proofs in very later chapters uses abbreviations like `Hp77.77` to indicate the hypothesis of proposition `77.77`.
@@ -47,16 +59,6 @@ Dft appears in the very later chapters of the texts, and I cannot understand its
 
 ##### Volatile Ch.8
 Most proofs in chapter 8 in Appendix A are given in texts, and in a lot of cases the proofs mention other propositions as "similar proof". Without these mentions, the proofs contain no propositions at all.
-
-##### Tactics with subscripts(___)
-There could be some connectives being added subscript(s), and the use of these connectives are being recognized as using 
-a tactic. One example is the `[]<->___` in chapter 40. Currently I have found out that they act as an abbreviation of 
-`forall`, as stated in page 22:
-```
-Fx (->_x) Gx <-> forall x. (Fx -> Gx) Df
-```
-Since it's a collection of tactics, I won't give complete treatment in the forseeable future to identify exact 
-definitions to the connective abbreviations. However, I have made NOTES on where they're being used. 
 
 --------
 
@@ -81,6 +83,66 @@ CALL apoc.export.json.all("pm.json",{useTypes:true})
 ````
 Find the json object under the database's `import/` folder, or open the project's `import` folder from settings.
 
+--------
+
+## Note on Inference Methods in Principia
+
+In general the most important inference ways I can see currently are the followings:
+
+1. |- (proposition)
+2. [] |- (proposition)
+3. |- (proposition) ->
+   \[(premises)\] |- (proposition) which is tactic `->[]`.
+   
+Since the material is rare I'll try to make a distinction between these tactics.
+
+##### 1. Ordinary Assumption (p92)
+Turnstile just means we assume a proposition. `|- p` means we can assume a proposition p without any requirements. Usually 
+this means the proposition `p` is a **primitive proposition** in PM as the foundation of the theory. There could be other
+usages in the later chapter.
+
+##### 2. Assumption from brackets (p98, p100) 
+(To be finished) There could be multiple ways of usages in this kind of inference. But the most simple
+kind of inference just want to use the brackets to mean that
+> We are using some conclusions from some previous proofs.
+
+When meaning this we are usually seeing only one propositions in the bracket. For example `Thm 2.01`.
+
+Another kind of usage of brackets is using a sequent of conclusions with a definition or inference rule:
+
+> [(1). (2). *1.11]
+> 
+> [(1). (*1.01)]
+> 
+> [(1). (2)]
+
+Several subtle characteristics to be addressed in these lines of brackets. First of all one of them has a pair of rounded brackets while the others don't. Rounded brackets
+means this is a definition. Second the 3rd one doesn't get a proposition number as its last element of the sequent. This
+usually means *1.11 has been omitted. What does *1.11 says? It says:
+
+> If we can write |- Fx, and we can write |- Fx -> Gx, then we can write |- Gx.
+
+(To be checked)So usually we want to say (1) is some kind of `|- Fx` and (2) is some kind of `|- Fx -> Gx` and we want to 
+conclude that we can write `|- Gx` as a conclusion. This is to say we're using an inference rule to derive a conclusion.
+
+The situation of `*(1.01)` is different. It doesn't involve inference, and this is why it's enclosed in rounded brackets `()`.
+This means we want to apply a definition.
+
+##### 3. Combined, Simplified Inference (p103, tactic `->[]`)
+
+In the last section we have explained the usage of Pp `1.11`. There's also other ways to use `1.11` and I'll take one of them
+as an example to show their underlying reasoning. We have
+
+> |- p ->
+> 
+> [etc.]  |- q
+
+which means 
+
+> We have proved |- p is true. "etc" is a proof of "|- p -> q is true". So we're now proving q is true.
+> We want to make the proof looks like |-p -> |- q with a comment witnessing its validity, so we use a bracket.  
+
+And this according to the author of Principia involves Pp `1.11`.
 
 --------
 
