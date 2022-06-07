@@ -22,10 +22,13 @@ In some files, I write comments to indicate that, there might be some tactic not
 
 ## Known Issues
 
-##### Tactic collections of []?
+##### Tactics of []?
 Several tactics involve using [] following by a connective in the proofs. These tactics include:
 - tactic []=
 - tactic []<-
+
+To my current understanding, these tactics have to deal with 1.11 as it's very fundamental. However there could be some more exact statements in
+some chapters stating that they could be used, so I cannot track the exact definitions' numbers they correspond to.
 
 ##### Tactics with subscripts(___)
 There could be some connectives being added subscript(s), and the use of these connectives are being recognized as using 
@@ -36,9 +39,6 @@ Fx (->_x) Gx <-> forall x. (Fx -> Gx) Df
 ```
 Since it's a collection of tactics, I won't give complete treatment in the forseeable future to identify exact 
 definitions to the connective abbreviations. However, I have made NOTES on where they're being used.
-
-Mostly, these tactics have to deal with 1.11 as it's very fundamental. However there could be some more exact statements in
-some chapters stating that they could be used, so I cannot track the exact definitions' numbers that they correspond to.
 
 ##### Tactic Hp-Prop
 `Hp` stands for hypothesis. Some proofs in very later chapters uses abbreviations like `Hp77.77` to indicate the hypothesis of proposition `77.77`.
@@ -93,6 +93,7 @@ In general the most important inference ways I can see currently are the followi
 2. [] |- (proposition)
 3. |- (proposition) ->
    \[(premises)\] |- (proposition) which is tactic `->[]`.
+4. [Syll] |- [(1). (2). (3)] -> |- p   
    
 Since the material is rare I'll try to make a distinction between these tactics.
 
@@ -143,6 +144,12 @@ which means
 > We want to make the proof looks like |-p -> |- q with a comment witnessing its validity, so we use a bracket.  
 
 And this according to the author of Principia involves Pp `1.11`.
+
+#### 4. Syllogism
+Syllogism is another inference rule. Since the rule is different from `1.11` so the way it can use for simplify the proofs
+is also different. Note that it's not some proof like `[(1). (2). (3). Syll]`. However, in the later chapter this kind of
+proof abbreviation has been abandoned. If you can understand how 1.11 works you should figure out the underlying reasoning of 
+this abbreviation pretty soon.
 
 --------
 
