@@ -9,6 +9,7 @@ Df 1.01
 Df 1.1
 
 page 95
+# NOTE: If we can write |- Fx, and we can write |- Fx->Gx, then we can write |-Gx
 Pp 1.11
 
 page 96
