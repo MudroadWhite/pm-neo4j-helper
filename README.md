@@ -1,4 +1,4 @@
-# pm-neo4j-helper
+# PM Neo4j Helper
 ![Proof relations in PM for chapter 1-5](graph.png)
 ## What It Does
 
